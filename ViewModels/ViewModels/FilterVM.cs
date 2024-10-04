@@ -11,10 +11,10 @@ namespace ViewModels.ViewModels
 {
 	public class FilterVM : ViewModelBase, IFilterViewModel
 	{
-
 		private readonly ICrudService<Filter> _crudService;
 		private readonly ICurrentParameterDTO _parameters;
 		private readonly IMapper _mapper;
+		private readonly Lazy<RelayCommand> _selectCommand;
 		private ObservableCollection<Filter> filters;
 		private Filter selectedFilter;
 		public ObservableCollection<Filter> Filters
@@ -49,9 +49,11 @@ namespace ViewModels.ViewModels
 			_crudService = crudService;
 			_crudService.EntitiesLoaded += OnFiltersLoaded;
 			GetAllCommand.Execute(this);
+			_selectCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await SelectFilterAsync(parameter)));
 			Filters = new();
 			SelectedFilter = new();
 		}
+		public RelayCommand SelectCommand => _selectCommand.Value;
 		public RelayCommand GetAllCommand => _crudService.GetAllCommand;
 		public RelayCommand DeleteCommand => _crudService.DeleteCommand;
 		public RelayCommand UpdateCommand => _crudService.UpdateCommand;
@@ -76,6 +78,15 @@ namespace ViewModels.ViewModels
 				Filters.Add(_mapper.Map<Filter>(filter));
 			}
 			Log.Information($"Filter type data has been uploaded");
+		}
+		private async Task SelectFilterAsync(object filterName)
+		{
+			if (filterName is string brandFilter)
+			{
+				var selectFilter = Filters.FirstOrDefault(e => e.BrandFilter == brandFilter);
+				if (selectFilter != null)
+					SelectedFilter = selectFilter;
+			}
 		}
 	}
 }

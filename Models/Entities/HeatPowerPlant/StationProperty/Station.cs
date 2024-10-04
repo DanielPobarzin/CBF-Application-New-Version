@@ -25,6 +25,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Мельница пылеприготовления
 		/// </summary>
+		[Description("Мельница пылеприготовления")]
 		public string Mill
 		{
 			get { return mill; }
@@ -39,6 +40,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Расход топлива
 		/// </summary>
+		[Description("Расход топлива В, кг/с")]
 		public double FuelConsumption
 		{
 			get { return fuelConsumption; }
@@ -53,6 +55,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Тип шлакоудаления
 		/// </summary>
+		[Description("Тип шлакоудаления")]
 		public SlagRemoval SlagRemoval
 		{
 			get { return slagRemoval; }
@@ -67,6 +70,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Температура уходящих газов
 		/// </summary>
+		[Description("Температура уходящих газов, °C")]
 		public double ExhaustGasTemperature
 		{
 			get { return exhaustGasTemperature; }
@@ -82,6 +86,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Количество дымососов
 		/// </summary>
+		[Description("Количество дымососов")]
 		public int NumberSmokePumps
 		{
 			get { return numberSmokePumps; }
@@ -96,6 +101,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Присосы воздуха
 		/// </summary>
+		[Description("Коэффициент избытка воздуха α")]
 		public double AirSuction
 		{
 			get { return airSuction; }
@@ -110,6 +116,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Тип подвода газа
 		/// </summary>
+		[Description("Тип подвода газа")]
 		public TypeFlueGasSupply TypeFlueGasSupply
 		{
 			get { return typeFlueGasSupply; }
@@ -124,6 +131,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Число решеток
 		/// </summary>
+		[Description("Число решеток")]
 		public int NumberGrids
 		{
 			get { return numberGrids; }
@@ -138,6 +146,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Схема бункерной перегородки
 		/// </summary>
+		[Description("Схема бункерной перегородки")]
 		public SchemeBunkerPartitions SchemeBunkerPartitions
 		{
 			get { return schemeBunkerPartitions; }
@@ -152,6 +161,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 		/// <summary>
 		/// Высота подъемной шахты
 		/// </summary>
+		[Description("Высота подъемной шахты Н, м")]
 		public double HeightLiftShaft
 		{
 			get { return heightLiftShaft; }

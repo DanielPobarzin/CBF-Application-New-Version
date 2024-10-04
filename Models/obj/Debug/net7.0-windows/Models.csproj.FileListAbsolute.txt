@@ -34,3 +34,16 @@ C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net
 C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\refint\Models.dll
 C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.pdb
 C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\ref\Models.dll
+D:\Develop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.deps.json
+D:\Develop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.sourcelink.json
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.dll
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\refint\Models.dll
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.pdb
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\ref\Models.dll

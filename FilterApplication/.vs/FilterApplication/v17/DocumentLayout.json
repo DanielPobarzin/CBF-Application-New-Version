@@ -3,36 +3,38 @@
   "WorkspaceRootPath": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\abstractbase\\resource\\fuelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\filterapplication.v2\\filterapplication\\view\\station.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\station.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\filterapplication.v2\\filterapplication\\view\\fuel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\fuel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C413BF-D7F7-42E6-AA4D-287ECF4388CE}|..\\ViewModels\\ViewModels.csproj|d:\\develop\\filterapplication.v2\\viewmodels\\viewmodels\\fuelvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\filterapplication.v2\\filterapplication\\view\\fuel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\fuel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\entities\\heatpowerplant\\resources\\fuel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\filterapplication.v2\\filterapplication\\view\\filter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\filter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\entities\\heatpowerplant\\egm_filters\\filter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0466B37F-29C2-421E-800D-0A33314B458A}|..\\Application\\Application.csproj|d:\\develop\\filterapplication.v2\\application\\interfaces\\viewmodels\\ifilterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\abstractbase\\production\\stationbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0466B37F-29C2-421E-800D-0A33314B458A}|..\\Application\\Application.csproj|d:\\develop\\filterapplication.v2\\application\\utilities\\selectedelementconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\abstractbase\\equipment\\filterbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0466B37F-29C2-421E-800D-0A33314B458A}|..\\Application\\Application.csproj|d:\\develop\\filterapplication.v2\\application\\interfaces\\services\\iexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF07117-5013-428B-9056-0FE70C42F31B}|..\\Persistance\\Persistance.csproj|d:\\develop\\filterapplication.v2\\persistance\\services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27C413BF-D7F7-42E6-AA4D-287ECF4388CE}|..\\ViewModels\\ViewModels.csproj|d:\\develop\\filterapplication.v2\\viewmodels\\viewmodels\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\entities\\heatpowerplant\\stationproperty\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\filterapplication.v2\\models\\entities\\calculationfilterefficiency\\definedfilterparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\filterapplication.v2\\filterapplication\\view\\splashscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\splashscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\d.pobarzin\\AppData\\Local\\Temp\\.vsdbgsrc\\663eae741a204ff437a3c7755147b6411af41c60c876629ecb38a7de166e1dc1\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,155 +44,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 313,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FuelBase.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "RelativeDocumentMoniker": "..\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "RelativeToolTip": "..\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwGIAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:04:16.508Z",
+              "Title": "Station.xaml",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Station.xaml",
+              "RelativeDocumentMoniker": "View\\Station.xaml",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Station.xaml",
+              "RelativeToolTip": "View\\Station.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T14:00:26.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StationBase.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\AbstractBase\\Production\\StationBase.cs",
-              "RelativeDocumentMoniker": "..\\Models\\AbstractBase\\Production\\StationBase.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\AbstractBase\\Production\\StationBase.cs",
-              "RelativeToolTip": "..\\Models\\AbstractBase\\Production\\StationBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Fuel.xaml.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Fuel.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Fuel.xaml.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Fuel.xaml.cs",
+              "RelativeToolTip": "View\\Fuel.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:04:11.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FilterBase.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\AbstractBase\\Equipment\\FilterBase.cs",
-              "RelativeDocumentMoniker": "..\\Models\\AbstractBase\\Equipment\\FilterBase.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\AbstractBase\\Equipment\\FilterBase.cs",
-              "RelativeToolTip": "..\\Models\\AbstractBase\\Equipment\\FilterBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:04:06.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Station.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\HeatPowerPlant\\StationProperty\\Station.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Entities\\HeatPowerPlant\\StationProperty\\Station.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\HeatPowerPlant\\StationProperty\\Station.cs",
-              "RelativeToolTip": "..\\Models\\Entities\\HeatPowerPlant\\StationProperty\\Station.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:03:43.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Fuel.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\HeatPowerPlant\\Resources\\Fuel.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Entities\\HeatPowerPlant\\Resources\\Fuel.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\HeatPowerPlant\\Resources\\Fuel.cs",
-              "RelativeToolTip": "..\\Models\\Entities\\HeatPowerPlant\\Resources\\Fuel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:03:25.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DefinedFilterParameters.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\CalculationFilterEfficiency\\DefinedFilterParameters.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Entities\\CalculationFilterEfficiency\\DefinedFilterParameters.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\CalculationFilterEfficiency\\DefinedFilterParameters.cs",
-              "RelativeToolTip": "..\\Models\\Entities\\CalculationFilterEfficiency\\DefinedFilterParameters.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T10:00:24.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ExportService.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Persistance\\Services\\ExportService.cs",
-              "RelativeDocumentMoniker": "..\\Persistance\\Services\\ExportService.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Persistance\\Services\\ExportService.cs",
-              "RelativeToolTip": "..\\Persistance\\Services\\ExportService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAArwFAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T09:56:11.209Z",
+              "WhenOpened": "2024-10-04T13:58:50.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Filter.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\HeatPowerPlant\\EGM_Filters\\Filter.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Entities\\HeatPowerPlant\\EGM_Filters\\Filter.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Models\\Entities\\HeatPowerPlant\\EGM_Filters\\Filter.cs",
-              "RelativeToolTip": "..\\Models\\Entities\\HeatPowerPlant\\EGM_Filters\\Filter.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwBEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T09:55:53.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SplashScreen.xaml.cs",
-              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\SplashScreen.xaml.cs",
-              "RelativeDocumentMoniker": "View\\SplashScreen.xaml.cs",
-              "ToolTip": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\SplashScreen.xaml.cs",
-              "RelativeToolTip": "View\\SplashScreen.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T18:20:45.145Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "6754a788-fbce-4e36-a74a-973666b6853d",
-        "Display": 1,
-        "X": 982,
-        "Y": 190,
-        "Width": 1195,
-        "Height": 752,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Fuel.xaml",
               "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Fuel.xaml",
               "RelativeDocumentMoniker": "View\\Fuel.xaml",
               "ToolTip": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Fuel.xaml",
               "RelativeToolTip": "View\\Fuel.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-04T10:09:39.369Z",
+              "WhenOpened": "2024-10-04T13:58:06.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFilterViewModel.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Application\\Interfaces\\ViewModels\\IFilterViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ViewModels\\IFilterViewModel.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Application\\Interfaces\\ViewModels\\IFilterViewModel.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\ViewModels\\IFilterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:45:29.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IExportService.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Application\\Interfaces\\Services\\IExportService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\Services\\IExportService.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Application\\Interfaces\\Services\\IExportService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\Services\\IExportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:45:20.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavigationVM.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\ViewModels\\ViewModels\\NavigationVM.cs",
+              "RelativeDocumentMoniker": "..\\ViewModels\\ViewModels\\NavigationVM.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\ViewModels\\ViewModels\\NavigationVM.cs",
+              "RelativeToolTip": "..\\ViewModels\\ViewModels\\NavigationVM.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAA/wEAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:31:53.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\d.pobarzin\\AppData\\Local\\Temp\\.vsdbgsrc\\663eae741a204ff437a3c7755147b6411af41c60c876629ecb38a7de166e1dc1\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\d.pobarzin\\AppData\\Local\\Temp\\.vsdbgsrc\\663eae741a204ff437a3c7755147b6411af41c60c876629ecb38a7de166e1dc1\\XamlReader.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAK8BAAAAAAAAAAApwNkBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:17:00.911Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Filter.xaml.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Filter.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Filter.xaml.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\FilterApplication\\View\\Filter.xaml.cs",
+              "RelativeToolTip": "View\\Filter.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:14:22.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectedElementConverter.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\Application\\Utilities\\SelectedElementConverter.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Utilities\\SelectedElementConverter.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\Application\\Utilities\\SelectedElementConverter.cs",
+              "RelativeToolTip": "..\\Application\\Utilities\\SelectedElementConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:12:16.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuelVM.cs",
+              "DocumentMoniker": "D:\\Develop\\FilterApplication.v2\\ViewModels\\ViewModels\\FuelVM.cs",
+              "RelativeDocumentMoniker": "..\\ViewModels\\ViewModels\\FuelVM.cs",
+              "ToolTip": "D:\\Develop\\FilterApplication.v2\\ViewModels\\ViewModels\\FuelVM.cs",
+              "RelativeToolTip": "..\\ViewModels\\ViewModels\\FuelVM.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:06:17.064Z",
               "EditorCaption": ""
             }
           ]

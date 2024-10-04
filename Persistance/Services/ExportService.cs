@@ -2,6 +2,7 @@
 using Application.Interfaces.ViewModels;
 using Microsoft.Win32;
 using Models.Commands;
+using Models.Entities.CalculationFilterEfficiency;
 using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Entities.HeatPowerPlant.Resources;
 using Models.Entities.HeatPowerPlant.StationProperty;
@@ -18,12 +19,12 @@ namespace Persistance.Services
 	{
 		private readonly Lazy<RelayCommand> _exportToExcelCommand;
 		private readonly ICustomMessageBoxService _messageBoxService;
-		private readonly ICalculateViewModel _calculateViewModel;
+		private readonly ICalculateService _calculateService;
 		private readonly ICurrentParameterDTO _currentParameters;
 
-		public ExportService(ICustomMessageBoxService messageBoxService, ICalculateViewModel calculateViewModel, ICurrentParameterDTO currentParameters)
+		public ExportService(ICustomMessageBoxService messageBoxService, ICalculateService calculateService, ICurrentParameterDTO currentParameters)
 		{
-			_calculateViewModel = calculateViewModel;
+			_calculateService = calculateService;
 			_messageBoxService = messageBoxService;
 			_currentParameters = currentParameters;
 			_exportToExcelCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await DialogExportToExcelAsync(parameter)));
@@ -76,15 +77,12 @@ namespace Persistance.Services
 
 		private async Task ExportCalculatedDataAsync(ExcelPackage excelPackage)
 		{
-			foreach (var result in _calculateViewModel.Results)
+			foreach (var result in _calculateService.Results)
 			{
-				var worksheet = CreateWorksheet(excelPackage, _);
+				var worksheet = CreateWorksheet(excelPackage, result.UseFuel);
+				worksheet.Cells.AutoFitColumns();
+				await FillPropertiesAsync(worksheet, typeof(DefinedFilterParameters), _currentParameters.SelectedFilter, 2);
 			}
-			
-			worksheet.Cells.AutoFitColumns();
-			await FillPropertiesAsync(worksheet, typeof(Filter), _currentParameters.SelectedFilter, 2);
-			await FillPropertiesAsync(worksheet, typeof(Station), _currentParameters.CurrentPropertyStation, 6);
-			await FillPropertiesAsync(worksheet, typeof(Fuel), _currentParameters.SelectedFuels, 10);
 		}
 
 		private async Task ExportInitialDataAsync(ExcelPackage excelPackage)

@@ -8,7 +8,6 @@ namespace Application.Interfaces.Services
 	public interface ICalculateService
 	{
 		RelayCommand CalculateCommand { get; }
-		event Action<ConcurrentObservableCollection<DefinedFilterParameters>> CalculationsHaveBeenCarriedOut;
-
+		ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
 	}
 }

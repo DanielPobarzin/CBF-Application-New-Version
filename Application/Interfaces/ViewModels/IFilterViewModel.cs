@@ -10,6 +10,7 @@ namespace Application.Interfaces.ViewModels
 		RelayCommand DeleteCommand { get; }
 		RelayCommand UpdateCommand { get; }
 		RelayCommand CreateCommand { get; }
+		RelayCommand SelectCommand { get; }
 		RelayCommand GeneralInsertCommand { get; }
 		ObservableCollection<Filter> Filters { get; }
 		Filter SelectedFilter { get; set; }

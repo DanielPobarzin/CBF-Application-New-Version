@@ -11,12 +11,15 @@ namespace ViewModels.ViewModels
 	{
 		private readonly ICurrentParameterDTO _parameters;
 		private readonly ICalculateService _calculateService;
-		public CalculateVM(ICurrentParameterDTO parameters, ICalculateService calculateService) 
+		private readonly IExportService _exportService;
+		public CalculateVM(ICurrentParameterDTO parameters, ICalculateService calculateService, IExportService exportService) 
 		{
 			_parameters = parameters;
+			_calculateService = calculateService;
+			_exportService = exportService;
 		}
-		public RelayCommand CalculateCommand {  get; set; }
-		public RelayCommand ExportToExcelCommand { get; set; }
-		public ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
+		public RelayCommand CalculateCommand => _calculateService.CalculateCommand;
+		public RelayCommand ExportToExcelCommand => _exportService.ExportToExcelCommand;
+		public ConcurrentObservableCollection<DefinedFilterParameters> Results => _calculateService.Results;
 	}
 }

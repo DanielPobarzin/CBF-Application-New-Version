@@ -18,6 +18,7 @@ namespace Models.Entities.HeatPowerPlant.Resources
 		/// <summary>
 		/// Медианный диаметр золы
 		/// </summary>
+		[Description("Медианный диаметр золы d50, м")]
 		public double MedianDiameterAsh
 		{
 			get { return medianDiameterAsh; }
@@ -32,6 +33,7 @@ namespace Models.Entities.HeatPowerPlant.Resources
 		/// <summary>
 		/// Напряженность электрического поля
 		/// </summary>
+		[Description("Напряженность электрического поля E, кВ/м")]
 		public double ElectricFieldStrength
 		{
 			get { return electricFieldStrength; }
@@ -46,6 +48,7 @@ namespace Models.Entities.HeatPowerPlant.Resources
 		/// <summary>
 		/// Коэффициент, учитывающий влияние обратной короны
 		/// </summary>
+		[Description("Коэффициент, учитывающий влияние обратной короны")]
 		public double CoefficientReverseCrown
 		{
 			get { return coefficientReverseCrown; }
@@ -60,6 +63,7 @@ namespace Models.Entities.HeatPowerPlant.Resources
 		/// <summary>
 		/// Электрическое сопротивление золы
 		/// </summary>
+		[Description("Удельное электрическое сопротивление золы, lg(p)")]
 		public double ElectricalResistanceAsh
 		{
 			get { return electricalResistanceAsh; }

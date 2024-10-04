@@ -96,7 +96,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		/// Серность
 		/// </summary>
-		[Description("Низшая теплота сгорания Q, МДж/кг")]
+		[Description("Серность S, %")]
 		public double SulfurContent
 		{
 			get { return sulfurContent; }
@@ -111,6 +111,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		/// Зольность
 		/// </summary>
+		[Description("Зольность А, %")]
 		public double AshContent
 		{
 			get { return ashContent; }
@@ -125,6 +126,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		///  Влажность
 		/// </summary>
+		[Description("Влажность W, %")]
 		public double Humidity
 		{
 			get { return humidity; }
@@ -139,6 +141,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		///  Содержание азота
 		/// </summary>
+		[Description("Содержание азота N, %")]
 		public double NContent
 		{
 			get { return nContent; }
@@ -153,6 +156,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		///  Теоретический объем воздуха
 		/// </summary>
+		[Description("Теоретический объем воздуха Vв, м³/кг")]
 		public double TheoreticalAirVolume
 		{
 			get { return theoreticalAirVolume; }
@@ -167,6 +171,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		///  Теоретический объем газа
 		/// </summary>
+		[Description("Теоретический объем газа Vг, м³/кг")]
 		public double TheoreticalVolumeGas
 		{
 			get { return theoreticalVolumeGas; }
@@ -181,6 +186,7 @@ namespace Models.AbstractBase.Resource
 		/// <summary>
 		///  Теоретический объем водяных паров
 		/// </summary>
+		[Description("Теоретический объем водяных паров Vвпо, м³/кг")]
 		public double TheoreticalVolumeWaterVapor
 		{
 			get { return theoreticalVolumeWaterVapor; }

@@ -14,7 +14,9 @@ namespace Persistance.Services
 		private readonly ICurrentParameterDTO _currentParameter;
 		private readonly IConstParameterService _constParameters;
 		private readonly ICustomMessageBoxService _messageService;
-		public event Action<ConcurrentObservableCollection<DefinedFilterParameters>> CalculationsHaveBeenCarriedOut;
+		public ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
+
+		//public event Action<ConcurrentObservableCollection<DefinedFilterParameters>> CalculationsHaveBeenCarriedOut;
 		public CalculateService(ICustomMessageBoxService messageService, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
 
 			_messageService = messageService;
@@ -27,7 +29,6 @@ namespace Persistance.Services
 		{
 			try
 			{
-				var calculationResults = new ConcurrentObservableCollection<DefinedFilterParameters>();
 				var calculationTasks = new List<Task>();
 				foreach (var fuel in _currentParameter.SelectedFuels)
 				{
@@ -36,12 +37,12 @@ namespace Persistance.Services
 						var result = Calculate(fuel);
 						if (result != null && result.DegreeAshCapture != 0) 
 						{
-							calculationResults.Add(result);
+							Results.Add(result);
 						}
 					}));
 				}
 				await Task.WhenAll(calculationTasks);
-				CalculationsHaveBeenCarriedOut?.Invoke(calculationResults);
+				//CalculationsHaveBeenCarriedOut?.Invoke(calculationResults);
 			}
 			catch (Exception ex)
 			{

@@ -27,6 +27,7 @@ namespace FilterApplication.View
 		}
 		private void SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
+			_viewModel.SelectedFuels.Clear();
 			foreach (var fuel in radComboBox.SelectedItems.Cast<Models.Entities.HeatPowerPlant.Resources.Fuel>())
 			{
 				_viewModel.SelectedFuels.Add(fuel);

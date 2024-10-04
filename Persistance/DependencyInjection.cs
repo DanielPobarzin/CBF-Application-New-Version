@@ -37,7 +37,7 @@ namespace Persistance
 			Bind(typeof(IRepositoryWithContextAsync<,>)).To(typeof(RepositoryAsync<,>)).InTransientScope();
 			Bind(typeof(IRepositoryAsync<Fuel>)).To<FuelRepository>().InTransientScope();
 			Bind(typeof(IRepositoryAsync<Filter>)).To<FilterRepository>().InTransientScope();
-
+			Bind<IExportService>().To<ExportService>().InTransientScope();
 			Bind(typeof(ICurrentParameterDTO)).To<CurrentParameterDTO>().InSingletonScope();
 			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InThreadScope();
 		}

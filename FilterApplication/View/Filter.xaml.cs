@@ -1,7 +1,9 @@
 ﻿using Application.Interfaces.ViewModels;
 using Application.Interfaces.Views;
+using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Enums.View;
 using Persistance.Configurations.TelerikConfiguration;
+using System.Windows;
 using System.Windows.Controls;
 using Telerik.Windows.Controls;
 
@@ -32,6 +34,15 @@ namespace FilterApplication.View
 			else
 				ComboBoxFilter.Visibility = System.Windows.Visibility.Hidden;
 
+		}
+
+		private void RadioButton_Checked(object sender, RoutedEventArgs e)
+		{
+			var radioButton = sender as RadioButton;
+			if (radioButton != null && radioButton.DataContext is Models.Entities.HeatPowerPlant.EGM_Filters.Filter filter)
+			{
+				_viewModel.SelectedFilter = filter;
+			}
 		}
 	}
 }
