@@ -1,0 +1,18 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Models.Entities.HeatPowerPlant.Resources;
+
+namespace Persistance.Configurations.EntityTypeConfiguration
+{
+	public class FuelConfig : IEntityTypeConfiguration<Fuel>
+	{
+		public void Configure(EntityTypeBuilder<Fuel> builder)
+		{
+			builder.HasKey(fuel => fuel.ID);
+			builder.HasIndex(fuel => fuel.ID).IsUnique();
+			builder.Property(fuel => fuel.BrandFuel).HasMaxLength(250);
+			builder.Ignore(fuel => fuel.Error);
+			builder.Ignore(fuel => fuel.TypeFuel);
+		}
+	}
+}

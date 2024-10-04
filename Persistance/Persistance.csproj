@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EPPlus" Version="7.3.2" />
+		<PackageReference Include="Telerik.UI.for.Wpf.70.Xaml" Version="2023.1.117" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.20" />
+	</ItemGroup>
+
+</Project>

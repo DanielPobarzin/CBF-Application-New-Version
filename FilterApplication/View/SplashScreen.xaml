@@ -1,0 +1,31 @@
+﻿<Window x:Class="FilterApplication.View.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilterApplication.View"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+            Name="SplashWin"
+            Height="500" 
+            Width="900"
+            MinWidth="340"
+            MinHeight="420"
+            AllowsTransparency="True"
+            ResizeMode="CanResizeWithGrip"
+            WindowStartupLocation="CenterScreen"
+            WindowStyle="None"
+            Background="Transparent">
+
+    <Window.Icon>
+        <BitmapImage UriSource="pack://application:,,,/Resources/Images/OST.ico"/>
+    </Window.Icon>
+    <Grid VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+        <Border x:Name="Bord" Background="#4b7187"
+             BorderBrush="#3A4149"
+             BorderThickness="5"
+             CornerRadius="20">
+            <MediaElement Name="loading" LoadedBehavior="Play" ></MediaElement>
+        </Border>
+    </Grid>
+</Window>

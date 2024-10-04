@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="FilterApplication.View.Calculate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600"
+             d:DesignWidth="622"
+              Style="{StaticResource Page_Style}">
+    <UserControl.Resources>
+    </UserControl.Resources>
+
+    <Grid Background="Transparent" 
+          VirtualizingPanel.IsVirtualizing="True"
+          VirtualizingPanel.ScrollUnit="Pixel"
+          VirtualizingPanel.IsContainerVirtualizable="True"
+          VirtualizingPanel.CacheLengthUnit="Pixel"
+          VirtualizingPanel.VirtualizationMode="Recycling">
+        <Border Background="#212529" 
+                BorderBrush="#3A4149" 
+                BorderThickness="5" 
+                CornerRadius="8,8,0,8">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.RowSpan="4" Grid.ColumnSpan="3" 
+                    Margin="0 0 0 50" 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center"
+                    MaxHeight="900" 
+                    MaxWidth="900" 
+                    Opacity="0.5"
+                    Source="/Resources/Images/charts_page.png" 
+                    Stretch="Uniform"/>
+                    <DataGrid Name="PassengerTable" Grid.Row="2" Grid.ColumnSpan="2"
+                  AutoGenerateColumns="False" 
+                  HorizontalAlignment="Stretch" 
+                  VerticalAlignment="Stretch" 
+                  GridLinesVisibility="Horizontal"
+                  HorizontalGridLinesBrush="White"
+                  BorderThickness="2"
+                  Margin="20"
+                  Background="Transparent"
+                  BorderBrush="Transparent"
+                  RowBackground="#0d1507"
+                  CanUserResizeRows="False"
+                  CanUserAddRows="False"
+                  ItemsSource="{Binding }" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Last Name" 
+                                    Width="*"
+                                    IsReadOnly="True"
+                                    Binding="{Binding Passenger.LastName, ValidatesOnDataErrors=True}"
+                                    
+                                    />
+                            <DataGridTextColumn Header="First Name" 
+                                    Width="*" 
+                                    IsReadOnly="True"
+                                    Binding="{Binding Passenger.FirstName, ValidatesOnDataErrors=True}"
+                                    
+                                    />
+                            <DataGridTextColumn Header="Patronymic" 
+                                    Width="*"
+                                    IsReadOnly="True"
+                                    Binding="{Binding Passenger.Patronymic , ValidatesOnDataErrors=True}"
+                                    />
+                            <DataGridTextColumn Header="Flight Number" 
+                    Width="1.1*"
+                    IsReadOnly="True"
+                    Binding="{Binding Flight.RouteNumber , ValidatesOnDataErrors=True}"
+                    />
+                            <DataGridTextColumn Header="Departure Time" 
+                    Width="1.1*"
+                    IsReadOnly="True"
+                    Binding="{Binding Flight.DepartureTime , ValidatesOnDataErrors=True}"
+                    />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

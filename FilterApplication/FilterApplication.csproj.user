@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="View\Calculate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Charts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CustomMessageBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Filter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Fuel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SplashScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Station.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Resources\Styles\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\ComboBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles\Text.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Calculate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Charts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CustomMessageBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Filter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Fuel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Station.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
