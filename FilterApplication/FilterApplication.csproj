@@ -96,6 +96,9 @@
 		<Resource Include="Resources\Fonts\Rubik-Regular.ttf">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Resource>
+		<Content Include="Resources\Images\charts_page.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 		<Content Include="Resources\Images\calculate_page.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>

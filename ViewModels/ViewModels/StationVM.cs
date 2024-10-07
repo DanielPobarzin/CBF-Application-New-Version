@@ -43,11 +43,11 @@ namespace ViewModels.ViewModels
 				   .ToDictionary(x => x.GetDescription(), x => x);
 		public List<int> SmokePumpsOptions => new List<int> { 1, 2, 3 };
 		public List<int> NumberGridsOptions => new List<int> { 1, 2 };
-		public List<string> TypeFlueGasSupplyOptions => 
+		public List<string> TypeFlueGasSupplyOptions =>
 			Enum.GetValues(typeof(TypeFlueGasSupply)).Cast<TypeFlueGasSupply>()
 				.Select(x => x.GetDescription())
 				.ToList();
-		public List<SchemeBunkerPartitions> SchemeBunkerPartitionsOptions => Enum.GetValues(typeof(SchemeBunkerPartitions)).Cast<SchemeBunkerPartitions>().ToList(); 
+		public List<SchemeBunkerPartitions> SchemeBunkerPartitionsOptions => Enum.GetValues(typeof(SchemeBunkerPartitions)).Cast<SchemeBunkerPartitions>().ToList();
 		private async Task SelectSchemeBunkerPatritionsAsync(object parameter)
 		{
 			System.Windows.MessageBox.Show($"{SlagRemovalOptions["Твердое шлакоудаление"]}");

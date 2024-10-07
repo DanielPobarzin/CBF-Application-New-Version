@@ -1,5 +1,4 @@
 ﻿using Application.Interfaces.Services;
-using Application.Interfaces.ViewModels;
 using Microsoft.Win32;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;

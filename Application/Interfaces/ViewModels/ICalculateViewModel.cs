@@ -1,6 +1,7 @@
 ﻿using Application.Extensions;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
+using System.Windows.Media;
 
 namespace Application.Interfaces.ViewModels
 {

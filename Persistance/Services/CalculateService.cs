@@ -1,10 +1,13 @@
 ﻿using Application.Extensions;
 using Application.Interfaces.Services;
+using Application.Parameters;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
 using Models.Entities.HeatPowerPlant.Resources;
 using Models.Enums.Station;
 using Serilog;
+using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 
 namespace Persistance.Services
 {
@@ -16,16 +19,30 @@ namespace Persistance.Services
 		private readonly ICustomMessageBoxService _messageService;
 		public ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
 
-		//public event Action<ConcurrentObservableCollection<DefinedFilterParameters>> CalculationsHaveBeenCarriedOut;
-		public CalculateService(ICustomMessageBoxService? messageService, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
+		public CalculateService(ICustomMessageBoxService messageService, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
 
-			_messageService = messageService ?? null;
+			_messageService = messageService;
 			_currentParameter = currentParameterDTO;
 			_constParameters = constParameters;
-			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAndRunCalcAsync(parameter)));
+			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAsync(parameter)));
 		}
 		public RelayCommand CalculateCommand => _calculateCommand.Value;
-		private async Task StartInitAndRunCalcAsync(object obj)
+		private async Task StartInitAsync(object parameter)
+		{
+			if (parameter != null && parameter is CalculateImageParameter multiParameter) {
+			
+				await RunAnimationAsync(multiParameter.ImageLoadCalculating, multiParameter.ButtonCalculating, multiParameter.HeaderCalculating);
+				await RunCalculationAsync();
+			}
+		}
+
+		private async Task RunAnimationAsync(Grid image, ToggleButton button, Border header)
+		{
+			image.Visibility = System.Windows.Visibility.Visible;
+			button.IsChecked = true;
+			header.Visibility = System.Windows.Visibility.Collapsed;
+		}
+		private async Task RunCalculationAsync()
 		{
 			try
 			{
@@ -35,14 +52,13 @@ namespace Persistance.Services
 					calculationTasks.Add(Task.Run(() =>
 					{
 						var result = Calculate(fuel);
-						if (result != null && result.DegreeAshCapture != 0) 
+						if (result != null && result.DegreeAshCapture != 0)
 						{
 							Results.Add(result);
 						}
 					}));
 				}
 				await Task.WhenAll(calculationTasks);
-				//CalculationsHaveBeenCarriedOut?.Invoke(calculationResults);
 			}
 			catch (Exception ex)
 			{
@@ -136,12 +152,10 @@ namespace Persistance.Services
 			if (result.DegreeAshCapture < 0.99)
 			{
 				var message = $"Степень улавливания золы для топлива типа {fuel.BrandFuel} ниже минимально допустимого значения. Желаете продолжить расчет?";
-				if (_messageService != null) {
-					_messageService.Show(Models.Enums.Message.Message.Dialog, message, "Подтверждение");
-					if (!_messageService.Dialog)
-					{
-						return new DefinedFilterParameters();
-					}
+				_messageService.Show(Models.Enums.Message.Message.Dialog, message, "Подтверждение");
+				if (!_messageService.Dialog)
+				{
+					return new DefinedFilterParameters();
 				}
 			}
 			
