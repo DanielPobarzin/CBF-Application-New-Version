@@ -10,7 +10,8 @@ namespace Application.Interfaces.ViewModels
 		RelayCommand CloseFormDataCommand { get; }
 		RelayCommand OpenFormDataCommand { get; }
 		RelayCommand SavePropertyStationCommand { get; }
-		List<string> SlagRemovalOptions { get; }
+		RelayCommand SelectSchemeBunkerPatritionsCommand { get; }
+		Dictionary<string, SlagRemoval> SlagRemovalOptions { get; }
 		List<string> TypeFlueGasSupplyOptions { get; }
 		List<SchemeBunkerPartitions> SchemeBunkerPartitionsOptions { get; }
 		List<int> SmokePumpsOptions { get; }

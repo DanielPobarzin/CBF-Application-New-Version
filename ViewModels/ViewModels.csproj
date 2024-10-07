@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ValidatorsToView\" />
+    <Compile Remove="ValidatorsToView\**" />
+    <EmbeddedResource Remove="ValidatorsToView\**" />
+    <None Remove="ValidatorsToView\**" />
+    <Page Remove="ValidatorsToView\**" />
   </ItemGroup>
 
   <ItemGroup>

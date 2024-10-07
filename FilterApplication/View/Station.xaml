@@ -5,6 +5,7 @@
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
              xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" 
+              xmlns:Models="clr-namespace:Models.Enums.Station;assembly=Models" 
              xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" 
              d:DataContext="{d:DesignInstance Type=viewmodels:StationVM}"
              mc:Ignorable="d"
@@ -292,6 +293,7 @@
                                     </TextBlock>
                                     <TextBox Name="Mill" Style="{StaticResource TextBoxUniformStyle}"
                                              Grid.ColumnSpan="2" 
+                                             Text="{Binding CurrentPropertyStation.Mill}" 
                                              Grid.Row="2"/>
                                     <TextBlock  IsHitTestVisible="False" 
                                                 FontSize="14" 
@@ -317,8 +319,8 @@
                                         </TextBlock>
                                         <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
-                                    
-                                    
+
+
                                     <telerik:RadComboBox x:Name="radComboBoxTypeSlagRemoval" 
                                              Margin="0, 10, 10, 0" 
                                              Grid.ColumnSpan="2" 
@@ -327,6 +329,9 @@
                                              MaxHeight="40"            
                                              FontFamily="Century Gothic" 
                                              FontSize="12"
+                                             DisplayMemberPath="Key"
+                                             SelectedValuePath="Value"
+                                             SelectedValue="{Binding CurrentPropertyStation.SlagRemoval}"
                                              ItemsSource="{Binding SlagRemovalOptions}"/>
 
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="6">
@@ -337,7 +342,8 @@
                                     </StackPanel>
                                     <TextBox Name="FuelConsumption" 
                                              Style="{StaticResource TextBoxUniformStyle}"
-                                             Grid.ColumnSpan="2" 
+                                             Grid.ColumnSpan="2"
+                                             Text="{Binding CurrentPropertyStation.FuelConsumption}"
                                              Grid.Row="7">
                                     </TextBox>
                                     <TextBlock  IsHitTestVisible="False" 
@@ -366,6 +372,7 @@
                                     <TextBox Name="ExhaustGasTemperature" 
                                              Style="{StaticResource TextBoxUniformStyle}"
                                              Grid.ColumnSpan="2" 
+                                             Text="{Binding CurrentPropertyStation.ExhaustGasTemperature}"
                                              Grid.Row="9">
                                     </TextBox>
                                     <TextBlock  IsHitTestVisible="False" 
@@ -394,6 +401,7 @@
                                     <TextBox Name="HeightLiftShift" 
                                            Style="{StaticResource TextBoxUniformStyle}"
                                            Grid.ColumnSpan="2" 
+                                           Text="{Binding CurrentPropertyStation.HeightLiftShaft}"
                                            Grid.Row="11">
                                     </TextBox>
                                     <TextBlock  IsHitTestVisible="False" 
@@ -427,6 +435,7 @@
                                               MaxHeight="40"            
                                               FontFamily="Century Gothic" 
                                               FontSize="12"
+                                              SelectedValue="{Binding CurrentPropertyStation.NumberSmokePumps, Mode=TwoWay}"
                                               ItemsSource="{Binding SmokePumpsOptions}"/>
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="14">
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
@@ -436,7 +445,8 @@
                                     <TextBox Name="AirSuction" 
                                            Style="{StaticResource TextBoxUniformStyle}"
                                            Grid.ColumnSpan="2" 
-                                           Grid.Row="15">
+                                           Grid.Row="15"
+                                           Text="{Binding CurrentPropertyStation.AirSuction}">
                                     </TextBox>
                                     <TextBlock  IsHitTestVisible="False" 
                                          FontSize="14" 
@@ -462,6 +472,9 @@
                                         <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <Menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPatritionsCommand}" 
+                                              CommandParameter="{x:Static Models:SchemeBunkerPartitions.WithTwoCurvedPartition}" 
                                               Grid.Column="0" 
                                               Grid.Row="17" 
                                               HorizontalAlignment="Center" 
@@ -473,6 +486,9 @@
                                                     Stretch="Uniform"/>
                                     </Menu:Btn>
                                     <Menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPatritionsCommand}" 
+                                              CommandParameter="{x:Static Models:SchemeBunkerPartitions.WithTwoCurvedAndOneStraightPartition}" 
                                               Grid.Column="1" 
                                               Grid.Row="17" 
                                               HorizontalAlignment="Center" 
@@ -483,7 +499,10 @@
                                                     VerticalAlignment="Center"
                                                     Stretch="Uniform"/>
                                     </Menu:Btn>
-                                    <Menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                    <Menu:Btn Style="{StaticResource SchemeBtnStyle}"
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPatritionsCommand}" 
+                                              CommandParameter="{x:Static Models:SchemeBunkerPartitions.WithFivePartitions}" 
                                               Grid.Column="0" 
                                               Grid.Row="18" 
                                               HorizontalAlignment="Center" 
@@ -495,6 +514,9 @@
                                                     Stretch="Uniform"/>
                                     </Menu:Btn>
                                     <Menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPatritionsCommand}" 
+                                              CommandParameter="{x:Static Models:SchemeBunkerPartitions.ThreeObliquePartitions}" 
                                               Grid.Column="1" 
                                               Grid.Row="18" 
                                               HorizontalAlignment="Center" 

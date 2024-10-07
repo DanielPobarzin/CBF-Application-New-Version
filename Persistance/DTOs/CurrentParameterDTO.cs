@@ -13,7 +13,17 @@ namespace Persistance.DTOs
 		private ObservableCollection<Fuel> _selectedFuels;
 		private Station _currentPropertyStation;
 
-		public CurrentParameterDTO()
+		public CurrentParameterDTO DeepCopy()
+		{
+			return new CurrentParameterDTO
+			{
+				SelectedFilter = this.SelectedFilter,
+				SelectedFuels = this.SelectedFuels,
+				CurrentPropertyStation = this.CurrentPropertyStation
+			};
+		}
+
+			public CurrentParameterDTO()
 		{
 			_selectedFilter = new Filter();
 			_selectedFuels = new ObservableCollection<Fuel>();

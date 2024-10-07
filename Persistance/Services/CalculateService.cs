@@ -17,9 +17,9 @@ namespace Persistance.Services
 		public ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
 
 		//public event Action<ConcurrentObservableCollection<DefinedFilterParameters>> CalculationsHaveBeenCarriedOut;
-		public CalculateService(ICustomMessageBoxService messageService, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
+		public CalculateService(ICustomMessageBoxService? messageService, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
 
-			_messageService = messageService;
+			_messageService = messageService ?? null;
 			_currentParameter = currentParameterDTO;
 			_constParameters = constParameters;
 			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAndRunCalcAsync(parameter)));
@@ -136,10 +136,12 @@ namespace Persistance.Services
 			if (result.DegreeAshCapture < 0.99)
 			{
 				var message = $"Степень улавливания золы для топлива типа {fuel.BrandFuel} ниже минимально допустимого значения. Желаете продолжить расчет?";
-				_messageService.Show(Models.Enums.Message.Message.Dialog, message, "Подтверждение");
-				if (!_messageService.Dialog)
-				{
-					return new DefinedFilterParameters();
+				if (_messageService != null) {
+					_messageService.Show(Models.Enums.Message.Message.Dialog, message, "Подтверждение");
+					if (!_messageService.Dialog)
+					{
+						return new DefinedFilterParameters();
+					}
 				}
 			}
 			
