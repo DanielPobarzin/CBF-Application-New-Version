@@ -1,10 +1,10 @@
 ﻿using Application.Interfaces.ViewModels;
 using Application.Interfaces.Views;
-using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Enums.View;
 using Persistance.Configurations.TelerikConfiguration;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using Telerik.Windows.Controls;
 
 namespace FilterApplication.View
@@ -35,13 +35,28 @@ namespace FilterApplication.View
 				ComboBoxFilter.Visibility = System.Windows.Visibility.Hidden;
 
 		}
-
 		private void RadioButton_Checked(object sender, RoutedEventArgs e)
 		{
 			var radioButton = sender as RadioButton;
 			if (radioButton != null && radioButton.DataContext is Models.Entities.HeatPowerPlant.EGM_Filters.Filter filter)
 			{
 				_viewModel.SelectedFilter = filter;
+			}
+		}
+
+		private void filtersGrid_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+		{
+			var selectedFilter = filtersGrid.SelectedItem as Models.Entities.HeatPowerPlant.EGM_Filters.Filter;
+			if (e.Key == Key.Delete && selectedFilter != null)
+			{
+				MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить эту строку?",
+					"Подтверждение удаления", MessageBoxButton.YesNo, MessageBoxImage.Question);
+				if (result == MessageBoxResult.No)
+				{
+					filtersGrid.CanUserDeleteRows = false;
+				}
+				else { filtersGrid.CanUserDeleteRows = true; }
+
 			}
 		}
 	}

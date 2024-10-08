@@ -3,7 +3,6 @@ using Application.Interfaces.Services;
 using Application.Interfaces.ViewModels;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
-using System.Windows.Media;
 using ViewModels.Utilities;
 
 namespace ViewModels.ViewModels

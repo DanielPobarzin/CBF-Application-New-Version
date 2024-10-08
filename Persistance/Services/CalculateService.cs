@@ -1,13 +1,14 @@
 ﻿using Application.Extensions;
 using Application.Interfaces.Services;
-using Application.Parameters;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
 using Models.Entities.HeatPowerPlant.Resources;
 using Models.Enums.Station;
 using Serilog;
-using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
+using System.Globalization;
+using System.Windows;
+using System.Windows.Data;
+using System.Windows.Media;
 
 namespace Persistance.Services
 {
@@ -16,31 +17,21 @@ namespace Persistance.Services
 		private readonly Lazy<RelayCommand> _calculateCommand;
 		private readonly ICurrentParameterDTO _currentParameter;
 		private readonly IConstParameterService _constParameters;
-		private readonly ICustomMessageBoxService _messageService;
+		private readonly IValueConverter _valueConverter;
 		public ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
+		
+		public CalculateService(IValueConverter valueConverter, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
 
-		public CalculateService(ICustomMessageBoxService messageService, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
-
-			_messageService = messageService;
+			_valueConverter = valueConverter;
 			_currentParameter = currentParameterDTO;
 			_constParameters = constParameters;
+			Results = new();
 			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAsync(parameter)));
 		}
 		public RelayCommand CalculateCommand => _calculateCommand.Value;
 		private async Task StartInitAsync(object parameter)
 		{
-			if (parameter != null && parameter is CalculateImageParameter multiParameter) {
-			
-				await RunAnimationAsync(multiParameter.ImageLoadCalculating, multiParameter.ButtonCalculating, multiParameter.HeaderCalculating);
 				await RunCalculationAsync();
-			}
-		}
-
-		private async Task RunAnimationAsync(Grid image, ToggleButton button, Border header)
-		{
-			image.Visibility = System.Windows.Visibility.Visible;
-			button.IsChecked = true;
-			header.Visibility = System.Windows.Visibility.Collapsed;
 		}
 		private async Task RunCalculationAsync()
 		{
@@ -84,7 +75,8 @@ namespace Persistance.Services
 		private DefinedFilterParameters Calculate(Fuel fuel)
 		{
 			var result = new DefinedFilterParameters();
-
+			
+			result.СolorResult = _valueConverter.Convert(null, typeof(SolidColorBrush), null, CultureInfo.InvariantCulture) as SolidColorBrush;
 			// Расчет объемного расхода газа
 			result.VolumetricGasConsumption = _currentParameter.CurrentPropertyStation.FuelConsumption * 
 				(fuel.TheoreticalVolumeGas + 1.016 * (_currentParameter.CurrentPropertyStation.AirSuction - 1) *
@@ -152,13 +144,12 @@ namespace Persistance.Services
 			if (result.DegreeAshCapture < 0.99)
 			{
 				var message = $"Степень улавливания золы для топлива типа {fuel.BrandFuel} ниже минимально допустимого значения. Желаете продолжить расчет?";
-				_messageService.Show(Models.Enums.Message.Message.Dialog, message, "Подтверждение");
-				if (!_messageService.Dialog)
+				MessageBoxResult dialog = MessageBox.Show(message,"Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
+				if (dialog == MessageBoxResult.No)
 				{
-					return new DefinedFilterParameters();
+					return new();
 				}
 			}
-			
 			// Расчет количества образующейся золы и продуктов механического недожога топлива 
 			result.AmountAshFormedProductsMechanicalUnderburning = 10 * (_currentParameter.CurrentPropertyStation.FuelConsumption * 
 				(_constParameters.ProportionCarriedAshDuringSlagRemoval[_currentParameter.CurrentPropertyStation.SlagRemoval]) *
@@ -185,12 +176,14 @@ namespace Persistance.Services
 			// Расчет количества газов, поступающих в одно поле
 			result.NumberGasesEnteringOneField = result.VolumetricGasConsumption / _currentParameter.CurrentPropertyStation.NumberSmokePumps;
 
+			result.AshConcentrationEntranceMthField = new();
 			// Расчет концентрации золы по полям
 			for (int i = 1; i <= _currentParameter.SelectedFilter.NumberFields; i++)
 			{
 				result.AshConcentrationEntranceMthField.Add(result.AshConcentrationEntranceToFirstField * Math.Pow(result.PassageAshFirstField, i - 1));
 			}
 
+			result.OptimalAshShakingMode = new();
 			// Расчет оптимальный режим встряхивания по полям
 			foreach (double AshConcentration in result.AshConcentrationEntranceMthField)
 			{
@@ -201,7 +194,7 @@ namespace Persistance.Services
 		}
 		private void HandleError(Exception ex)
 		{
-			_messageService.Show(Models.Enums.Message.Message.Error, "Возникла ошибка при расчетах. Подробная информация в логах", "Ошибка");
+			MessageBox.Show("Возникла ошибка при расчетах. Подробная информация в логах", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
 			Log.Error("An error occurred: {0}", ex.Message);
 		}
 	}

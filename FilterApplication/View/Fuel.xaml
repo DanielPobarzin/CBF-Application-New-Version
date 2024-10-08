@@ -32,12 +32,7 @@
             <Setter Property="ValidatesOnDataErrors" Value="InViewMode"/>
         </Style>
     </UserControl.Resources>
-    <Grid Background="Transparent"          
-          VirtualizingPanel.IsVirtualizing="True"
-          VirtualizingPanel.ScrollUnit="Pixel"
-          VirtualizingPanel.IsContainerVirtualizable="True"
-          VirtualizingPanel.CacheLengthUnit="Pixel"
-          VirtualizingPanel.VirtualizationMode="Recycling">
+    <Grid Background="Transparent">
         <Border Background="#212529" BorderBrush="#3A4149" BorderThickness="5" CornerRadius="8,8,0,8">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
                 <Grid>
@@ -72,17 +67,13 @@
                     </StackPanel>
                     <telerik:RadGridView Name="fuelsGrid" GroupRenderMode="Flat" Grid.Row="1" Grid.ColumnSpan="2"
                                          Margin="8,15,8,8"
+                                         PreviewKeyDown="fuelsGrid_PreviewKeyDown"
                                          Height="Auto"
                                          VerticalAlignment="Top"
 				                         AutoGenerateColumns="False"
                                          ItemsSource="{Binding Fuels, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" 
                                          IsReadOnly="False"
                                          RowIndicatorVisibility="Collapsed"
-                                         VirtualizingPanel.IsVirtualizing="True"
-                                         VirtualizingPanel.IsContainerVirtualizable="True"
-                                         VirtualizingPanel.ScrollUnit="Item"
-                                         VirtualizingPanel.CacheLengthUnit="Item"
-                                         VirtualizingPanel.VirtualizationMode="Recycling"
                                          DataLoadMode="Asynchronous"
                                          NewRowPosition="Bottom"
                                          ShowColumnHeaders="True"
@@ -132,11 +123,8 @@
                             MaxHeight="450" 
                             CornerRadius="25">
                         <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10">
-                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent" >
-                                <FlowDocument VirtualizingPanel.IsVirtualizing="True"
-                                              VirtualizingPanel.ScrollUnit="Pixel"
-                                              VirtualizingPanel.CacheLengthUnit="Page"
-                                              VirtualizingPanel.VirtualizationMode="Recycling">
+                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent">
+                                <FlowDocument>
                                     <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
                                         К ознакомлению
                                     </Paragraph>

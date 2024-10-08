@@ -1148,7 +1148,6 @@ D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-window
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\App.baml
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
-D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.g.cs
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
@@ -1363,7 +1362,6 @@ D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-window
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
-D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.baml
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig

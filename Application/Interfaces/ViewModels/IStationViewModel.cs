@@ -12,7 +12,7 @@ namespace Application.Interfaces.ViewModels
 		RelayCommand SavePropertyStationCommand { get; }
 		RelayCommand SelectSchemeBunkerPatritionsCommand { get; }
 		Dictionary<string, SlagRemoval> SlagRemovalOptions { get; }
-		List<string> TypeFlueGasSupplyOptions { get; }
+		Dictionary<string, TypeFlueGasSupply> TypeFlueGasSupplyOptions { get; }
 		List<SchemeBunkerPartitions> SchemeBunkerPartitionsOptions { get; }
 		List<int> SmokePumpsOptions { get; }
 		List<int> NumberGridsOptions { get; }

@@ -83,12 +83,7 @@
             <Setter Property="FontSize" Value="13"/>
         </Style>
     </UserControl.Resources>
-    <Grid x:Name="StationGrid"
-            VirtualizingPanel.IsVirtualizing="True"
-            VirtualizingPanel.ScrollUnit="Pixel"
-            VirtualizingPanel.IsContainerVirtualizable="True"
-            VirtualizingPanel.CacheLengthUnit="Pixel"
-            VirtualizingPanel.VirtualizationMode="Recycling">
+    <Grid x:Name="StationGrid">
         <Border Background="#212529"  
                 BorderBrush="#3A4149"
                 BorderThickness="5"
@@ -123,11 +118,8 @@
                                 <RichTextBox IsReadOnly="True" 
                                              Background="Transparent" 
                                              Foreground="#DCE0E4" 
-                                             BorderBrush="Transparent" >
-                                    <FlowDocument VirtualizingPanel.IsVirtualizing="True"
-                                                  VirtualizingPanel.ScrollUnit="Item"
-                                                  VirtualizingPanel.CacheLengthUnit="Pixel"
-                                                  VirtualizingPanel.VirtualizationMode="Standard">
+                                             BorderBrush="Transparent">
+                                    <FlowDocument>
                                         <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
                                             К ознакомлению
                                         </Paragraph>
@@ -207,19 +199,9 @@
                                   MinHeight="50"
                                   MaxHeight="700"
                                   MinWidth="300"
-                                  MaxWidth="500"
-                               VirtualizingPanel.IsVirtualizing="True"
-                               VirtualizingPanel.ScrollUnit="Pixel"
-                               VirtualizingPanel.IsContainerVirtualizable="True"
-                               VirtualizingPanel.CacheLengthUnit="Pixel"
-                               VirtualizingPanel.VirtualizationMode="Recycling">
+                                  MaxWidth="500">
                             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                <Grid
-                                     VirtualizingPanel.IsVirtualizing="True"
-                                     VirtualizingPanel.ScrollUnit="Item"
-                                     VirtualizingPanel.IsContainerVirtualizable="True"
-                                     VirtualizingPanel.CacheLengthUnit="Item"
-                                     VirtualizingPanel.VirtualizationMode="Recycling">
+                                <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition
                                             Width="1*" />
@@ -540,6 +522,7 @@
                                               MaxHeight="40"            
                                               FontFamily="Century Gothic" 
                                               FontSize="12"
+                                              SelectedValue="{Binding CurrentPropertyStation.NumberGrids, Mode=TwoWay}"
                                               ItemsSource="{Binding NumberGridsOptions}"/>
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="21">
                                         <TextBlock Style="{StaticResource TextBlockForm}"
@@ -554,6 +537,9 @@
                                                MaxHeight="40"            
                                                FontFamily="Century Gothic" 
                                                FontSize="12"
+                                               DisplayMemberPath="Key"
+                                               SelectedValuePath="Value"
+                                               SelectedValue="{Binding CurrentPropertyStation.TypeFlueGasSupply, Mode=TwoWay}"
                                                ItemsSource="{Binding TypeFlueGasSupplyOptions}"/>
                                     <Button Name="MenuClose" 
                                             Visibility="Collapsed" 

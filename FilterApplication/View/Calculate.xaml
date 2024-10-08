@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:CalculateVM}"
+             xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" d:DataContext="{d:DesignInstance Type=viewmodels:CalculateVM}"
              mc:Ignorable="d" 
              d:DesignHeight="600"
              d:DesignWidth="622"
@@ -71,7 +71,6 @@
             <Border x:Name="ExternalBorder" 
                     Margin="10" 
                     CornerRadius="25" 
-                    BorderBrush="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource RandomColorConverter}}" 
                     Opacity="0.9" 
                     Background="Transparent"  
                     BorderThickness="4">
@@ -272,6 +271,85 @@
             </Border>
 
         </DataTemplate>
+        <DataTemplate x:Key="DegreeAshCapture">
+            <Border x:Name="ExternalBorder" 
+             Margin="10" 
+             CornerRadius="25" 
+             BorderBrush="{Binding}" 
+             Opacity="0.9" 
+             Background="Transparent"  
+             BorderThickness="4">
+            <Border Background="#3A4149" Margin="3" CornerRadius="20">
+            <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" 
+                       Grid.ColumnSpan="2" 
+                       Orientation="Horizontal" 
+                       Margin="5 15 10 0" 
+                       VerticalAlignment="Top"  
+                       HorizontalAlignment="Stretch">
+                            <TextBlock TextAlignment="Left" 
+                          HorizontalAlignment="Left" 
+                          Foreground="#DCE0E4" 
+                          Text="Топливо: " 
+                          FontSize="12"
+                          FontStyle="Italic"
+                          FontWeight="Bold"
+                          TextWrapping="Wrap" 
+                          FontFamily="Century Gothic"/>
+                            <TextBlock Name="Fuel" 
+                          TextAlignment="Left" 
+                          HorizontalAlignment="Left" 
+                          Foreground="#DCE0E4" 
+                          FontSize="14"
+                          FontStyle="Italic"
+                          TextWrapping="Wrap" 
+                          FontFamily="Century Gothic"/>
+                        </StackPanel>
+                        <Border x:Name="InternalBorder" 
+                   VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Stretch" 
+                   Height="5" 
+                   CornerRadius="2" 
+                   Grid.Row="1" 
+                   Grid.ColumnSpan="2" 
+                   Margin="5 0 5 5">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                    <GradientStop Offset="0"/>
+                                    <GradientStop Color="#3A4149" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                        <TextBlock Style="{StaticResource TextBlockForm}" 
+              Grid.Column="0" 
+              Grid.Row="2" 
+              Text="Степень золоулавливания:">
+                        </TextBlock>
+                        <TextBox Name="FirstField" Style="{StaticResource TextBoxUniformStyle}"
+                                Grid.Column="2" Margin="10,5,10,5" IsReadOnly="True"
+                                Grid.Row="2"/>
+                    </Grid>
+                </Border>
+                <Border.Effect>
+                    <DropShadowEffect 
+               Color="{Binding RelativeSource={RelativeSource AncestorType=Border}, 
+               Path=BorderBrush.Color}"
+               ShadowDepth="0"
+               BlurRadius="20"
+               Opacity="0.4"/>
+                </Border.Effect>
+            </Border>
+
+        </DataTemplate>
     </UserControl.Resources>
 
     <Grid Background="Transparent">
@@ -284,7 +362,6 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
-                        <RowDefinition Height="1*" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
@@ -318,7 +395,7 @@
                             </Grid>
                         </Border>
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="2">
+                    <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
                         <Border x:Name="HeaderCalculate" 
                                 Background="#FF0BCDFF" 
                                 Height="50" 
@@ -334,7 +411,7 @@
                                        TextWrapping="NoWrap" 
                                        FontFamily="Century Gothic"/>
                         </Border>
-                        <Grid Height="200" Name="GridLoad" Visibility="Visible"
+                        <Grid Height="200" Name="GridLoad" Visibility="Collapsed"
                              Width="200"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Center">
@@ -346,9 +423,9 @@
                                    HorizontalAlignment="Center"
                                    Source="{StaticResource Dial_Image}"
                                    Stretch="Uniform"/>
-                            <Ellipse Height="150"
-                                 Width="150"
-                                 Opacity="0.8"
+                            <Ellipse Height="160"
+                                 Width="160"
+                                 Opacity="0.7"
                                  Stroke="#212529"
                                  StrokeThickness="15"
                                  VerticalAlignment="Center"
@@ -383,7 +460,7 @@
                             HorizontalAlignment="Center"
                             TextAlignment="Center"
                             Margin="0,40,0,0" />
-                            
+
                         </Grid>
                         <ToggleButton x:Name="StartButtonCalculate" 
                                       Margin="10"
@@ -391,7 +468,7 @@
                                       Width="50"
                                       HorizontalAlignment="Center"
                                       VerticalAlignment="Top"
-                                      Command="{Binding CalculateCommand}"
+                                      Click="Start_Click"
                                       Style="{StaticResource PlayBtn_Style}"
                                       IsChecked="False">
                             <ToggleButton.CommandParameter>
@@ -402,69 +479,25 @@
                                 </MultiBinding>
                             </ToggleButton.CommandParameter>
                         </ToggleButton>
-
                     </StackPanel>
-                   
-                    <Border Name="BorderSuccess" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" Margin="20 20 20 20" Grid.RowSpan="5" CornerRadius="20" BorderBrush="#FF0BCDFF" BorderThickness="6" MinHeight="10" Height="200" MaxHeight="800">
-                        <Grid Margin="20 20 20 20">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="1" Grid.Row="0" Margin="10,10,10,10" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Stretch">
-                                    <TextBlock Margin="20, 20, 20, 20" VerticalAlignment="Top" MaxHeight="60" HorizontalAlignment="Center" Foreground="#DCE0E4" Text="Степень золоулавливания" FontSize="20" TextWrapping="Wrap" FontFamily="Fonts/#Raleway SemiBold" />
-                                </StackPanel>
-                                <Border Background="#3A4149" Grid.Row="1" CornerRadius="25" VerticalAlignment="Top" MaxHeight="250" HorizontalAlignment="Stretch" Margin="10 10 10 10">
-                                    <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10 10 10 10">
-                                        <Grid x:Name="DegreeAshCapture" Grid.IsSharedSizeScope="True"></Grid>
-                                    </ScrollViewer>
-                                </Border>
-                            </Grid>
-                            <Grid Grid.Column="0" Grid.Row="0" Margin="10,10,10,10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Stretch">
-                                    <TextBlock Margin="20, 20, 20, 20" VerticalAlignment="Top" MaxHeight="60" HorizontalAlignment="Center" Foreground="#DCE0E4" Text="Концентрация золы" FontSize="20" TextWrapping="Wrap" FontFamily="Fonts/#Raleway SemiBold" />
-                                </StackPanel>
-                                <Border Background="#3A4149" Grid.Row="1" CornerRadius="25" VerticalAlignment="Top" MaxHeight="600" HorizontalAlignment="Stretch" Margin="10 10 10 10">
-                                    <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10 10 10 10">
-                                        <Grid x:Name="GridAshClean" Grid.IsSharedSizeScope="True"></Grid>
-                                    </ScrollViewer>
-                                </Border>
-                            </Grid>
-                            <Grid Grid.Column="2" Grid.Row="0" Margin="10,10,2,10">
-                                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <Grid MinWidth="200">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="Auto" />
-                                        </Grid.RowDefinitions>
-                                        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Stretch">
-                                            <TextBlock Margin="20, 20, 20, 20" VerticalAlignment="Top" MaxHeight="60" HorizontalAlignment="Center" Foreground="#DCE0E4" Text="Оптимальный режим встряхивания" FontSize="20" TextWrapping="Wrap" FontFamily="Fonts/#Raleway SemiBold" />
-                                        </StackPanel>
-                                        <Border Background="#3A4149" Grid.Row="1" CornerRadius="25" VerticalAlignment="Top" MaxHeight="600" HorizontalAlignment="Stretch" Margin="10 10 10 10">
-                                            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10 10 10 10">
-                                                <Grid x:Name="GridOptimalShakeMode" Grid.IsSharedSizeScope="True"></Grid>
-                                            </ScrollViewer>
-                                        </Border>
-                                    </Grid>
-                                </ScrollViewer>
-                            </Grid>
-                        </Grid>
-                    </Border>
+                    <telerik:RadGridView  Name="resultsGrid" GroupRenderMode="Flat" Grid.Row="2" Grid.ColumnSpan="3"
+                       Margin="20"
+                       Height="Auto"
+                       VerticalAlignment="Top"
+                       AutoGenerateColumns="False"
+                       ItemsSource="{Binding Results, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" 
+                       IsReadOnly="True"
+                       RowIndicatorVisibility="Collapsed"
+                       DataLoadMode="Asynchronous"
+                       NewRowPosition="Bottom"
+                       ShowColumnHeaders="True">
+                        <telerik:RadGridView.Columns>
+
+                            <telerik:GridViewDataColumn Header="Расчитываемое топливо"
+							DataMemberBinding="{Binding UseFuel, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                         
+                        </telerik:RadGridView.Columns>
+                    </telerik:RadGridView>
                 </Grid>
             </ScrollViewer>
         </Border>

@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces.Repositories;
 using Application.Interfaces.Services;
+using Application.Utilities;
 using Microsoft.EntityFrameworkCore;
 using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Entities.HeatPowerPlant.Resources;
@@ -9,6 +10,7 @@ using Persistance.DbContexts;
 using Persistance.DTOs;
 using Persistance.Repositories;
 using Persistance.Services;
+using System.Windows.Data;
 using ViewModels.Services.Repositories;
 
 namespace Persistance
@@ -17,7 +19,6 @@ namespace Persistance
 	{
 		public override void Load()
 		{
-			Bind<ICustomMessageBoxService>().To<CustomMessageBoxService>().InTransientScope();
 			Bind<IConstParameterService>().To<ConstParameterService>().InSingletonScope();
 			Bind<ICrudService<Fuel>>().To<FuelDataService>().InSingletonScope();
 			Bind<ICrudService<Filter>>().To<FilterDataService>().InSingletonScope();
@@ -40,6 +41,7 @@ namespace Persistance
 			Bind<IExportService>().To<ExportService>().InTransientScope();
 			Bind(typeof(ICurrentParameterDTO)).To<CurrentParameterDTO>().InSingletonScope();
 			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InThreadScope();
+			Bind<IValueConverter>().To<RandomColorConverter>().WhenInjectedInto<CalculateService>().InTransientScope();
 		}
 	}
 }

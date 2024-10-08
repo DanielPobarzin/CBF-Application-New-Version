@@ -62,8 +62,7 @@ namespace FilterApplication
 			Kernel.Get<IFiltersView>().SetViewModel(Kernel.Get<IFilterViewModel>());
 			Kernel.Get<IFuelsView>().SetViewModel(Kernel.Get<IFuelViewModel>());
 			Kernel.Get<IStationView>().SetViewModel(Kernel.Get<IStationViewModel>());
-			Kernel.Get<ICalculateView>().SetViewModel(Kernel.Get<ICalculateViewModel>());
-			Kernel.Get<ICustomMessageBox>().SetViewModel(Kernel.Get<ICustomMessageBoxViewModel>());
+			Kernel.Get<ICalculateView>().SetViewModel(Kernel.Get<ICalculateViewModel>(), Kernel.Get<ICurrentParameterDTO>());
 			Kernel.Get<IChartsView>();
 
 			Log.Information("All application windows have been initialized");
@@ -123,7 +122,6 @@ namespace FilterApplication
 			Bind<IStationView>().To<Station>().InSingletonScope();
 			Bind<ICalculateView>().To<Calculate>().InSingletonScope();
 			Bind<IChartsView>().To<Charts>().InSingletonScope();
-			Bind<ICustomMessageBox>().To<CustomMessageBox>().InTransientScope();
 
 			Bind<ICalculateService>().To<CalculateService>().InSingletonScope();
 			Bind<ICommandService>().To<CommandService>().InSingletonScope();
@@ -134,7 +132,6 @@ namespace FilterApplication
 			Bind<IStationViewModel>().To<StationVM>().InSingletonScope();
 			Bind<INavigationViewModel>().To<NavigationVM>().InSingletonScope();
 			Bind<ICalculateViewModel>().To<CalculateVM>().InSingletonScope();
-			Bind<ICustomMessageBoxViewModel>().To<CustomMessageBoxVM>().InTransientScope();
 
 			Bind<IMediator>().To<Mediator>().InSingletonScope();
 			Bind<MainWindow>().ToSelf().InSingletonScope();

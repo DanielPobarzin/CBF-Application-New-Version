@@ -29,12 +29,7 @@
         </Style>
     </UserControl.Resources>
 
-    <Grid Background="Transparent" 
-          VirtualizingPanel.IsVirtualizing="True"
-          VirtualizingPanel.ScrollUnit="Pixel"
-          VirtualizingPanel.IsContainerVirtualizable="True"
-          VirtualizingPanel.CacheLengthUnit="Pixel"
-          VirtualizingPanel.VirtualizationMode="Recycling">
+    <Grid Background="Transparent" >
         <Border Background="#212529" 
                 BorderBrush="#3A4149" 
                 BorderThickness="5" 
@@ -79,17 +74,13 @@
                                           ItemsSource="{Binding Filters, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" 
                                           IsReadOnly="False"
                                           RowIndicatorVisibility="Collapsed"
-                                          VirtualizingPanel.IsVirtualizing="True"
-                                          VirtualizingPanel.IsContainerVirtualizable="True"
-                                          VirtualizingPanel.ScrollUnit="Item"
-                                          VirtualizingPanel.CacheLengthUnit="Item"
-                                          VirtualizingPanel.VirtualizationMode="Recycling"
                                           DataLoadMode="Asynchronous"
                                           NewRowPosition="Bottom"
                                           ShowColumnHeaders="True"
                                           ShowSearchPanel="True" 
                                           ShowColumnSortIndexes="True"
-                                          IsLocalizationLanguageRespected="True">   
+                                          Keyboard.PreviewKeyDown="filtersGrid_PreviewKeyDown"
+                                          IsLocalizationLanguageRespected="True">
                         <telerik:RadGridView.Columns>
 
                             <telerik:GridViewDataColumn Header="Модель фильтра" Style="{DynamicResource GridViewDataColumnStyle}"
@@ -127,15 +118,10 @@
                             MaxHeight="450" 
                             MinWidth="300"
                             Opacity="0.9"
-                            CornerRadius="25" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" VirtualizingPanel.IsContainerVirtualizable="True">
+                            CornerRadius="25">
                         <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10">
-                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent" VirtualizingPanel.IsVirtualizing="True" 
-                                         VirtualizingPanel.VirtualizationMode="Standard" 
-                                         VirtualizingPanel.IsContainerVirtualizable="True">
-                                <FlowDocument VirtualizingPanel.IsVirtualizing="True"
-                                              VirtualizingPanel.ScrollUnit="Pixel"
-                                              VirtualizingPanel.CacheLengthUnit="Page"
-                                              VirtualizingPanel.VirtualizationMode="Recycling">
+                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent">
+                                <FlowDocument>
                                     <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
                                         К ознакомлению
                                     </Paragraph>
@@ -361,16 +347,3 @@
         </Border>
     </Grid>
 </UserControl>
-<!--<telerik:RadComboBox x:Name="radComboBox" 
-   Margin="10" 
-   MaxWidth="450" 
-   Grid.Row="1" 
-   EmptyText="Выберите модель фильтра для расчета..." 
-   FontFamily="Century Gothic" 
-   AllowMultipleSelection="False" 
-   ItemsSource="{Binding Filters}" 
-   SelectedValuePath="BrandFilter"
-   SelectedItem="{Binding SelectedFilter}"
-   TextSearch.TextPath="BrandFilter" 
-   ItemTemplate="{StaticResource CheckBoxItemTemplate}"
-   IsEditable="{Binding IsChecked, ElementName=IsEditable}"/>-->

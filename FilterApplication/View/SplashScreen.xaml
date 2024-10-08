@@ -20,7 +20,7 @@
     <Window.Icon>
         <BitmapImage UriSource="pack://application:,,,/Resources/Images/OST.ico"/>
     </Window.Icon>
-    <Grid VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+    <Grid>
         <Border x:Name="Bord" Background="#4b7187"
              BorderBrush="#3A4149"
              BorderThickness="5"

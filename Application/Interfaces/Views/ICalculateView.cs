@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.ViewModels;
+﻿using Application.Interfaces.Services;
+using Application.Interfaces.ViewModels;
 using Models.Enums.View;
 
 namespace Application.Interfaces.Views

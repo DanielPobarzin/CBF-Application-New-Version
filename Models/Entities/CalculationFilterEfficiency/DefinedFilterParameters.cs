@@ -1,6 +1,7 @@
 ﻿using Models.Validators;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Media;
 
 namespace Models.Entities.CalculationFilterEfficiency
 {
@@ -34,9 +35,23 @@ namespace Models.Entities.CalculationFilterEfficiency
 		private double areaDepositionOneField;  
 		private double numberGasesEnteringOneField;  
 		private List<double> ashConcentrationEntranceMthField;
-
+		private SolidColorBrush colorResult;
 		public string Error { get; set; }
 
+
+		/// <summary>
+		/// Цвет для графиков и выделения блоков
+		/// </summary>
+		public SolidColorBrush СolorResult
+		{
+			get { return colorResult; }
+			set
+			{
+				if (colorResult != value)
+					colorResult = value;
+				OnPropertyChanged(nameof(СolorResult));
+			}
+		}
 		/// <summary>
 		/// Расчитываемое топливо
 		/// </summary>

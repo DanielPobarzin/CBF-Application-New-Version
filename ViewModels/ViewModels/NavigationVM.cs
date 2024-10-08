@@ -14,12 +14,12 @@ namespace ViewModels.ViewModels
 		private readonly ICommandService _commandService;
 		private readonly IKernel _serviceProvider;
 
-		private readonly Lazy<RelayCommand> _homeCommand;
-		private readonly Lazy<RelayCommand> _filtersCommand;
-		private readonly Lazy<RelayCommand> _fuelsCommand;
-		private readonly Lazy<RelayCommand> _stationsCommand;
-		private readonly Lazy<RelayCommand> _calculateCommand;
-		private readonly Lazy<RelayCommand> _chartsCommand;
+		private readonly RelayCommand _homeCommand;
+		private readonly RelayCommand _filtersCommand;
+		private readonly RelayCommand _fuelsCommand;
+		private readonly RelayCommand _stationsCommand;
+		private readonly RelayCommand _calculateCommand;
+		private readonly RelayCommand _chartsCommand;
 		
 		private object _currentView;
 		public object Current
@@ -37,12 +37,12 @@ namespace ViewModels.ViewModels
 			_serviceProvider = serviceProvider;
 			_commandService = commandService;
 
-			_homeCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await NavigateToHomeAsync()));
-			_filtersCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await NavigateToFiltersAsync()));
-			_fuelsCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await NavigateToFuelsAsync()));
-			_stationsCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await NavigateToStationAsync()));
-			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await NavigateToCalculateAsync()));
-			_chartsCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await NavigateToChartsAsync()));
+			_homeCommand = new RelayCommand(async (parameter) => await NavigateToHomeAsync());
+			_filtersCommand =  new RelayCommand(async (parameter) => await NavigateToFiltersAsync());
+			_fuelsCommand =  new RelayCommand(async (parameter) => await NavigateToFuelsAsync());
+			_stationsCommand =  new RelayCommand(async (parameter) => await NavigateToStationAsync());
+			_calculateCommand =  new RelayCommand(async (parameter) => await NavigateToCalculateAsync());
+			_chartsCommand =  new RelayCommand(async (parameter) => await NavigateToChartsAsync());
 			_currentView = _serviceProvider.Get<IHomeView>() as UserControl;
 			CurrentPageChanged += UpdatePage;
 		}
@@ -51,12 +51,12 @@ namespace ViewModels.ViewModels
 		public RelayCommand CloseCommand => _commandService.CloseCommand;
 		public RelayCommand MaxCommand => _commandService.MaxCommand;
 		public RelayCommand MoveWindowCommand => _commandService.MoveWindowCommand;
-		public RelayCommand HomeCommand => _homeCommand.Value;
-		public RelayCommand FiltersCommand => _filtersCommand.Value;
-		public RelayCommand FuelsCommand => _fuelsCommand.Value;
-		public RelayCommand StationsCommand => _stationsCommand.Value;
-		public RelayCommand CalculateCommand => _calculateCommand.Value;
-		public RelayCommand ChartsCommand => _chartsCommand.Value;
+		public RelayCommand HomeCommand => _homeCommand;
+		public RelayCommand FiltersCommand => _filtersCommand;
+		public RelayCommand FuelsCommand => _fuelsCommand;
+		public RelayCommand StationsCommand => _stationsCommand;
+		public RelayCommand CalculateCommand => _calculateCommand;
+		public RelayCommand ChartsCommand => _chartsCommand;
 
 		private async Task NavigateToHomeAsync()
 		{

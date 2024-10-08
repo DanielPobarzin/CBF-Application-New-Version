@@ -5,26 +5,24 @@ using Models.Entities.CalculationFilterEfficiency;
 using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Entities.HeatPowerPlant.Resources;
 using Models.Entities.HeatPowerPlant.StationProperty;
-using Models.Enums.Message;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using System.ComponentModel;
 using System.IO;
 using System.Reflection;
+using System.Windows;
 
 namespace Persistance.Services
 {
 	public class ExportService : IExportService
 	{
 		private readonly Lazy<RelayCommand> _exportToExcelCommand;
-		private readonly ICustomMessageBoxService _messageBoxService;
 		private readonly ICalculateService _calculateService;
 		private readonly ICurrentParameterDTO _currentParameters;
 
-		public ExportService(ICustomMessageBoxService messageBoxService, ICalculateService calculateService, ICurrentParameterDTO currentParameters)
+		public ExportService(ICalculateService calculateService, ICurrentParameterDTO currentParameters)
 		{
 			_calculateService = calculateService;
-			_messageBoxService = messageBoxService;
 			_currentParameters = currentParameters;
 			_exportToExcelCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await DialogExportToExcelAsync(parameter)));
 		}
@@ -53,8 +51,7 @@ namespace Persistance.Services
 
 				excelPackage.SaveAs(new FileInfo(filePath));
 			}
-
-			_messageBoxService.Show(Message.Information, "Экспорт завершен успешно!", "Экспорт данных");
+			MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных", MessageBoxButton.OK, MessageBoxImage.Information);
 		}
 		private async Task LoadExistingWorksheetsAsync(ExcelPackage excelPackage)
 		{

@@ -1,7 +1,15 @@
 ﻿using Application.Interfaces.ViewModels;
 using Application.Interfaces.Views;
 using Models.Enums.View;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using System;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Animation;
+using System.Windows.Threading;
+using Application.Interfaces.Services;
+using System.Windows.Media;
 
 namespace FilterApplication.View
 {
@@ -11,6 +19,7 @@ namespace FilterApplication.View
 	public partial class Calculate : UserControl, ICalculateView
 	{
 		private ICalculateViewModel _viewModel;
+		private ICurrentParameterDTO _constParameterService;
 		public Represantation View => Represantation.Calculate;
 		public Calculate()
 		{
@@ -21,5 +30,6 @@ namespace FilterApplication.View
 			_viewModel = viewModel;
 			DataContext = _viewModel;
 		}
+		
 	}
 }

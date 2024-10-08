@@ -53,10 +53,6 @@ namespace Persistance.Services
 					await OpenFormDataAsync(formParameter.Panel, formParameter.CloseMenu, formParameter.OpenMenu);
 				}
 			}));
-			_savePropertyStationCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) =>
-			{
-
-			}));
 		}
 		public RelayCommand CloseCommand => _closeCommand.Value;
 		public RelayCommand MaxCommand => _maxCommand.Value;
