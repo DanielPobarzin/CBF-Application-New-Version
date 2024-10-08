@@ -1373,3 +1373,6 @@ D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-window
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
 D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\charts_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\DataGridTemplate.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\DataGridTemplate.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs

@@ -21,5 +21,6 @@ namespace ViewModels.ViewModels
 		public RelayCommand CalculateCommand => _calculateService.CalculateCommand;
 		public RelayCommand ExportToExcelCommand => _exportService.ExportToExcelCommand;
 		public ConcurrentObservableCollection<DefinedFilterParameters> Results => _calculateService.Results;
+		public object ContentPresenter {  get; set; }
 	}
 }

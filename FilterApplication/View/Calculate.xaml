@@ -480,24 +480,9 @@
                             </ToggleButton.CommandParameter>
                         </ToggleButton>
                     </StackPanel>
-                    <telerik:RadGridView  Name="resultsGrid" GroupRenderMode="Flat" Grid.Row="2" Grid.ColumnSpan="3"
-                       Margin="20"
-                       Height="Auto"
-                       VerticalAlignment="Top"
-                       AutoGenerateColumns="False"
-                       ItemsSource="{Binding Results, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" 
-                       IsReadOnly="True"
-                       RowIndicatorVisibility="Collapsed"
-                       DataLoadMode="Asynchronous"
-                       NewRowPosition="Bottom"
-                       ShowColumnHeaders="True">
-                        <telerik:RadGridView.Columns>
-
-                            <telerik:GridViewDataColumn Header="Расчитываемое топливо"
-							DataMemberBinding="{Binding UseFuel, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
-                         
-                        </telerik:RadGridView.Columns>
-                    </telerik:RadGridView>
+                    <Grid Name="UserGrid" Grid.Row="2" Grid.ColumnSpan="3">
+                        <ContentControl x:Name="Pages" Content="{Binding ContentPresenter}"/>
+                    </Grid>
                 </Grid>
             </ScrollViewer>
         </Border>

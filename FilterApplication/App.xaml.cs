@@ -62,7 +62,7 @@ namespace FilterApplication
 			Kernel.Get<IFiltersView>().SetViewModel(Kernel.Get<IFilterViewModel>());
 			Kernel.Get<IFuelsView>().SetViewModel(Kernel.Get<IFuelViewModel>());
 			Kernel.Get<IStationView>().SetViewModel(Kernel.Get<IStationViewModel>());
-			Kernel.Get<ICalculateView>().SetViewModel(Kernel.Get<ICalculateViewModel>(), Kernel.Get<ICurrentParameterDTO>());
+			Kernel.Get<ICalculateView>().SetViewModel(Kernel.Get<ICalculateViewModel>());
 			Kernel.Get<IChartsView>();
 
 			Log.Information("All application windows have been initialized");

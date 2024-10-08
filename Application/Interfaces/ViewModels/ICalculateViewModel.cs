@@ -10,5 +10,6 @@ namespace Application.Interfaces.ViewModels
 		RelayCommand CalculateCommand { get; }
 		RelayCommand ExportToExcelCommand { get; }
 		ConcurrentObservableCollection<DefinedFilterParameters> Results { get; }
+		object ContentPresenter { get; set; }
 	}
 }
