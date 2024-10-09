@@ -6,15 +6,74 @@ namespace Application.Utilities
 {
 	public class RandomColorConverter : IValueConverter
 	{
+		private readonly List<Color> colors = new List<Color>
+		{
+			Colors.Red,
+			Colors.OrangeRed,
+			Colors.Orange,
+			Colors.Yellow,
+			Colors.LightYellow,
+			Colors.LemonChiffon,
+			Colors.LightGoldenrodYellow,
+			Colors.PaleGoldenrod,
+			Colors.Gold,
+			Colors.YellowGreen,
+			Colors.LightGreen,
+			Colors.LimeGreen,
+			Colors.SpringGreen,
+			Colors.Cyan,
+			Colors.LightCyan,
+			Colors.Aquamarine,
+			Colors.Turquoise,
+			Colors.LightSkyBlue,
+			Colors.SkyBlue,
+			Colors.DodgerBlue,
+			Colors.CornflowerBlue,
+			Colors.SteelBlue,
+			Colors.LightSteelBlue,
+			Colors.Peru,
+			Colors.SandyBrown,
+			Colors.BurlyWood,
+			Colors.Wheat,
+			Colors.PeachPuff,
+			Colors.NavajoWhite,
+			Colors.MistyRose,
+			Colors.LightCoral,
+			Colors.HotPink,
+			Colors.DeepPink,
+			Colors.Pink,
+			Colors.LightPink,
+			Colors.Violet,
+			Colors.Plum,
+			Colors.Orchid,
+			Colors.Thistle,
+			Colors.Lavender
+		};
+
+		private HashSet<int> usedIndices = new HashSet<int>();
 		private Random random = new Random();
+		private readonly object lockObject = new object();
 
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
-			byte red = (byte)random.Next(180, 256);
-			byte green = (byte)random.Next(180, 256);
-			byte blue = (byte)random.Next(180, 256);
-			return new SolidColorBrush(Color.FromRgb(red, green, blue));
+			lock (lockObject)
+			{
+				if (usedIndices.Count >= colors.Count)
+				{
+					return Color.FromRgb((byte)random.Next(180, 256), (byte)random.Next(180, 256), (byte)random.Next(180, 256));
+				}
+
+				int index;
+				do
+				{
+					index = random.Next(colors.Count);
+				} while (usedIndices.Contains(index));
+
+				usedIndices.Add(index);
+				return colors[index];
+			}
 		}
+
 		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
 		{
 			throw new NotImplementedException();

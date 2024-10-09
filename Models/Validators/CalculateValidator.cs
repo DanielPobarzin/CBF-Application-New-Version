@@ -67,9 +67,14 @@ namespace Models.Validators
 			.GreaterThanOrEqualTo(0).WithMessage("Концентрация золы на входе в первое поле отрицательная. Проверьте исходные данные.")
 			.LessThanOrEqualTo(1).WithMessage("Концентрация золы на входе в первое поле превысила 100%. От фильтра одно название ...");
 			RuleFor(x => x.OptimalAshShakingMode)
-			.NotNull()
-			.Must(x => x.Any()).WithMessage("Оптимальный режим встряхивания для каждого поля не определен. Если изменение исходных данных не помогает, обратитесь к разработчику. Вероятно, есть ошибка в расчетах.")
-			.ForEach(mode => mode.GreaterThanOrEqualTo(0).WithMessage("Оптимальный режим встряхивания для каждого поля отрицательный. Проверьте исходные данные."));
+		   .NotNull()
+		   .WithMessage("Оптимальный режим встряхивания не может быть null.")
+		   .Must(x => x != null && x.Any())
+		   .WithMessage("Оптимальный режим встряхивания для каждого поля не определен. Если изменение исходных данных не помогает, обратитесь к разработчику. Вероятно, есть ошибка в расчетах.");
+
+			RuleForEach(x => x.OptimalAshShakingMode)
+				.Must(pair => pair.Value >= 0)
+				.WithMessage("Оптимальный режим встряхивания для каждого поля должен быть неотрицательным.");
 			RuleFor(x => x.OptimalValueDustCapacity)
 			.NotNull()
 			.GreaterThanOrEqualTo(0).WithMessage("Опитимальное значение пылеемкости отрицательное. Проверьте исходные данные.");
@@ -81,9 +86,15 @@ namespace Models.Validators
 			.GreaterThanOrEqualTo(0).WithMessage("Количество газов, поступающих в одно поле, отрицательное. Проверьте исходные данные.");
 			RuleFor(x => x.AshConcentrationEntranceMthField)
 			.NotNull()
-			.Must(x => x.Any()).WithMessage("Концентрация золы на входе не определена. Если изменение исходных данных не помогает, обратитесь к разработчику. Вероятно, есть ошибка в расчетах.")
-			.ForEach(mode => mode.GreaterThanOrEqualTo(0).WithMessage("Концентрация золы на входе в поле отрицательная. Проверьте исходные данные.")
-			.LessThanOrEqualTo(1).WithMessage("Концентрация золы на входе в поле превысила 100%."));
+			.WithMessage("Концентрация золы на входе не может быть null.")
+			.Must(x => x != null && x.Any())
+			.WithMessage("Концентрация золы на входе не определена. Если изменение исходных данных не помогает, обратитесь к разработчику. Вероятно, есть ошибка в расчетах.");
+			RuleForEach(x => x.AshConcentrationEntranceMthField)
+				.Must(pair => pair.Value >= 0)
+				.WithMessage("Концентрация золы на входе в поле отрицательная. Проверьте исходные данные.");
+			RuleForEach(x => x.AshConcentrationEntranceMthField)
+				.Must(pair => pair.Value < 1)
+				.WithMessage("Концентрация золы на входе в поле превысила 100%.");
 		}
 	}
 }

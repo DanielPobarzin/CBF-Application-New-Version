@@ -8,9 +8,6 @@
     <Compile Update="View\Charts.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\DataGridTemplate.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="View\Filter.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -53,9 +50,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Charts.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\DataGridTemplate.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Filter.xaml">

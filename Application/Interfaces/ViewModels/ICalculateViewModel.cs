@@ -1,6 +1,7 @@
 ﻿using Application.Extensions;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
+using System.Collections.ObjectModel;
 using System.Windows.Media;
 
 namespace Application.Interfaces.ViewModels
@@ -9,7 +10,6 @@ namespace Application.Interfaces.ViewModels
     {
 		RelayCommand CalculateCommand { get; }
 		RelayCommand ExportToExcelCommand { get; }
-		ConcurrentObservableCollection<DefinedFilterParameters> Results { get; }
-		object ContentPresenter { get; set; }
+		ObservableCollection<DefinedFilterParameters> Results { get; }
 	}
 }

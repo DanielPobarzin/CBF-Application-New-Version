@@ -1,10 +1,11 @@
-﻿using Application.Extensions;
-using Application.Interfaces.Services;
+﻿using Application.Interfaces.Services;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
 using Models.Entities.HeatPowerPlant.Resources;
 using Models.Enums.Station;
 using Serilog;
+using System.Collections.Concurrent;
+using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
@@ -18,8 +19,9 @@ namespace Persistance.Services
 		private readonly ICurrentParameterDTO _currentParameter;
 		private readonly IConstParameterService _constParameters;
 		private readonly IValueConverter _valueConverter;
-		public ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
-		
+		public ObservableCollection<DefinedFilterParameters> Results { get; set; }
+		public event Action<ConcurrentBag<DefinedFilterParameters>> ResultsLoaded;
+
 		public CalculateService(IValueConverter valueConverter, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
 
 			_valueConverter = valueConverter;
@@ -31,25 +33,27 @@ namespace Persistance.Services
 		public RelayCommand CalculateCommand => _calculateCommand.Value;
 		private async Task StartInitAsync(object parameter)
 		{
-				await RunCalculationAsync();
+			// TODO: Добавить валиадцию исходных данных
+
+			await RunCalculationAsync();
 		}
 		private async Task RunCalculationAsync()
 		{
 			try
 			{
-				var calculationTasks = new List<Task>();
-				foreach (var fuel in _currentParameter.SelectedFuels)
+				Results.Clear();
+				var results = new ConcurrentBag<DefinedFilterParameters>();
+				var calculationTasks = _currentParameter.SelectedFuels.Select(fuel => Task.Run(() =>
 				{
-					calculationTasks.Add(Task.Run(() =>
+					var result = Calculate(fuel);
+					if (result != null && result.DegreeAshCapture != 0)
 					{
-						var result = Calculate(fuel);
-						if (result != null && result.DegreeAshCapture != 0)
-						{
-							Results.Add(result);
-						}
-					}));
-				}
-				await Task.WhenAll(calculationTasks);
+						results.Add(result);
+					}
+				}));
+
+				await Task.WhenAll(calculationTasks).ConfigureAwait(false);
+				System.Windows.Application.Current.Dispatcher.Invoke(() => ResultsLoaded?.Invoke(results));
 			}
 			catch (Exception ex)
 			{
@@ -75,17 +79,21 @@ namespace Persistance.Services
 		private DefinedFilterParameters Calculate(Fuel fuel)
 		{
 			var result = new DefinedFilterParameters();
-			
-			result.СolorResult = _valueConverter.Convert(null, typeof(SolidColorBrush), null, CultureInfo.InvariantCulture) as SolidColorBrush;
+
+			result.UseFuel = fuel.BrandFuel;
+			result.СolorResult = (Color)_valueConverter.Convert(null, typeof(Color), null, CultureInfo.InvariantCulture);
+			Log.Information($"{result.UseFuel}");
 			// Расчет объемного расхода газа
-			result.VolumetricGasConsumption = _currentParameter.CurrentPropertyStation.FuelConsumption * 
+			result.VolumetricGasConsumption = _currentParameter.CurrentPropertyStation.FuelConsumption *
 				(fuel.TheoreticalVolumeGas + 1.016 * (_currentParameter.CurrentPropertyStation.AirSuction - 1) *
 				fuel.TheoreticalAirVolume) * (273 + _currentParameter.CurrentPropertyStation.ExhaustGasTemperature) / 273;
 
 			// Расчет скорости дымовых газов
-			result.FlueGasVelocity = result.VolumetricGasConsumption / 
+			result.FlueGasVelocity = result.VolumetricGasConsumption /
 				(_currentParameter.CurrentPropertyStation.NumberSmokePumps * _currentParameter.SelectedFilter.AreaActiveSection);
-
+			Log.Information($"{result.VolumetricGasConsumption}");
+			Log.Information($"{_currentParameter.CurrentPropertyStation.NumberSmokePumps}");
+			Log.Information($"{_currentParameter.SelectedFilter.AreaActiveSection}");
 			// Расчет эффективной напряженности электрического поля
 			result.EffectiveStrength = fuel.CoefficientReverseCrown * fuel.ElectricFieldStrength;
 
@@ -94,29 +102,34 @@ namespace Persistance.Services
 
 			// Расчет коэффициента высоты электрода
 			result.HeightCoefficientElectrode = 7.5 / _currentParameter.SelectedFilter.ElectrodeHeight;
-
+			Log.Information($"{result.HeightCoefficientElectrode}");
 			// Расчет коэффициента вторичного уноса уловленной золы
-			result.CoeffSecondaryEntrainmentTrappedAsh = result.HeightCoefficientElectrode * _constParameters.СoefficientElectrodeType * 
+			result.CoeffSecondaryEntrainmentTrappedAsh = result.HeightCoefficientElectrode * _constParameters.СoefficientElectrodeType *
 				_currentParameter.SelectedFilter.СoefficientShakingMode * (1 - 0.25 * (result.FlueGasVelocity - 1));
-
+			
+			Log.Information($"{result.CoeffSecondaryEntrainmentTrappedAsh}");
 			// Расчет параметра золоулавливания при равномерном поле скоростей
-			result.ParameterAshCollectionUNIFORMVelocityField = 0.2 * result.CoeffSecondaryEntrainmentTrappedAsh * 
+			
+			
+			result.ParameterAshCollectionUNIFORMVelocityField = 0.2 * result.CoeffSecondaryEntrainmentTrappedAsh *
 				Math.Sqrt(result.TrateDriftAshParticles / result.FlueGasVelocity) * _currentParameter.SelectedFilter.NumberFields *
 				_currentParameter.SelectedFilter.ActiveFieldLength / _currentParameter.SelectedFilter.DistanceCPDevices;
-
+			
+			Log.Information($"0.2 *{ result.CoeffSecondaryEntrainmentTrappedAsh} *	Math.Sqrt({result.TrateDriftAshParticles} / {result.FlueGasVelocity}) * { _currentParameter.SelectedFilter.NumberFields} * {
+				_currentParameter.SelectedFilter.ActiveFieldLength} / {_currentParameter.SelectedFilter.DistanceCPDevices}");
 			// Расчет просокока золы при равномерном поле скоростей
 			result.AshEmissionUniformVelocityField = Math.Exp(-result.ParameterAshCollectionUNIFORMVelocityField);
 
 			// Расчет степени золоулавливания при равномерном поле скоростей
 			result.DegreeAshCaptureUNIFORMVelocityField = 1 - result.AshEmissionUniformVelocityField;
-
+			Log.Information($"{result.DegreeAshCaptureUNIFORMVelocityField}");
 			// Расчет коэффициента относительного увеличения влияния неравномерности
-			result.CoeffRelativeIncreaseInfluenceUnevenness = 0.125 * (1 + result.ParameterAshCollectionUNIFORMVelocityField) * 
+			result.CoeffRelativeIncreaseInfluenceUnevenness = 0.125 * (1 + result.ParameterAshCollectionUNIFORMVelocityField) *
 				result.ParameterAshCollectionUNIFORMVelocityField;
 
 			// Расчет относительной высоты подъемной шахты
-			result.RelativeHeightLiftingShaft = FindClosestValue(_currentParameter.CurrentPropertyStation.HeightLiftShaft/ _currentParameter.SelectedFilter.ElectrodeHeight, 
-				new double [] { 0, 0.4, 0.8 });
+			result.RelativeHeightLiftingShaft = FindClosestValue(_currentParameter.CurrentPropertyStation.HeightLiftShaft / _currentParameter.SelectedFilter.ElectrodeHeight,
+				new double[] { 0, 0.4, 0.8 });
 
 			// Расчет квадрата отклонения скорости от среднего значения
 			result.SquareVelocityDeviationAverageValue = (_currentParameter.CurrentPropertyStation.TypeFlueGasSupply == TypeFlueGasSupply.FlueGasSupplyFromBelow) ?
@@ -143,15 +156,16 @@ namespace Persistance.Services
 			result.DegreeAshCapture = 1 - result.PassageAshTakingAccountGasLeaksZones;
 			if (result.DegreeAshCapture < 0.99)
 			{
+				Log.Information($"{result.DegreeAshCapture}");
 				var message = $"Степень улавливания золы для топлива типа {fuel.BrandFuel} ниже минимально допустимого значения. Желаете продолжить расчет?";
-				MessageBoxResult dialog = MessageBox.Show(message,"Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
+				MessageBoxResult dialog = MessageBox.Show(message, "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
 				if (dialog == MessageBoxResult.No)
 				{
 					return new();
 				}
 			}
 			// Расчет количества образующейся золы и продуктов механического недожога топлива 
-			result.AmountAshFormedProductsMechanicalUnderburning = 10 * (_currentParameter.CurrentPropertyStation.FuelConsumption * 
+			result.AmountAshFormedProductsMechanicalUnderburning = 10 * (_currentParameter.CurrentPropertyStation.FuelConsumption *
 				(_constParameters.ProportionCarriedAshDuringSlagRemoval[_currentParameter.CurrentPropertyStation.SlagRemoval]) *
 				fuel.AshContent + _constParameters.MechanicalUnderburningFuel * fuel.LowerHeatCombustion / 32.68);
 
@@ -176,25 +190,26 @@ namespace Persistance.Services
 			// Расчет количества газов, поступающих в одно поле
 			result.NumberGasesEnteringOneField = result.VolumetricGasConsumption / _currentParameter.CurrentPropertyStation.NumberSmokePumps;
 
-			result.AshConcentrationEntranceMthField = new();
+			result.AshConcentrationEntranceMthField ??= new();
 			// Расчет концентрации золы по полям
 			for (int i = 1; i <= _currentParameter.SelectedFilter.NumberFields; i++)
 			{
-				result.AshConcentrationEntranceMthField.Add(result.AshConcentrationEntranceToFirstField * Math.Pow(result.PassageAshFirstField, i - 1));
+				result.AshConcentrationEntranceMthField[$"Поле №{i}"] = (result.AshConcentrationEntranceToFirstField * Math.Pow(result.PassageAshFirstField, i - 1));
 			}
 
-			result.OptimalAshShakingMode = new();
+			result.OptimalAshShakingMode ??= new();
 			// Расчет оптимальный режим встряхивания по полям
-			foreach (double AshConcentration in result.AshConcentrationEntranceMthField)
+			foreach (var AshConcentration in result.AshConcentrationEntranceMthField)
 			{
-				result.OptimalAshShakingMode.Add(16.7 * result.AreaDepositionOneField * result.OptimalValueDustCapacity /
-				(result.NumberGasesEnteringOneField * AshConcentration * result.DegreeAshCaptureFirstField));
+				result.OptimalAshShakingMode[AshConcentration.Key] = (16.7 * result.AreaDepositionOneField * result.OptimalValueDustCapacity /
+				(result.NumberGasesEnteringOneField * AshConcentration.Value * result.DegreeAshCaptureFirstField));
+				Log.Information($"{result.OptimalAshShakingMode[AshConcentration.Key]}");
 			}
 			return result;
 		}
 		private void HandleError(Exception ex)
 		{
-			MessageBox.Show("Возникла ошибка при расчетах. Подробная информация в логах", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+			MessageBox.Show($"Возникла ошибка при выполнении расчета.{ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
 			Log.Error("An error occurred: {0}", ex.Message);
 		}
 	}

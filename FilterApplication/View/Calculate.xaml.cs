@@ -19,7 +19,6 @@ namespace FilterApplication.View
 	public partial class Calculate : UserControl, ICalculateView
 	{
 		private ICalculateViewModel _viewModel;
-		private ICurrentParameterDTO _constParameterService;
 		public Represantation View => Represantation.Calculate;
 		public Calculate()
 		{

@@ -42,9 +42,6 @@
   <Page Include="View\Charts.xaml">
     <Generator>MSBuild:Compile</Generator>
   </Page>
-  <Page Include="View\DataGridTemplate.xaml">
-    <Generator>MSBuild:Compile</Generator>
-  </Page>
   <Page Include="View\Filter.xaml">
     <Generator>MSBuild:Compile</Generator>
   </Page>
@@ -71,7 +68,6 @@
   <Compile Include="Resources\Helpers\SplashScreen.cs" />
   <Compile Include="View\Calculate.xaml.cs" />
   <Compile Include="View\Charts.xaml.cs" />
-  <Compile Include="View\DataGridTemplate.xaml.cs" />
   <Compile Include="View\Filter.xaml.cs" />
   <Compile Include="View\Fuel.xaml.cs" />
   <Compile Include="View\Home.xaml.cs" />

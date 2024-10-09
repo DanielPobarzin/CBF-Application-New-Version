@@ -1,13 +1,14 @@
-﻿using Application.Extensions;
-using Models.Commands;
+﻿using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
-using Models.Entities.HeatPowerPlant.EGM_Filters;
+using System.Collections.Concurrent;
+using System.Collections.ObjectModel;
 
 namespace Application.Interfaces.Services
 {
 	public interface ICalculateService
 	{
 		RelayCommand CalculateCommand { get; }
-		ConcurrentObservableCollection<DefinedFilterParameters> Results { get; set; }
+		ObservableCollection<DefinedFilterParameters> Results { get; set; }
+		event Action<ConcurrentBag<DefinedFilterParameters>> ResultsLoaded;
 	}
 }

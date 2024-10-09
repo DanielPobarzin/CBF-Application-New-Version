@@ -30,19 +30,19 @@ namespace Models.Entities.CalculationFilterEfficiency
 		private double amountAshFormedProductsMechanicalUnderburning; 
 		private double passageAshFirstField;  
 		private double degreeAshCaptureFirstField; 
-		private List<double> optimalAshShakingMode; 
+		private Dictionary<string, double> optimalAshShakingMode; 
 		private double optimalValueDustCapacity; 
 		private double areaDepositionOneField;  
 		private double numberGasesEnteringOneField;  
-		private List<double> ashConcentrationEntranceMthField;
-		private SolidColorBrush colorResult;
+		private Dictionary<string, double> ashConcentrationEntranceMthField;
+		private Color colorResult;
 		public string Error { get; set; }
 
 
 		/// <summary>
 		/// Цвет для графиков и выделения блоков
 		/// </summary>
-		public SolidColorBrush СolorResult
+		public Color СolorResult
 		{
 			get { return colorResult; }
 			set
@@ -350,12 +350,12 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// Оптимальный режим встряхивания золы для каждого поля
 		/// </summary>
 		[Description("Оптимальный режим встряхивания золы для каждого поля")]
-		public List<double> OptimalAshShakingMode
+		public Dictionary<string, double> OptimalAshShakingMode
 		{
 			get { return optimalAshShakingMode; }
 			set
 			{
-				optimalAshShakingMode ??= new List<double>();
+				optimalAshShakingMode ??= new Dictionary<string, double>();
 				if (optimalAshShakingMode != value)
 					optimalAshShakingMode = value;
 				OnPropertyChanged(nameof(OptimalAshShakingMode));
@@ -407,12 +407,12 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// Концентрация золы на входе в m-тое поле
 		/// </summary>
 		[Description("Концентрация золы на входе в m-тое поле")]
-		public List<double> AshConcentrationEntranceMthField
+		public Dictionary<string, double> AshConcentrationEntranceMthField
 		{
 			get { return ashConcentrationEntranceMthField; }
 			set
 			{
-				ashConcentrationEntranceMthField ??= new List<double>();
+				ashConcentrationEntranceMthField ??= new Dictionary<string, double>();
 				if (ashConcentrationEntranceMthField != value)
 					ashConcentrationEntranceMthField = value;
 				OnPropertyChanged(nameof(AshConcentrationEntranceMthField));

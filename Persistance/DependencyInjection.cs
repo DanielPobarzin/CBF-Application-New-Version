@@ -41,7 +41,7 @@ namespace Persistance
 			Bind<IExportService>().To<ExportService>().InTransientScope();
 			Bind(typeof(ICurrentParameterDTO)).To<CurrentParameterDTO>().InSingletonScope();
 			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InThreadScope();
-			Bind<IValueConverter>().To<RandomColorConverter>().WhenInjectedInto<CalculateService>().InTransientScope();
+			Bind<IValueConverter>().To<RandomColorConverter>().WhenInjectedInto<CalculateService>().InThreadScope();
 		}
 	}
 }
