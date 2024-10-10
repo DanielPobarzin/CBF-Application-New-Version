@@ -88,7 +88,7 @@ namespace Persistance.Services
 			{
 				var worksheet = CreateWorksheet(excelPackage, result.UseFuel);
 				worksheet.Cells.AutoFitColumns();
-				await FillPropertiesAsync(worksheet, typeof(DefinedFilterParameters), _currentParameters.SelectedFilter);
+				//await FillPropertiesAsync(worksheet, typeof(DefinedFilterParameters), _currentParameters.SelectedFilter);
 			}
 		}
 

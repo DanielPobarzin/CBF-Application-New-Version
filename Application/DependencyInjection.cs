@@ -18,21 +18,32 @@ using System.Reflection;
 
 namespace Application
 {
+	/// <summary>
+	/// Модуль приложения, который настраивает зависимости с помощью Ninject.
+	/// </summary>
 	public class ApplicationModule : NinjectModule
 	{
+		/// <summary>
+		/// Загружает привязки зависимостей в контейнер Ninject.
+		/// </summary>
 		public override void Load()
 		{
+			// Привязка обработчиков запросов для работы с топливом
 			Bind<IRequestHandler<GetAllFuelsQuery, Response<GetAllFuelsViewModel>>>().To<GetAllFuelsQueryHandler>();
 			Bind<IRequestHandler<CreateFuelCommand, Response<Fuel>>>().To<CreateFuelCommandHandler>();
 			Bind<IRequestHandler<DeleteFuelCommand, Response<int>>>().To<DeleteFuelCommandHandler>();
 			Bind<IRequestHandler<UpdateFuelCommand, Response<Fuel>>>().To<UpdateFuelCommandHandler>();
 
+			// Привязка обработчиков запросов для работы с фильтрами
 			Bind<IRequestHandler<GetAllFiltersQuery, Response<GetAllFiltersViewModel>>>().To<GetAllFiltersQueryHandler>();
 			Bind<IRequestHandler<CreateFilterCommand, Response<Filter>>>().To<CreateFilterCommandHandler>();
 			Bind<IRequestHandler<DeleteFilterCommand, Response<int>>>().To<DeleteFilterCommandHandler>();
 			Bind<IRequestHandler<UpdateFilterCommand, Response<Filter>>>().To<UpdateFilterCommandHandler>();
 
+			// Привязка поведения конвейера для логирования
 			Bind(typeof(IPipelineBehavior<,>)).To(typeof(LoggingBehaviour<,>)).InTransientScope();
+
+			// Привязка AutoMapper с конфигурацией из текущей сборки
 			Bind<IMapper>().ToMethod(ctx =>
 			{
 				var config = new MapperConfiguration(cfg =>

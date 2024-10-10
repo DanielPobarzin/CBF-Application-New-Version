@@ -4,6 +4,14 @@ using System.ComponentModel;
 
 namespace Models.Entities.HeatPowerPlant.EGM_Filters
 {
+	/// <summary>
+	/// Представляет электрофильтр, используемый для очистки газов от твердых частиц.
+	/// </summary>
+	/// <remarks>
+	/// Этот класс наследует от <see cref="FilterBase"/> и реализует интерфейс <see cref="IDataErrorInfo"/> для поддержки 
+	/// валидации данных. Он содержит свойства, описывающие геометрические и эксплуатационные характеристики 
+	/// электрофильтра.
+	/// </remarks>
 	[Description("Электрофильтр")]
 	public class Filter : FilterBase, IDataErrorInfo
     {

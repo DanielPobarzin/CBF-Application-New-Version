@@ -1,4 +1,5 @@
-﻿using Application.Interfaces.Mappings;
+﻿using Application.Features.Fuels.Queries.GetAll;
+using Application.Interfaces.Mappings;
 using Application.Wrappers;
 using AutoMapper;
 using MediatR;
@@ -6,6 +7,9 @@ using Models.Entities.HeatPowerPlant.Resources;
 
 namespace Application.Features.Fuels.Commands.Create
 {
+	/// <summary>
+	/// Объект команды создания топлива.
+	/// </summary>
 	public class CreateFuelCommand : IRequest<Response<Fuel>>, IMapWith<Fuel>
 	{
 		public int ID { get; set; }

@@ -6,6 +6,9 @@ using Models.Entities.HeatPowerPlant.EGM_Filters;
 
 namespace Application.Features.EGM_Filters.Commands.Update
 {
+	/// <summary>
+	/// Объект команды для обновления фильтра.
+	/// </summary>
 	public class UpdateFilterCommand : IRequest<Response<Filter>>, IMapWith<Filter>
 	{
 		public int ID { get; set; }

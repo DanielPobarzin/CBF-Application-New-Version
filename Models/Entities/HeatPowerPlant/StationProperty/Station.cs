@@ -5,6 +5,13 @@ using System.ComponentModel;
 
 namespace Models.Entities.HeatPowerPlant.StationProperty
 {
+	/// <summary>
+	/// Класс, представляющий параметры электростанции.
+	/// </summary>
+	/// <remarks>
+	/// Этот класс наследует от <see cref="StationBase"/> и реализует интерфейс <see cref="IDataErrorInfo"/> для поддержки 
+	/// валидации данных. Он содержит свойства, описывающие характеристики станции.
+	/// </remarks> 
 	[Description("Используемые параметры электростанции")]
 	public class Station : StationBase, IDataErrorInfo
 	{

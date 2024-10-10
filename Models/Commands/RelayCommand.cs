@@ -3,6 +3,15 @@ using System.Windows.Input;
 
 namespace Models.Commands
 {
+	/// <summary>
+	/// Представляет команду, которая может быть выполнена асинхронно.
+	/// </summary>
+	/// <remarks>
+	/// Этот класс реализует интерфейс <see cref="ICommand"/> и позволяет связывать команды с пользовательским интерфейсом,
+	/// обеспечивая поддержку асинхронного выполнения. Он также позволяет управлять состоянием доступности команды через 
+	/// метод <see cref="RaiseCanExecuteChanged"/>.
+	/// </remarks>
+	/// <typeparam name="T">Тип параметра, передаваемого в команду.</typeparam>
 	public class RelayCommand : ICommand
 	{
 		private readonly Func<object, Task> _execute;
@@ -16,8 +25,17 @@ namespace Models.Commands
 			_canExecute = canExecute;
 		}
 
+		/// <summary>
+		/// Определяет, может ли команда быть выполнена с заданным параметром.
+		/// </summary>
+		/// <param name="parameter">Параметр для проверки доступности команды.</param>
+		/// <returns>true, если команда может быть выполнена; в противном случае — false.</returns>
 		public bool CanExecute(object parameter) => _canExecute == null || _canExecute(parameter);
 
+		/// <summary>
+		/// Выполняет команду асинхронно с заданным параметром.
+		/// </summary>
+		/// <param name="parameter">Параметр, передаваемый в команду.</param>
 		public async void Execute(object parameter)
 		{
 			if (CanExecute(parameter))

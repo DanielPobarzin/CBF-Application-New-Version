@@ -4,8 +4,15 @@ using Models.Entities.HeatPowerPlant.Resources;
 
 namespace Persistance.Configurations.EntityTypeConfiguration
 {
+	/// <summary>
+	/// Конфигурация сущности <see cref="Fuel"/> для использования с Entity Framework.
+	/// </summary>
 	public class FuelConfig : IEntityTypeConfiguration<Fuel>
 	{
+		/// <summary>
+		/// Настраивает параметры сущности <see cref="Fuel"/> в контексте базы данных.
+		/// </summary>
+		/// <param name="builder">Объект <see cref="EntityTypeBuilder{Fuel}"/>, используемый для настройки сущности.</param>
 		public void Configure(EntityTypeBuilder<Fuel> builder)
 		{
 			builder.HasKey(fuel => fuel.ID);
@@ -16,3 +23,4 @@ namespace Persistance.Configurations.EntityTypeConfiguration
 		}
 	}
 }
+	

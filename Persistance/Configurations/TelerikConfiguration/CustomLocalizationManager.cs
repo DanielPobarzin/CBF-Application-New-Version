@@ -1,9 +1,17 @@
 ﻿using Telerik.Windows.Controls;
 namespace Persistance.Configurations.TelerikConfiguration
 {
+	/// <summary>
+	/// Класс <see cref="CustomLocalizationManager"/> предназначен для переопределения строк локализации.
+	/// </summary>
 	public class CustomLocalizationManager : LocalizationManager
-    {
-        public override string GetStringOverride(string key)
+	{
+		/// <summary>
+		/// Переопределяет метод получения строки локализации по ключу.
+		/// </summary>
+		/// <param name="key">Ключ локализации, для которого требуется получить строку.</param>
+		/// <returns>Локализованная строка, соответствующая указанному ключу.</returns>
+		public override string GetStringOverride(string key)
         {
 			switch (key)
             {

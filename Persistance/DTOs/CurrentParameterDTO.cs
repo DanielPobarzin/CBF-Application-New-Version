@@ -7,12 +7,20 @@ using System.ComponentModel;
 
 namespace Persistance.DTOs
 {
+	/// <summary>
+	/// Представляет текущие параметры, включая выбранный фильтр, выбранные виды топлива 
+	/// и текущую станцию.
+	/// </summary>
 	public class CurrentParameterDTO : ICurrentParameterDTO
 	{
 		private Filter _selectedFilter;
 		private ObservableCollection<Fuel> _selectedFuels;
 		private Station _currentPropertyStation;
 
+		/// <summary>
+		/// Создает глубокую копию текущего экземпляра <see cref="CurrentParameterDTO"/>.
+		/// </summary>
+		/// <returns>Новая глубокая копия текущего объекта <see cref="CurrentParameterDTO"/>.</returns>
 		public CurrentParameterDTO DeepCopy()
 		{
 			return new CurrentParameterDTO
@@ -23,13 +31,20 @@ namespace Persistance.DTOs
 			};
 		}
 
-			public CurrentParameterDTO()
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="CurrentParameterDTO"/> 
+		/// с пустыми значениями для фильтра, видов топлива и станции.
+		/// </summary>
+		public CurrentParameterDTO()
 		{
 			_selectedFilter = new Filter();
 			_selectedFuels = new ObservableCollection<Fuel>();
 			_currentPropertyStation = new Station();
 		}
 
+		/// <summary>
+		/// Получает или устанавливает выбранный фильтр.
+		/// </summary>
 		public Filter SelectedFilter
 		{
 			get { return _selectedFilter; }
@@ -40,6 +55,10 @@ namespace Persistance.DTOs
 					OnPropertyChanged(nameof(SelectedFilter));
 			}
 		}
+
+		/// <summary>
+		/// Получает или устанавливает коллекцию топлив.
+		/// </summary>
 		public ObservableCollection<Fuel> SelectedFuels
 		{
 			get { return _selectedFuels; }
@@ -50,6 +69,10 @@ namespace Persistance.DTOs
 					OnPropertyChanged(nameof(SelectedFuels));
 			}
 		}
+
+		/// <summary>
+		/// Получает или устанавливает параметры станции.
+		/// </summary>
 		public Station CurrentPropertyStation
 		{
 			get { return _currentPropertyStation; }

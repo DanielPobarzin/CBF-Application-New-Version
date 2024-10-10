@@ -16,7 +16,6 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
-using Telerik.Windows.Controls.Spreadsheet.Charts;
 using ViewModels.ViewModels;
 
 namespace FilterApplication
@@ -133,7 +132,7 @@ namespace FilterApplication
 			Bind<IStationViewModel>().To<StationVM>().InSingletonScope();
 			Bind<INavigationViewModel>().To<NavigationVM>().InSingletonScope();
 			Bind<ICalculateViewModel>().To<CalculateVM>().InSingletonScope();
-
+			Bind<IChartViewModel>().To<ChartVM>().InSingletonScope();
 			Bind<IMediator>().To<Mediator>().InSingletonScope();
 			Bind<MainWindow>().ToSelf().InSingletonScope();
 		}

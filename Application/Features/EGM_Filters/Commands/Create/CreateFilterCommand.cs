@@ -6,6 +6,9 @@ using Models.Entities.HeatPowerPlant.EGM_Filters;
 
 namespace Application.Features.EGM_Filters.Commands.Create
 {
+	/// <summary>
+	/// Объект команды для создания нового фильтра
+	/// </summary>
 	public class CreateFilterCommand : IRequest<Response<Filter>>, IMapWith<Filter>
 	{
 		public int ID { get; set; }

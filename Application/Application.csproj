@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\Calculates\**" />
+    <EmbeddedResource Remove="Features\Calculates\**" />
+    <None Remove="Features\Calculates\**" />
+    <Page Remove="Features\Calculates\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Ninject" Version="3.3.6" />
@@ -17,10 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\Calculates\" />
   </ItemGroup>
 
 </Project>

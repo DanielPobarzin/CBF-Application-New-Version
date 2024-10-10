@@ -4,6 +4,9 @@ using Models.Entities.HeatPowerPlant.EGM_Filters;
 
 namespace Application.Features.EGM_Filters.Queries.GetAll
 {
+	/// <summary>
+	/// Объект передачи данных для фильтров.
+	/// </summary>
 	public class FilterLookupDTO : IMapWith<Filter>
 	{
 		public int ID { get; set; }

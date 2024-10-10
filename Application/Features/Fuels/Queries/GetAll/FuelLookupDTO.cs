@@ -4,8 +4,11 @@ using Models.Entities.HeatPowerPlant.Resources;
 
 namespace Application.Features.Fuels.Queries.GetAll
 {
+	/// <summary>
+	/// Объект передачи данных для поиска топлива.
+	/// </summary>
 	public class FuelLookupDTO : IMapWith<Fuel>
-    {
+	{
 		public int ID { get; set; }
         public string BrandFuel { get; set; }
 		public string Type { get; set; }

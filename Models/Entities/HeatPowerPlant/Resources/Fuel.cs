@@ -4,6 +4,13 @@ using System.ComponentModel;
 
 namespace Models.Entities.HeatPowerPlant.Resources
 {
+	/// <summary>
+	/// Представляет топливо, используемое в процессе сжигания.
+	/// </summary>
+	/// <remarks>
+	/// Этот класс наследует от <see cref="FuelBase"/> и реализует интерфейс <see cref="IDataErrorInfo"/> для поддержки 
+	/// валидации данных. Он содержит свойства, описывающие характеристики топлива.
+	/// </remarks>
 	[Description("Топливо")]
 	public class Fuel : FuelBase, IDataErrorInfo
 	{

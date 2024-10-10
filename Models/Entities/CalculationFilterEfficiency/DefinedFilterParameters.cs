@@ -5,6 +5,14 @@ using System.Windows.Media;
 
 namespace Models.Entities.CalculationFilterEfficiency
 {
+	/// <summary>
+	/// Представляет расчетные параметры, определяемые при расчете эффективности удаления золы в системах очистки газов.
+	/// </summary>
+	/// <remarks>
+	/// Этот класс реализует интерфейсы <see cref="INotifyPropertyChanged"/> и <see cref="IDataErrorInfo"/> для поддержки 
+	/// привязки данных и валидации. Он содержит свойства, описывающие различные параметры, влияющие на процесс 
+	/// фильтрации, такие как расход газа, скорость дымовых газов и коэффициенты, связанные с удалением золы.
+	/// </remarks>
 	[Description("Расчет")]
 	public class DefinedFilterParameters : INotifyPropertyChanged, IDataErrorInfo
 	{
