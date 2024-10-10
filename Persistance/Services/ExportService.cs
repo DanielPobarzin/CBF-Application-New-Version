@@ -7,6 +7,7 @@ using Models.Entities.HeatPowerPlant.Resources;
 using Models.Entities.HeatPowerPlant.StationProperty;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
+using Serilog;
 using System.ComponentModel;
 using System.IO;
 using System.Reflection;
@@ -19,7 +20,7 @@ namespace Persistance.Services
 		private readonly Lazy<RelayCommand> _exportToExcelCommand;
 		private readonly ICalculateService _calculateService;
 		private readonly ICurrentParameterDTO _currentParameters;
-
+		private int currentRow;
 		public ExportService(ICalculateService calculateService, ICurrentParameterDTO currentParameters)
 		{
 			_calculateService = calculateService;
@@ -29,6 +30,7 @@ namespace Persistance.Services
 		public RelayCommand ExportToExcelCommand => _exportToExcelCommand.Value;
 		private async Task DialogExportToExcelAsync(object obj)
 		{
+			currentRow = 1;
 			SaveFileDialog saveFileDialog = new SaveFileDialog
 			{
 				Filter = "Excel Files (*.xlsx)|*.xlsx",
@@ -45,17 +47,26 @@ namespace Persistance.Services
 			ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 			using (var excelPackage = new ExcelPackage())
 			{
-				await LoadExistingWorksheetsAsync(excelPackage);
-				await ExportInitialDataAsync(excelPackage);
-				await ExportCalculatedDataAsync(excelPackage);
-
-				excelPackage.SaveAs(new FileInfo(filePath));
+				try
+				{
+					await LoadExistingWorksheetsAsync(excelPackage);
+					await ExportInitialDataAsync(excelPackage);
+					await ExportCalculatedDataAsync(excelPackage);
+					excelPackage.SaveAs(new FileInfo(filePath));
+					MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных", MessageBoxButton.OK, MessageBoxImage.Information);
+				}
+				catch (Exception ex) 
+				{
+					MessageBox.Show($"Невозможно совершить экспорт.", "Экспорт данных", MessageBoxButton.OK, MessageBoxImage.Error);
+					Log.Error(ex.Message);
+				}
 			}
-			MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных", MessageBoxButton.OK, MessageBoxImage.Information);
+			
 		}
+		
 		private async Task LoadExistingWorksheetsAsync(ExcelPackage excelPackage)
 		{
-			var existingFile = new FileInfo(Path.Combine(Environment.CurrentDirectory, @"Templates\Template.xlsx"));
+			var existingFile = new FileInfo(Path.Combine(Environment.CurrentDirectory, @"Resources\Templates\Template.xlsx"));
 			if (existingFile.Exists)
 			{
 				await Task.Run(() => 
@@ -77,7 +88,7 @@ namespace Persistance.Services
 			{
 				var worksheet = CreateWorksheet(excelPackage, result.UseFuel);
 				worksheet.Cells.AutoFitColumns();
-				await FillPropertiesAsync(worksheet, typeof(DefinedFilterParameters), _currentParameters.SelectedFilter, 2);
+				await FillPropertiesAsync(worksheet, typeof(DefinedFilterParameters), _currentParameters.SelectedFilter);
 			}
 		}
 
@@ -85,11 +96,11 @@ namespace Persistance.Services
 		{
 			var worksheet = CreateWorksheet(excelPackage, "Исходные данные");
 			worksheet.Cells.AutoFitColumns();
-			await FillPropertiesAsync(worksheet, typeof(Filter), _currentParameters.SelectedFilter, 2);
-			await FillPropertiesAsync(worksheet, typeof(Station), _currentParameters.CurrentPropertyStation, 6);
-			await FillPropertiesAsync(worksheet, typeof(Fuel), _currentParameters.SelectedFuels, 10);
+			await FillPropertiesAsync(worksheet, typeof(Filter), _currentParameters.SelectedFilter);
+			await FillPropertiesAsync(worksheet, typeof(Station), _currentParameters.CurrentPropertyStation);
+			await FillPropertiesAsync(worksheet, typeof(Fuel), _currentParameters.SelectedFuels);
 		}
-		private async Task FillPropertiesAsync(ExcelWorksheet worksheet, Type type, object instance, int startRow)
+		private async Task FillPropertiesAsync(ExcelWorksheet worksheet, Type type, object instance)
 		{
 			await Task.Run(() =>
 			{
@@ -97,39 +108,46 @@ namespace Persistance.Services
 				var classDescription = type.GetCustomAttribute<DescriptionAttribute>()?.Description;
 				if (!string.IsNullOrEmpty(classDescription))
 				{
-					var descriptionCell = worksheet.Cells[startRow - 1, 1];
+					var descriptionCell = worksheet.Cells[currentRow, 1];
 					descriptionCell.Value = classDescription;
+					worksheet.Cells.AutoFitColumns();
 					descriptionCell.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
 					StyleCell(descriptionCell, 14);
-					worksheet.Cells[startRow - 1, 1, startRow - 1, worksheet.Dimension.End.Column].Merge = true;
 				}
 				for (int i = 0; i < properties.Length; i++)
 				{
 					if (properties[i].GetCustomAttribute<DescriptionAttribute>() != null)
 					{
-						var cell = worksheet.Cells[startRow, i + 1];
-						cell.Value = properties[i].Name;
+						currentRow++;
+						var cell = worksheet.Cells[currentRow, 1];
+						worksheet.Cells.AutoFitColumns();
+						cell.Value = properties[i].GetCustomAttribute<DescriptionAttribute>().Description;
 						StyleCell(cell);
 
-						if (instance != null && instance is not Fuel)
+						if (instance != null && type != typeof(Fuel))
 						{
-							var valueCell = worksheet.Cells[startRow + 1, i + 1];
-							valueCell.Value = properties[i].GetValue(instance);
+							var valueCell = worksheet.Cells[currentRow, 2];
+							if (!properties[i].PropertyType.IsEnum)
+							{
+								valueCell.Value = properties[i].GetValue(instance);
+							}
+							else valueCell.Value = GetEnumDescription((Enum)properties[i].GetValue(instance));
 							StyleCell(valueCell);
 						}
-						else if (instance is Fuel)
+						else if (type == typeof(Fuel))
 						{
-							int counter = 0;
+							int currentColumn = 2;
 							foreach (var fuel in _currentParameters.SelectedFuels)
 							{
-								var valueCell = worksheet.Cells[startRow + 1 + counter, i + 1];
+								var valueCell = worksheet.Cells[currentRow, currentColumn];
 								valueCell.Value = properties[i].GetValue(fuel);
 								StyleCell(valueCell);
-								counter ++;
+								currentColumn++;
 							}
 						}
 					}
 				}
+				currentRow++;
 			});
 		}
 
@@ -146,7 +164,20 @@ namespace Persistance.Services
 			cell.Style.Font.Size = fontSize;
 			SetCellBorders(cell);
 		}
-
+		private static string GetEnumDescription(Enum value)
+		{
+			FieldInfo field = value.GetType().GetField(value.ToString());
+			if (field != null)
+			{
+				DescriptionAttribute attribute =
+					Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute)) as DescriptionAttribute;
+				if (attribute != null)
+				{
+					return attribute.Description;
+				}
+			}
+			return value.ToString(); 
+		}
 		private void SetCellBorders(ExcelRange cell)
 		{
 			cell.Style.Border.Top.Style = ExcelBorderStyle.Thin;

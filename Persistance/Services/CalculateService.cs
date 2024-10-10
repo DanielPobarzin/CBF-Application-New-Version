@@ -46,7 +46,12 @@ namespace Persistance.Services
 				var calculationTasks = _currentParameter.SelectedFuels.Select(fuel => Task.Run(() =>
 				{
 					var result = Calculate(fuel);
-					if (result != null && result.DegreeAshCapture != 0)
+
+					// Заменить на валидацию результата DefinedCalculationResult
+					if (result != null &&
+						!double.IsInfinity(result.DegreeAshCapture) &&
+						!double.IsNaN(result.DegreeAshCapture) &&
+						result.DegreeAshCapture != 0)
 					{
 						results.Add(result);
 					}
@@ -82,7 +87,7 @@ namespace Persistance.Services
 
 			result.UseFuel = fuel.BrandFuel;
 			result.СolorResult = (Color)_valueConverter.Convert(null, typeof(Color), null, CultureInfo.InvariantCulture);
-			Log.Information($"{result.UseFuel}");
+
 			// Расчет объемного расхода газа
 			result.VolumetricGasConsumption = _currentParameter.CurrentPropertyStation.FuelConsumption *
 				(fuel.TheoreticalVolumeGas + 1.016 * (_currentParameter.CurrentPropertyStation.AirSuction - 1) *
@@ -91,9 +96,7 @@ namespace Persistance.Services
 			// Расчет скорости дымовых газов
 			result.FlueGasVelocity = result.VolumetricGasConsumption /
 				(_currentParameter.CurrentPropertyStation.NumberSmokePumps * _currentParameter.SelectedFilter.AreaActiveSection);
-			Log.Information($"{result.VolumetricGasConsumption}");
-			Log.Information($"{_currentParameter.CurrentPropertyStation.NumberSmokePumps}");
-			Log.Information($"{_currentParameter.SelectedFilter.AreaActiveSection}");
+
 			// Расчет эффективной напряженности электрического поля
 			result.EffectiveStrength = fuel.CoefficientReverseCrown * fuel.ElectricFieldStrength;
 
@@ -102,27 +105,22 @@ namespace Persistance.Services
 
 			// Расчет коэффициента высоты электрода
 			result.HeightCoefficientElectrode = 7.5 / _currentParameter.SelectedFilter.ElectrodeHeight;
-			Log.Information($"{result.HeightCoefficientElectrode}");
+
 			// Расчет коэффициента вторичного уноса уловленной золы
 			result.CoeffSecondaryEntrainmentTrappedAsh = result.HeightCoefficientElectrode * _constParameters.СoefficientElectrodeType *
 				_currentParameter.SelectedFilter.СoefficientShakingMode * (1 - 0.25 * (result.FlueGasVelocity - 1));
 			
-			Log.Information($"{result.CoeffSecondaryEntrainmentTrappedAsh}");
 			// Расчет параметра золоулавливания при равномерном поле скоростей
-			
-			
 			result.ParameterAshCollectionUNIFORMVelocityField = 0.2 * result.CoeffSecondaryEntrainmentTrappedAsh *
 				Math.Sqrt(result.TrateDriftAshParticles / result.FlueGasVelocity) * _currentParameter.SelectedFilter.NumberFields *
 				_currentParameter.SelectedFilter.ActiveFieldLength / _currentParameter.SelectedFilter.DistanceCPDevices;
 			
-			Log.Information($"0.2 *{ result.CoeffSecondaryEntrainmentTrappedAsh} *	Math.Sqrt({result.TrateDriftAshParticles} / {result.FlueGasVelocity}) * { _currentParameter.SelectedFilter.NumberFields} * {
-				_currentParameter.SelectedFilter.ActiveFieldLength} / {_currentParameter.SelectedFilter.DistanceCPDevices}");
 			// Расчет просокока золы при равномерном поле скоростей
 			result.AshEmissionUniformVelocityField = Math.Exp(-result.ParameterAshCollectionUNIFORMVelocityField);
 
 			// Расчет степени золоулавливания при равномерном поле скоростей
 			result.DegreeAshCaptureUNIFORMVelocityField = 1 - result.AshEmissionUniformVelocityField;
-			Log.Information($"{result.DegreeAshCaptureUNIFORMVelocityField}");
+			
 			// Расчет коэффициента относительного увеличения влияния неравномерности
 			result.CoeffRelativeIncreaseInfluenceUnevenness = 0.125 * (1 + result.ParameterAshCollectionUNIFORMVelocityField) *
 				result.ParameterAshCollectionUNIFORMVelocityField;
@@ -156,7 +154,6 @@ namespace Persistance.Services
 			result.DegreeAshCapture = 1 - result.PassageAshTakingAccountGasLeaksZones;
 			if (result.DegreeAshCapture < 0.99)
 			{
-				Log.Information($"{result.DegreeAshCapture}");
 				var message = $"Степень улавливания золы для топлива типа {fuel.BrandFuel} ниже минимально допустимого значения. Желаете продолжить расчет?";
 				MessageBoxResult dialog = MessageBox.Show(message, "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
 				if (dialog == MessageBoxResult.No)
@@ -203,13 +200,12 @@ namespace Persistance.Services
 			{
 				result.OptimalAshShakingMode[AshConcentration.Key] = (16.7 * result.AreaDepositionOneField * result.OptimalValueDustCapacity /
 				(result.NumberGasesEnteringOneField * AshConcentration.Value * result.DegreeAshCaptureFirstField));
-				Log.Information($"{result.OptimalAshShakingMode[AshConcentration.Key]}");
 			}
 			return result;
 		}
 		private void HandleError(Exception ex)
 		{
-			MessageBox.Show($"Возникла ошибка при выполнении расчета.{ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+			MessageBox.Show($"Возникла ошибка при выполнении расчета: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
 			Log.Error("An error occurred: {0}", ex.Message);
 		}
 	}

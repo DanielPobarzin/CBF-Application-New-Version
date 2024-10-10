@@ -1372,3 +1372,4 @@ D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-wi
 D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
 D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
 D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Templates\Template.xlsx

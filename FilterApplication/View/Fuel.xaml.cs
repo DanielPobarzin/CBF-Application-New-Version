@@ -33,7 +33,6 @@ namespace FilterApplication.View
 			foreach (var fuel in radComboBox.SelectedItems.Cast<Models.Entities.HeatPowerPlant.Resources.Fuel>())
 			{
 				_viewModel.SelectedFuels.Add(fuel);
-				MessageBox.Show(_viewModel.SelectedFuels.Count.ToString());
 			}
 		}
 		private void fuelsGrid_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)

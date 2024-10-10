@@ -29,7 +29,6 @@
   <Page Include="Resources\Styles\Image.xaml">
     <Generator>MSBuild:Compile</Generator>
   </Page>
- 
   <Page Include="Resources\Styles\Styles.xaml">
     <Generator>MSBuild:Compile</Generator>
   </Page>
@@ -209,6 +208,9 @@
 		<Content Include="Resources\Images\combobox_off.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
+		<Content Include="Resources\Templates\Template.xlsx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
   
 	<ItemGroup>
@@ -220,6 +222,7 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="Resources\NuGet\Telerik.UI.for.Wpf.70.Xaml.2023.1.117.nupkg" Pack="true" PackagePath="Resources\NuGet\" />
+    <None Include="Resources\Templates\Template.xlsx" />
   </ItemGroup>
 	
   <ItemGroup>

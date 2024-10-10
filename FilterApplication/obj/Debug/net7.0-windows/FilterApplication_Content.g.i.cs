@@ -47,5 +47,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/schema_4.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/combobox_on.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/combobox_off.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/templates/template.xlsx")]
 
 
