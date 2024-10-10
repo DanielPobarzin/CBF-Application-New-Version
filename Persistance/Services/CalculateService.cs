@@ -59,6 +59,7 @@ namespace Persistance.Services
 
 				await Task.WhenAll(calculationTasks).ConfigureAwait(false);
 				System.Windows.Application.Current.Dispatcher.Invoke(() => ResultsLoaded?.Invoke(results));
+				foreach (var result in results) { Results.Add(result); }
 			}
 			catch (Exception ex)
 			{

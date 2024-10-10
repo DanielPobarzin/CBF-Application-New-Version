@@ -1,13 +1,12 @@
 ﻿using Models.Commands;
+using Models.Entities.CalculationFilterEfficiency;
+using System.Collections.ObjectModel;
 
 namespace Application.Interfaces.Services
 {
 	public interface IChartsBuilderService
 	{
-		RelayCommand BuildCommand { get; }
-		RelayCommand DrawCommand { get; }
-
-		event Action BuildCreated;
-
+		ObservableCollection<Dictionary<string, Dictionary<double, double>>> DependencyDegreeAshConsumptionAirSuction { get; set; }
+		ObservableCollection<DefinedFilterParameters> Results {  get; }
 	}
 }

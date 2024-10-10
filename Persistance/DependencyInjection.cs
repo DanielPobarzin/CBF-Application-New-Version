@@ -22,6 +22,7 @@ namespace Persistance
 			Bind<IConstParameterService>().To<ConstParameterService>().InSingletonScope();
 			Bind<ICrudService<Fuel>>().To<FuelDataService>().InSingletonScope();
 			Bind<ICrudService<Filter>>().To<FilterDataService>().InSingletonScope();
+			Bind<IChartsBuilderService>().To<ChartsBuilderService>().InSingletonScope();
 
 			Bind<ApplicationDbFilterContext>().ToMethod(ctx =>
 				new ApplicationDbFilterContext(new DbContextOptionsBuilder<ApplicationDbFilterContext>()

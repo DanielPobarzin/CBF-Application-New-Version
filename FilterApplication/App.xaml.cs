@@ -16,6 +16,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
+using Telerik.Windows.Controls.Spreadsheet.Charts;
 using ViewModels.ViewModels;
 
 namespace FilterApplication
@@ -63,7 +64,7 @@ namespace FilterApplication
 			Kernel.Get<IFuelsView>().SetViewModel(Kernel.Get<IFuelViewModel>());
 			Kernel.Get<IStationView>().SetViewModel(Kernel.Get<IStationViewModel>());
 			Kernel.Get<ICalculateView>().SetViewModel(Kernel.Get<ICalculateViewModel>());
-			Kernel.Get<IChartsView>();
+			Kernel.Get<IChartsView>().SetViewModel(Kernel.Get<IChartViewModel>());
 
 			Log.Information("All application windows have been initialized");
 		}
