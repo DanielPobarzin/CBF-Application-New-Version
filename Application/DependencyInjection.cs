@@ -10,9 +10,13 @@ using Application.Features.Fuels.Queries.GetAll;
 using Application.Mappings;
 using Application.Wrappers;
 using AutoMapper;
+using FluentValidation;
 using MediatR;
+using Models.Entities.CalculationFilterEfficiency;
 using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Entities.HeatPowerPlant.Resources;
+using Models.Entities.HeatPowerPlant.StationProperty;
+using Models.Validators;
 using Ninject.Modules;
 using System.Reflection;
 
@@ -52,6 +56,12 @@ namespace Application
 				});
 				return config.CreateMapper();
 			}).InSingletonScope();
+
+			// Привязка валидации
+			Bind<IValidator<Filter>>().To<FilterValidator>().InTransientScope();
+			Bind<IValidator<Fuel>>().To<FuelValidator>().InTransientScope();
+			Bind<IValidator<Station>>().To<StationValidator>().InTransientScope();
+			Bind<IValidator<DefinedFilterParameters>>().To<CalculateValidator>().InTransientScope();
 		}
 	}
 }

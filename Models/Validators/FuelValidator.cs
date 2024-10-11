@@ -8,7 +8,6 @@ namespace Models.Validators
 		private readonly HashSet<int> _existingIds;
 		public FuelValidator()
 		{
-
 			RuleFor(fuel => fuel.BrandFuel)
 				.NotEmpty().WithMessage("Поле 'Бренд топлива' не может быть пустым.")
 				.MaximumLength(50).WithMessage("Поле 'Бренд топлива' не может превышать 50 символов.");

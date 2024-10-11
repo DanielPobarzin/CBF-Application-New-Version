@@ -37,7 +37,7 @@ namespace ViewModels.ViewModels
 				return this._renderModes;
 			}
 		}
-		public ObservableCollection<DependencyData> DependencyDegreeAshConsumptionAirSuction => _chartsBuilderService.DependencyDegreeAshConsumptionAirSuction;
+		//public ObservableCollection<DependencyData> DependencyDegreeAshConsumptionAirSuction => _chartsBuilderService.DependencyDegreeAshConsumptionAirSuction;
 		public ObservableCollection<DefinedFilterParameters> Results => _calculateService.Results;
 		public int DefaultRenderModeIndex
 		{

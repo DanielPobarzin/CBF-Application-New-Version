@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\
 FilterApplication
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\Develop\App\CBF-Application-New-Version\FilterApplication\App.xaml
+D:\Develop\CBF-Application-New-Version\FilterApplication\App.xaml
 151793970383
 40-661314183
 10-1866213364
-312-771118242
+312-1923271852
 Resources\Styles\Button.xaml;Resources\Styles\Page.xaml;Resources\Styles\ComboBoxStyle.xaml;Resources\Styles\DataTemplate.xaml;Resources\Styles\Image.xaml;Resources\Styles\Styles.xaml;Resources\Styles\Text.xaml;View\Calculate.xaml;View\Charts.xaml;View\Filter.xaml;View\Fuel.xaml;View\Home.xaml;View\MainWindow.xaml;View\SplashScreen.xaml;View\Station.xaml;
 
 False

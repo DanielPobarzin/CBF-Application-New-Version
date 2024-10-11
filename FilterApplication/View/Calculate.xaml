@@ -10,7 +10,6 @@
               Style="{StaticResource Page_Style}">
     <UserControl.Resources>
         <Menu:RandomColorConverter x:Key="RandomColorConverter"/>
-        <Menu:MultiCalculateConverter x:Key="MultiParameterConverter"/>
         <Style x:Key="TextBoxUniformStyle" TargetType="TextBox">
             <Setter Property="Background" Value="#FF11141A"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -210,13 +209,6 @@
                                       Command="{Binding CalculateCommand}"
                                       Style="{StaticResource PlayBtn_Style}"
                                       IsChecked="False">
-                            <ToggleButton.CommandParameter>
-                                <MultiBinding Converter="{StaticResource MultiParameterConverter}">
-                                    <Binding ElementName="HeaderCalculate"/>
-                                    <Binding ElementName="GridLoad"/>
-                                    <Binding ElementName="StartButtonCalculate"/>
-                                </MultiBinding>
-                            </ToggleButton.CommandParameter>
                         </ToggleButton>
                         <Button Height="20" Command="{Binding ExportToExcelCommand}">Экспорт</Button>
                     </StackPanel>

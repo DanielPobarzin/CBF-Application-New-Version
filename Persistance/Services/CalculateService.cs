@@ -1,7 +1,10 @@
 ﻿using Application.Interfaces.Services;
+using FluentValidation;
 using Models.Commands;
 using Models.Entities.CalculationFilterEfficiency;
+using Models.Entities.HeatPowerPlant.EGM_Filters;
 using Models.Entities.HeatPowerPlant.Resources;
+using Models.Entities.HeatPowerPlant.StationProperty;
 using Models.Enums.Station;
 using Serilog;
 using System.Collections.Concurrent;
@@ -13,28 +16,100 @@ using System.Windows.Media;
 
 namespace Persistance.Services
 {
+	/// <summary>
+	/// Сервис для выполнения расчетов.
+	/// </summary>
 	public class CalculateService : ICalculateService
 	{
 		private readonly Lazy<RelayCommand> _calculateCommand;
 		private readonly ICurrentParameterDTO _currentParameter;
 		private readonly IConstParameterService _constParameters;
 		private readonly IValueConverter _valueConverter;
+		private readonly IValidator<Fuel> _fuelValidator;
+		private readonly IValidator<Filter> _filterValidator;
+		private readonly IValidator<Station> _stationValidator;
+		private readonly IValidator<DefinedFilterParameters> _calculateValidator;
+		/// <summary>
+		/// Коллекция с определенными параметрами, полученными в результате расчетов.
+		/// </summary>
 		public ObservableCollection<DefinedFilterParameters> Results { get; set; }
+
+		/// <summary>
+		/// Событие, которое вызывается при загрузке результатов расчетов.
+		/// </summary>
 		public event Action<ConcurrentBag<DefinedFilterParameters>> ResultsLoaded;
 
-		public CalculateService(IValueConverter valueConverter, ICurrentParameterDTO currentParameterDTO, IConstParameterService constParameters) {
-
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="CalculateService"/>.
+		/// </summary>
+		/// <param name="valueConverter">Объект для преобразования значений.</param>
+		/// <param name="currentParameterDTO">Объект текущих параметров.</param>
+		/// <param name="constParameters">Сервис для работы с постоянными параметрами.</param>
+		/// <param name="fuelValidator">Валидатор для проверки выбранного топлива.</param>
+		/// <param name="filterValidator">Валидатор для проверки выбранного фильтра.</param>
+		/// <param name="stationValidator">Валидатор для проверки параметров станции.</param>
+		/// <param name="calculateValidator">Валидатор для проверки результатов расчетов.</param>
+		public CalculateService(IValueConverter valueConverter, 
+			ICurrentParameterDTO currentParameterDTO, 
+			IConstParameterService constParameters,
+			IValidator<Fuel> fuelValidator,
+			IValidator<Filter> filterValidator,
+			IValidator<Station> stationValidator,
+			IValidator<DefinedFilterParameters> calculateValidator)
+		{
 			_valueConverter = valueConverter;
 			_currentParameter = currentParameterDTO;
 			_constParameters = constParameters;
+			_fuelValidator = fuelValidator;
+			_filterValidator = filterValidator;
+			_stationValidator = stationValidator;
+			_calculateValidator = calculateValidator;
 			Results = new();
 			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAsync(parameter)));
 		}
+
+		/// <summary>
+		/// Команда для запуска расчетов.
+		/// </summary>
 		public RelayCommand CalculateCommand => _calculateCommand.Value;
 		private async Task StartInitAsync(object parameter)
 		{
-			// TODO: Добавить валиадцию исходных данных
-
+			if (_filterValidator?.Validate(_currentParameter.SelectedFilter) is { IsValid: false } validationResultFilter)
+			{
+				foreach (var error in validationResultFilter.Errors)
+				{
+					Log.Warning($"Validation failed for filter {_currentParameter.SelectedFilter.BrandFilter}:" +
+						$"\n- {error.PropertyName}: {error.ErrorMessage}");
+				}
+			}
+			if (_stationValidator?.Validate(_currentParameter.CurrentPropertyStation) is { IsValid: false } validationResultStation)
+			{
+				Log.Warning($"Validation failed for station parameter.");
+				foreach (var error in validationResultStation.Errors)
+				{
+					Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
+				}
+			}
+			if (_currentParameter.SelectedFuels.Count == 0)
+			{
+				Log.Warning($"Validation failed for fuel:" +
+							$"\n- Не выбрана ни одна модель топлива.");
+			}
+			else
+			{
+				foreach (var fuel in _currentParameter.SelectedFuels)
+				{
+					if (_fuelValidator?.Validate(fuel) is { IsValid: false } validationResultFuel)
+					{
+						Log.Warning($"Validation failed for fuel {fuel.BrandFuel}");
+						foreach (var error in validationResultFuel.Errors)
+						{
+							Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
+						}
+					}
+				}
+			}
+			
 			await RunCalculationAsync();
 		}
 		private async Task RunCalculationAsync()
@@ -46,15 +121,16 @@ namespace Persistance.Services
 				var calculationTasks = _currentParameter.SelectedFuels.Select(fuel => Task.Run(() =>
 				{
 					var result = Calculate(fuel);
-
-					// Заменить на валидацию результата DefinedCalculationResult
-					if (result != null &&
-						!double.IsInfinity(result.DegreeAshCapture) &&
-						!double.IsNaN(result.DegreeAshCapture) &&
-						result.DegreeAshCapture != 0)
+					if (_calculateValidator?.Validate(result) is { IsValid: false } validationResult)
 					{
-						results.Add(result);
+						Log.Warning($"Validation failed: Ошибки при расчете. Возможно, исходные данные некорректны.");
+						foreach (var error in validationResult.Errors)
+						{
+							Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
+						}
+						return;
 					}
+					results.Add(result);
 				}));
 
 				await Task.WhenAll(calculationTasks).ConfigureAwait(false);

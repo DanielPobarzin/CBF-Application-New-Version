@@ -20,7 +20,7 @@ namespace Persistance.Services
 		private readonly Lazy<RelayCommand> _exportToExcelCommand;
 		private readonly ICalculateService _calculateService;
 		private readonly ICurrentParameterDTO _currentParameters;
-		private int currentRow;
+		private int currentRow = 1;
 		public ExportService(ICalculateService calculateService, ICurrentParameterDTO currentParameters)
 		{
 			_calculateService = calculateService;
@@ -30,15 +30,18 @@ namespace Persistance.Services
 		public RelayCommand ExportToExcelCommand => _exportToExcelCommand.Value;
 		private async Task DialogExportToExcelAsync(object obj)
 		{
-			currentRow = 1;
-			SaveFileDialog saveFileDialog = new SaveFileDialog
+			SaveFileDialog saveFileDialog = new()
 			{
 				Filter = "Excel Files (*.xlsx)|*.xlsx",
-				Title = "Сохранить файл Excel"
+				Title = "Сохранить файл Excel",
+				FileName = "Результаты",
+				AddExtension = true,
+				CheckPathExists = true
 			};
 
 			if (saveFileDialog.ShowDialog() == true)
 			{
+				currentRow = 1;
 				await ExportToExcelAsync(saveFileDialog.FileName);
 			}
 		}
@@ -49,22 +52,24 @@ namespace Persistance.Services
 			{
 				try
 				{
-					await LoadExistingWorksheetsAsync(excelPackage);
-					await ExportInitialDataAsync(excelPackage);
-					await ExportCalculatedDataAsync(excelPackage);
+					await GetTemplateExportFileAsync(excelPackage);
+					await WriteInitDataAsync(excelPackage);
+					await WriteDefinedDataAsync(excelPackage);
+
 					excelPackage.SaveAs(new FileInfo(filePath));
-					MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных", MessageBoxButton.OK, MessageBoxImage.Information);
+					MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных", 
+									MessageBoxButton.OK, MessageBoxImage.Information);
 				}
 				catch (Exception ex) 
 				{
-					MessageBox.Show($"Невозможно совершить экспорт.", "Экспорт данных", MessageBoxButton.OK, MessageBoxImage.Error);
+					MessageBox.Show($"Невозможно совершить экспорт.", "Экспорт данных", 
+									MessageBoxButton.OK, MessageBoxImage.Error);
 					Log.Error(ex.Message);
 				}
 			}
 			
 		}
-		
-		private async Task LoadExistingWorksheetsAsync(ExcelPackage excelPackage)
+		private async Task GetTemplateExportFileAsync(ExcelPackage excelPackage)
 		{
 			var existingFile = new FileInfo(Path.Combine(Environment.CurrentDirectory, @"Resources\Templates\Template.xlsx"));
 			if (existingFile.Exists)
@@ -81,24 +86,22 @@ namespace Persistance.Services
 				});
 			}
 		}
-
-		private async Task ExportCalculatedDataAsync(ExcelPackage excelPackage)
+		private async Task WriteInitDataAsync(ExcelPackage excelPackage)
+		{
+			var worksheet = CreateWorksheet(excelPackage, "Исходные данные");
+			worksheet.Cells.AutoFitColumns();
+			await FillPropertiesAsync(worksheet, typeof(Fuel), _currentParameters.SelectedFuels);
+			await FillPropertiesAsync(worksheet, typeof(Filter), _currentParameters.SelectedFilter);
+			await FillPropertiesAsync(worksheet, typeof(Station), _currentParameters.CurrentPropertyStation);
+		}
+		private async Task WriteDefinedDataAsync(ExcelPackage excelPackage)
 		{
 			foreach (var result in _calculateService.Results)
 			{
 				var worksheet = CreateWorksheet(excelPackage, result.UseFuel);
 				worksheet.Cells.AutoFitColumns();
-				//await FillPropertiesAsync(worksheet, typeof(DefinedFilterParameters), _currentParameters.SelectedFilter);
+				await FillResultsAsync(worksheet, typeof(DefinedFilterParameters), result);
 			}
-		}
-
-		private async Task ExportInitialDataAsync(ExcelPackage excelPackage)
-		{
-			var worksheet = CreateWorksheet(excelPackage, "Исходные данные");
-			worksheet.Cells.AutoFitColumns();
-			await FillPropertiesAsync(worksheet, typeof(Filter), _currentParameters.SelectedFilter);
-			await FillPropertiesAsync(worksheet, typeof(Station), _currentParameters.CurrentPropertyStation);
-			await FillPropertiesAsync(worksheet, typeof(Fuel), _currentParameters.SelectedFuels);
 		}
 		private async Task FillPropertiesAsync(ExcelWorksheet worksheet, Type type, object instance)
 		{
@@ -127,11 +130,9 @@ namespace Persistance.Services
 						if (instance != null && type != typeof(Fuel))
 						{
 							var valueCell = worksheet.Cells[currentRow, 2];
-							if (!properties[i].PropertyType.IsEnum)
-							{
-								valueCell.Value = properties[i].GetValue(instance);
-							}
-							else valueCell.Value = GetEnumDescription((Enum)properties[i].GetValue(instance));
+							valueCell.Value = properties[i].PropertyType.IsEnum
+							? GetEnumDescription((Enum)properties[i].GetValue(instance))
+							: properties[i].GetValue(instance);
 							StyleCell(valueCell);
 						}
 						else if (type == typeof(Fuel))
@@ -150,13 +151,49 @@ namespace Persistance.Services
 				currentRow++;
 			});
 		}
-
+		private async Task FillResultsAsync(ExcelWorksheet worksheet, Type type, object instance)
+		{
+			int currentRow = 0;
+			await Task.Run(() =>
+			{
+				var properties = type.GetProperties();
+				for (int i = 0; i < properties.Length; i++)
+				{
+					if (properties[i].GetCustomAttribute<DescriptionAttribute>() != null)
+					{
+						currentRow++;
+						var nameCell = worksheet.Cells[currentRow, 1];
+						var valueCell = worksheet.Cells[currentRow, 2];
+						worksheet.Cells.AutoFitColumns();
+						nameCell.Value = properties[i].GetCustomAttribute<DescriptionAttribute>().Description;
+						if (properties[i].PropertyType.IsGenericType &&
+							 properties[i].PropertyType.GetGenericTypeDefinition() == typeof(Dictionary<,>))
+						{
+							var dictionary = properties[i].GetValue(instance) as IDictionary<string, double>;
+							foreach (var keyValue in dictionary)
+							{
+								currentRow++;
+								worksheet.Cells[currentRow, 1].Value = keyValue.Key;
+								StyleCell(worksheet.Cells[currentRow, 1]);
+								worksheet.Cells[currentRow, 2].Value = keyValue.Value;
+								StyleCell(worksheet.Cells[currentRow, 2]);
+							}
+						}
+						else
+						{
+							valueCell.Value = properties[i].GetValue(instance);
+						}
+						StyleCell(nameCell);
+						StyleCell(valueCell);
+					}
+				}
+			});
+		}
 		private ExcelWorksheet CreateWorksheet(ExcelPackage excelPackage, string name)
 		{
 			var worksheet = excelPackage.Workbook.Worksheets.Add(name);
 			return worksheet;
 		}
-
 		private void StyleCell(ExcelRange cell, int fontSize = 12)
 		{
 			if (fontSize == 14) cell.Style.Font.Italic = true;
@@ -169,9 +206,7 @@ namespace Persistance.Services
 			FieldInfo field = value.GetType().GetField(value.ToString());
 			if (field != null)
 			{
-				DescriptionAttribute attribute =
-					Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute)) as DescriptionAttribute;
-				if (attribute != null)
+				if (Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute)) is DescriptionAttribute attribute)
 				{
 					return attribute.Description;
 				}

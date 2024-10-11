@@ -63,7 +63,6 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Расчитываемое топливо
 		/// </summary>
-		[Description("Топливо, используемое в расчете")]
 		public string UseFuel
 		{
 			get { return useFuel; }
@@ -133,7 +132,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Коэффициент вторичного уноса уловленной золы
 		/// </summary>
-		[Description("Коэффициент вторичного уноса уловленной золы Кву")]
+		[Description("Коэффициент вторичного уноса уловленной золы Кун")]
 		public double CoeffSecondaryEntrainmentTrappedAsh
 		{
 			get { return coeffSecondaryEntrainmentTrappedAsh; }
@@ -147,7 +146,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Коэффициент высоты электрода
 		/// </summary>
-		[Description("Коэффициент высоты электрода")]
+		[Description("Коэффициент высоты электрода Kн")]
 		public double HeightCoefficientElectrode
 		{
 			get { return heightCoefficientElectrode; }
@@ -161,7 +160,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Параметр золоулавливания при РАВНОМЕРНОМ поле скоростей 
 		/// </summary>
-		[Description("Параметр золоулавливания при равномерном поле скоростей")]
+		[Description("Параметр золоулавливания при равномерном поле скоростей Пр")]
 		public double ParameterAshCollectionUNIFORMVelocityField
 		{
 			get { return parameterAshCollectionUNIFORMVelocityField; }
@@ -175,7 +174,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Проскок золы при равномерном поле скоростей 
 		/// </summary>
-		[Description("Проскок золы при равномерном поле скоростей")]
+		[Description("Проскок золы при равномерном поле скоростей Рр")]
 		public double AshEmissionUniformVelocityField
 		{
 			get { return ashEmissionUniformVelocityField; }
@@ -189,7 +188,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Степень улавливания золы при РАВНОМЕРНОМ поле скоростей 
 		/// </summary>
-		[Description("Степень улавливания золы при равномерном поле скоростей")]
+		[Description("Степень улавливания золы при равномерном поле скоростей ηзу")]
 		public double DegreeAshCaptureUNIFORMVelocityField
 		{
 			get { return degreeAshCaptureUNIFORMVelocityField; }
@@ -203,7 +202,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Проскок золы через электрофильтр с учетом НЕРАВНОМЕРНОСТИ поля 
 		/// </summary>
-		[Description("Проскок золы через электрофильтр с учетом неравномерности поля")]
+		[Description("Проскок золы через электрофильтр с учетом неравномерности поля Pa")]
 		public double PassageAshTakingAccountUNEVENNESSFieldVelocity
 		{
 			get { return passageAshTakingAccountUNEVENNESSFieldVelocity; }
@@ -217,7 +216,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Коэффициент относительного увеличения влияния неравномерности
 		/// </summary>
-		[Description("Коэффициент относительного увеличения влияния неравномерности")]
+		[Description("Коэффициент относительного увеличения влияния неравномерности R")]
 		public double CoeffRelativeIncreaseInfluenceUnevenness
 		{
 			get { return coeffRelativeIncreaseInfluenceUnevenness; }
@@ -231,7 +230,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Значение квадрата отклонения скорости от среднего значения 
 		/// </summary>
-		[Description("Значение квадрата отклонения скорости от среднего значения")]
+		[Description("Значение квадрата отклонения скорости от среднего значения Δucp^2")]
 		public double SquareVelocityDeviationAverageValue
 		{
 			get { return squareVelocityDeviationAverageValue; }
@@ -245,7 +244,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Относительная высота подъемной шахты
 		/// </summary>
-		[Description("Относительная высота подъемной шахты")]
+		[Description("Относительная высота подъемной шахты H")]
 		public double RelativeHeightLiftingShaft
 		{
 			get { return relativeHeightLiftingShaft; }
@@ -259,7 +258,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Проскок золы через электрофильтр с учетом протечек газов через зоны 
 		/// </summary>
-		[Description("Проскок золы через электрофильтр с учетом протечек газов через зоны")]
+		[Description("Проскок золы через электрофильтр с учетом протечек газов через зоны р")]
 		public double PassageAshTakingAccountGasLeaksZones
 		{
 			get { return passageAshTakingAccountGasLeaksZones; }
@@ -273,7 +272,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Проскок золы через неактивные зоны 
 		/// </summary>
-		[Description("Проскок золы через неактивные зоны")]
+		[Description("Проскок золы через неактивные зоны рн")]
 		public double PassageAshInactiveZones
 		{
 			get { return passageAshInactiveZones; }
@@ -287,7 +286,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Степень улавливания золы
 		/// </summary>
-		[Description("Степень улавливания золы")]
+		[Description("Степень улавливания золы ηзу")]
 		public double DegreeAshCapture
 		{
 			get { return degreeAshCapture; }
@@ -301,7 +300,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Концентрация золы на входе в первое поле 
 		/// </summary>
-		[Description("Концентрация золы на входе в первое поле")]
+		[Description("Концентрация золы на входе в первое поле Свх1, г/м3")]
 		public double AshConcentrationEntranceToFirstField
 		{
 			get { return ashConcentrationEntranceToFirstField; }
@@ -315,7 +314,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Kоличество образующейся золы и продуктов механического недожога топлива
 		/// </summary>
-		[Description("Kоличество образующейся золы и продуктов механического недожога топлива")]
+		[Description("Kоличество образующейся золы и продуктов механического недожога топлива Мз, г/с")]
 		public double AmountAshFormedProductsMechanicalUnderburning
 		{
 			get { return amountAshFormedProductsMechanicalUnderburning; }
@@ -329,7 +328,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Проскок золы в первом поле 
 		/// </summary>
-		[Description("Проскок золы в первом поле")]
+		[Description("Проскок золы в первом поле Рп1")]
 		public double PassageAshFirstField
 		{
 			get { return passageAshFirstField; }
@@ -343,7 +342,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Cтепень улавливания золы в первом поле 
 		/// </summary>
-		[Description("Cтепень улавливания золы в первом поле")]
+		[Description("Cтепень улавливания золы в первом поле ηп1")]
 		public double DegreeAshCaptureFirstField
 		{
 			get { return degreeAshCaptureFirstField; }
@@ -357,7 +356,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Оптимальный режим встряхивания золы для каждого поля
 		/// </summary>
-		[Description("Оптимальный режим встряхивания золы для каждого поля")]
+		[Description("Оптимальный режим встряхивания золы для каждого поля τ, с")]
 		public Dictionary<string, double> OptimalAshShakingMode
 		{
 			get { return optimalAshShakingMode; }
@@ -372,7 +371,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Оптимальное значение пылеемкости 
 		/// </summary>
-		[Description("Оптимальное значение пылеемкости")]
+		[Description("Оптимальное значение пылеемкости m0, кг/м2")]
 		public double OptimalValueDustCapacity
 		{
 			get { return optimalValueDustCapacity; }
@@ -386,7 +385,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Площадь осаждения одного поля
 		/// </summary>
-		[Description("Площадь осаждения одного поля")]
+		[Description("Площадь осаждения одного поля А, м2")]
 		public double AreaDepositionOneField
 		{
 			get { return areaDepositionOneField; }
@@ -400,7 +399,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Количество газов, поступающих в одно поле 
 		/// </summary>
-		[Description("Количество газов, поступающих в одно поле")]
+		[Description("Количество газов, поступающих в одно поле Vп, м3/с")]
 		public double NumberGasesEnteringOneField
 		{
 			get { return numberGasesEnteringOneField; }
@@ -414,7 +413,7 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Концентрация золы на входе в m-тое поле
 		/// </summary>
-		[Description("Концентрация золы на входе в m-тое поле")]
+		[Description("Концентрация золы на входе в m-тое поле Свх m, г/м3")]
 		public Dictionary<string, double> AshConcentrationEntranceMthField
 		{
 			get { return ashConcentrationEntranceMthField; }

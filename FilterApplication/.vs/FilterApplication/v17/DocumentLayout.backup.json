@@ -3,33 +3,7 @@
   "WorkspaceRootPath": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0466B37F-29C2-421E-800D-0A33314B458A}|..\\Application\\Application.csproj|d:\\develop\\cbf-application-new-version\\application\\wrappers\\dependensydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\cbf-application-new-version\\filterapplication\\view\\charts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\charts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27C413BF-D7F7-42E6-AA4D-287ECF4388CE}|..\\ViewModels\\ViewModels.csproj|d:\\develop\\cbf-application-new-version\\viewmodels\\viewmodels\\chartvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF07117-5013-428B-9056-0FE70C42F31B}|..\\Persistance\\Persistance.csproj|d:\\develop\\cbf-application-new-version\\persistance\\services\\chartsbuilderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0466B37F-29C2-421E-800D-0A33314B458A}|..\\Application\\Application.csproj|d:\\develop\\cbf-application-new-version\\application\\interfaces\\services\\ichartsbuilderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E37C0CC-D5BA-42D9-9EC5-9A1628499B1D}|..\\Models\\Models.csproj|d:\\develop\\cbf-application-new-version\\models\\abstractbase\\resource\\fuelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EF07117-5013-428B-9056-0FE70C42F31B}|..\\Persistance\\Persistance.csproj|d:\\develop\\cbf-application-new-version\\persistance\\services\\calculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\cbf-application-new-version\\filterapplication\\view\\charts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\charts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0466B37F-29C2-421E-800D-0A33314B458A}|..\\Application\\Application.csproj|d:\\develop\\cbf-application-new-version\\application\\interfaces\\viewmodels\\ichartviewmodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,122 +13,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 313,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DependensyData.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Application\\Wrappers\\DependensyData.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Wrappers\\DependensyData.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Application\\Wrappers\\DependensyData.cs",
-              "RelativeToolTip": "..\\Application\\Wrappers\\DependensyData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T14:34:21.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IChartViewModel.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Application\\Interfaces\\ViewModels\\IChartViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\ViewModels\\IChartViewModel.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Application\\Interfaces\\ViewModels\\IChartViewModel.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\ViewModels\\IChartViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T14:04:37.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FuelBase.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "RelativeDocumentMoniker": "..\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "RelativeToolTip": "..\\Models\\AbstractBase\\Resource\\FuelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:37:01.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "CalculateService.cs",
               "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Services\\CalculateService.cs",
               "RelativeDocumentMoniker": "..\\Persistance\\Services\\CalculateService.cs",
               "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Services\\CalculateService.cs",
               "RelativeToolTip": "..\\Persistance\\Services\\CalculateService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwEEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:25:55.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Charts.xaml.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\View\\Charts.xaml.cs",
-              "RelativeDocumentMoniker": "View\\Charts.xaml.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\View\\Charts.xaml.cs",
-              "RelativeToolTip": "View\\Charts.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:24:45.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChartVM.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels\\ChartVM.cs",
-              "RelativeDocumentMoniker": "..\\ViewModels\\ViewModels\\ChartVM.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels\\ChartVM.cs",
-              "RelativeToolTip": "..\\ViewModels\\ViewModels\\ChartVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:24:37.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChartsBuilderService.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Services\\ChartsBuilderService.cs",
-              "RelativeDocumentMoniker": "..\\Persistance\\Services\\ChartsBuilderService.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Services\\ChartsBuilderService.cs",
-              "RelativeToolTip": "..\\Persistance\\Services\\ChartsBuilderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:24:20.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IChartsBuilderService.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Application\\Interfaces\\Services\\IChartsBuilderService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\Services\\IChartsBuilderService.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Application\\Interfaces\\Services\\IChartsBuilderService.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\Services\\IChartsBuilderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:24:08.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Charts.xaml",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\View\\Charts.xaml",
-              "RelativeDocumentMoniker": "View\\Charts.xaml",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\View\\Charts.xaml",
-              "RelativeToolTip": "View\\Charts.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-10T12:23:05.359Z",
+              "WhenOpened": "2024-10-11T12:39:41.814Z",
               "EditorCaption": ""
             }
           ]
