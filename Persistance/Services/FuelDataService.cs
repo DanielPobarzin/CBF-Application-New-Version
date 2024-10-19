@@ -12,6 +12,9 @@ using System.Collections.ObjectModel;
 
 namespace Persistance.Services
 {
+	/// <summary>
+	/// Служба для работы с данными топлива, реализующая интерфейс <see cref="ICrudService{Fuel}"/>.
+	/// </summary>
 	public class FuelDataService : ICrudService<Fuel>
 	{
 		private readonly Lazy<RelayCommand> _getAllCommand;
@@ -22,6 +25,12 @@ namespace Persistance.Services
 		private readonly IMediator _mediator;
 		private readonly IMapper _mapper;
 		private ObservableCollection<Fuel> backupCollectionFuel { get; set; }
+
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="FuelDataService"/>.
+		/// </summary>
+		/// <param name="mediator">Медиатор для обработки команд.</param>
+		/// <param name="mapper">Маппер для преобразования объектов.</param>
 		public FuelDataService(IMediator mediator, IMapper mapper)
 		{
 			backupCollectionFuel = new();
@@ -33,11 +42,35 @@ namespace Persistance.Services
 			_createCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await Create(parameter)));
 			_generalInsertCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await GeneralInsert(parameter)));
 		}
+
+		/// <summary>
+		/// Получает команду для получения всех данных о топливе.
+		/// </summary>
 		public RelayCommand GetAllCommand => _getAllCommand.Value;
+
+		/// <summary>
+		/// Получает команду для удаления данных о топливе.
+		/// </summary>
 		public RelayCommand DeleteCommand => _deleteCommand.Value;
+
+		/// <summary>
+		/// Получает команду для обновления данных о топливе.
+		/// </summary>
 		public RelayCommand UpdateCommand => _updateCommand.Value;
+
+		/// <summary>
+		/// Получает команду для создания новых данных о топливе.
+		/// </summary>
 		public RelayCommand CreateCommand => _createCommand.Value;
+
+		/// <summary>
+		/// Получает команду для общего вставления данных о топливе.
+		/// </summary>
 		public RelayCommand GeneralInsertCommand => _generalInsertCommand.Value;
+
+		/// <summary>
+		/// Событие, которое вызывается при загрузке сущностей.
+		/// </summary>
 		public event Action<List<Fuel>> EntitiesLoaded;
 		private async Task<GetAllFuelsViewModel> GetAll()
 		{

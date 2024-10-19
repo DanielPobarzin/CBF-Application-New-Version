@@ -12,6 +12,9 @@ using System.Collections.ObjectModel;
 
 namespace Persistance.Services
 {
+	/// <summary>
+	/// Служба для работы с данными фильтров, реализующая интерфейс <see cref="ICrudService{Filter}"/>.
+	/// </summary>
 	public class FilterDataService : ICrudService<Filter>
 	{
 		private readonly Lazy<RelayCommand> _getAllCommand;
@@ -23,6 +26,11 @@ namespace Persistance.Services
 		private readonly IMapper _mapper;
 		private ObservableCollection<Filter> backupCollectionFilter { get; set; }
 
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="FilterDataService"/>.
+		/// </summary>
+		/// <param name="mediator">Медиатор для обработки команд.</param>
+		/// <param name="mapper">Маппер для преобразования объектов.</param>
 		public FilterDataService(IMediator mediator, IMapper mapper)
 		{
 			backupCollectionFilter = new();
@@ -34,11 +42,35 @@ namespace Persistance.Services
 			_createCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await Create(parameter)));
 			_generalInsertCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await GeneralInsert(parameter)));
 		}
+
+		/// <summary>
+		/// Получает команду для получения всех фильтров.
+		/// </summary>
 		public RelayCommand GetAllCommand => _getAllCommand.Value;
+
+		/// <summary>
+		/// Получает команду для удаления фильтра.
+		/// </summary>
 		public RelayCommand DeleteCommand => _deleteCommand.Value;
+
+		/// <summary>
+		/// Получает команду для обновления фильтра.
+		/// </summary>
 		public RelayCommand UpdateCommand => _updateCommand.Value;
+
+		/// <summary>
+		/// Получает команду для создания нового фильтра.
+		/// </summary>
 		public RelayCommand CreateCommand => _createCommand.Value;
+
+		/// <summary>
+		/// Получает команду для общего вставления фильтра.
+		/// </summary>
 		public RelayCommand GeneralInsertCommand => _generalInsertCommand.Value;
+
+		/// <summary>
+		/// Событие, которое вызывается при загрузке сущностей.
+		/// </summary>
 		public event Action<List<Filter>> EntitiesLoaded;
 
 		private async Task<GetAllFiltersViewModel> GetAll()

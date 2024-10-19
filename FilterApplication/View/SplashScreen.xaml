@@ -12,11 +12,9 @@
             MinWidth="340"
             MinHeight="420"
             AllowsTransparency="True"
-            ResizeMode="CanResizeWithGrip"
             WindowStartupLocation="CenterScreen"
             WindowStyle="None"
             Background="Transparent">
-
     <Window.Icon>
         <BitmapImage UriSource="pack://application:,,,/Resources/Images/OST.ico"/>
     </Window.Icon>
@@ -25,7 +23,27 @@
              BorderBrush="#3A4149"
              BorderThickness="5"
              CornerRadius="20">
-            <MediaElement Name="loading" LoadedBehavior="Play" ></MediaElement>
+            <Image HorizontalAlignment="Right" Name="loading" Height="450" Source="/Resources/Images/0001.gif" ></Image>
         </Border>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal">
+                <Polygon Margin="20 0 0 0" Points="30,0 50,0 20,70 0,70" 
+              Fill="#FF89C009"/>
+                <Polygon Points="10,0 30,0 0,70 -20,70" 
+              Fill="#FF89C009"/>
+                <Canvas>
+                    <Polygon Points="10,0 250,0 220,70 -20,70" 
+  Fill="#FF89C009">
+                    </Polygon>
+                    <TextBlock VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Foreground="White" FontStyle="Italic" FontFamily="Berlin Sans FB Demi" Canvas.Top="15" HorizontalAlignment="Center">CBF: App PRO</TextBlock>
+                </Canvas>
+            </StackPanel>
+            <Border Height="20" Width="300" CornerRadius="10" Background="White" Margin="20 10 0 0">
+                <Border x:Name="Loading" Height="15" Width="15" MaxWidth="290" CornerRadius="10" HorizontalAlignment="Left" Background="#FF89C009" Margin="5 0 0 0"/>
+            </Border>
+            <TextBlock VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="White" FontStyle="Italic" FontFamily="Berlin Sans FB Demi" HorizontalAlignment="Center">Загрузка ...</TextBlock>
+        </StackPanel>
+       
+        
     </Grid>
 </Window>

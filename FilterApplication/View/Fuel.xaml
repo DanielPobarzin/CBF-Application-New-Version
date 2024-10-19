@@ -7,8 +7,8 @@
              xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" 
              d:DataContext="{d:DesignInstance Type=viewmodels:FuelVM}"
              mc:Ignorable="d" 
-             d:DesignHeight="600"
-             d:DesignWidth="622"
+             d:DesignHeight="1000"
+             d:DesignWidth="1622"
              Style="{StaticResource Page_Style}">
     <UserControl.Resources>
         <telerik:InvertedBooleanConverter x:Key="InvertedBooleanConverter" />
@@ -34,7 +34,7 @@
     </UserControl.Resources>
     <Grid Background="Transparent">
         <Border Background="#212529" BorderBrush="#3A4149" BorderThickness="5" CornerRadius="8,8,0,8">
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -49,8 +49,8 @@
                     <Image Grid.RowSpan="4" 
                            Grid.ColumnSpan="2" 
                            Margin="0 0 0 30" 
-                          MaxHeight="700" 
-                          MaxWidth="700" 
+                          MaxHeight="1000" 
+                          MaxWidth="1000" 
                           Opacity="0.6"
                            HorizontalAlignment="Right"
                            VerticalAlignment="Bottom" 
@@ -122,8 +122,8 @@
                             MinWidth="250"
                             MaxHeight="450" 
                             CornerRadius="25">
-                        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10">
-                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
                                 <FlowDocument>
                                     <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
                                         К ознакомлению
@@ -154,7 +154,7 @@
                                             серы путѐм замены угля менее сернистым часто ведѐт к ухудшению улавливания золы в электрофильтрах
                                         </Paragraph>
                                     </Section>
-                                    
+
                                 </FlowDocument>
                             </RichTextBox>
                         </ScrollViewer>
@@ -166,26 +166,26 @@
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0">
+                            <StackPanel>
                                 <telerik:Label Margin="10" 
                                                Content="Выбраны виды топлива:" 
                                                Padding="0" 
                                                FontFamily="Century Gothic" 
                                                Foreground="White"/>
-                                <ItemsControl ItemsSource="{Binding ElementName=radComboBox, Path=SelectedItems}">
-                                    <ItemsControl.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding BrandFuel}" 
-                                                       Foreground="Orange" 
-                                                       FontSize="12" 
-                                                       FontFamily="Century Gothic"/>
-                                        </DataTemplate>
-                                    </ItemsControl.ItemTemplate>
-                                </ItemsControl>
+                                <Border CornerRadius="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#3A4149" Opacity="0.9">
+                                    <ItemsControl ItemsSource="{Binding ElementName=radComboBox, Path=SelectedItems}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding BrandFuel}" 
+                                                           FontSize="12" 
+                                                           Margin="5 5 5 0"
+                                                           FontFamily="Century Gothic"
+                                                           Foreground="Orange">
+                                                </TextBlock>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Border>
                             </StackPanel>
                         </Grid>
 
@@ -210,11 +210,11 @@
                             </telerik:RadButton>
                             <telerik:RadButton Style="{DynamicResource UnselectAll}" HorizontalAlignment="Left" 
                                               Command="{x:Static telerik:RadComboBoxCommands.UnselectAll}" 
-                                              CommandTarget="{Binding ElementName=radComboBox}">            
+                                              CommandTarget="{Binding ElementName=radComboBox}">
                             </telerik:RadButton>
                         </StackPanel>
                     </Grid>
-                      <telerik:RadDataPager x:Name="radDataPager" FontFamily="Century Gothic"
+                    <telerik:RadDataPager x:Name="radDataPager" FontFamily="Century Gothic"
 					  Grid.Row="3" FontSize="12" 
 					  Source="{Binding ElementName=fuelsGrid, Path=Items}"
 					  DisplayMode="All"

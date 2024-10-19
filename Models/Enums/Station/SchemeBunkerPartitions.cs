@@ -4,6 +4,7 @@ namespace Models.Enums.Station
 {
 	public enum SchemeBunkerPartitions
     {
+		None = 0,
 		[Description("Рисунок №1")]
 		WithTwoCurvedPartition = 1,
 		[Description("Рисунок №2")]

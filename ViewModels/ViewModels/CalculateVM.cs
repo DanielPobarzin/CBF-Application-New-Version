@@ -8,23 +8,66 @@ using ViewModels.Utilities;
 
 namespace ViewModels.ViewModels
 {
+	/// <summary>
+	/// Представляет модель представления для вычислений.
+	/// </summary>
 	public class CalculateVM : ViewModelBase, ICalculateViewModel
 	{
 		private readonly ICurrentParameterDTO _parameters;
 		private readonly ICalculateService _calculateService;
 		private readonly IExportService _exportService;
+		private string _logOutput;
 
-		public CalculateVM(ICurrentParameterDTO parameters, ICalculateService calculateService, IExportService exportService) 
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="CalculateVM"/>.
+		/// </summary>
+		/// <param name="parameters">Текущие параметры для вычислений.</param>
+		/// <param name="calculateService">Сервис для выполнения вычислений.</param>
+		/// <param name="exportService">Сервис для экспорта данных.</param>
+		public CalculateVM(ICurrentParameterDTO parameters, ICalculateService calculateService, IExportService exportService)
 		{
 			_parameters = parameters;
 			_calculateService = calculateService;
 			_exportService = exportService;
-			Results = new();
+			Results = new ObservableCollection<DefinedFilterParameters>();
 			_calculateService.ResultsLoaded += OnResultsLoaded;
+			_calculateService.LogUpdated += OnLogUpdated;
 		}
+
+		/// <summary>
+		/// Получает или задает вывод логов.
+		/// </summary>
+		public string LogOutput
+		{
+			get => _logOutput;
+			set
+			{
+				if (_logOutput != value)
+				{
+					_logOutput = value;
+					OnPropertyChanged(nameof(LogOutput));
+				}
+			}
+		}
+
+		private void OnLogUpdated()
+		{
+			LogOutput = _calculateService.LogOutput;
+		}
+
+		/// <summary>
+		/// Получает команду для выполнения вычислений.
+		/// </summary>
 		public RelayCommand CalculateCommand => _calculateService.CalculateCommand;
+
+		/// <summary>
+		/// Получает команду для экспорта данных в Excel.
+		/// </summary>
 		public RelayCommand ExportToExcelCommand => _exportService.ExportToExcelCommand;
 
+		/// <summary>
+		/// Получает коллекцию результатов вычислений.
+		/// </summary>
 		public ObservableCollection<DefinedFilterParameters> Results { get; private set; }
 
 		private void OnResultsLoaded(IEnumerable<DefinedFilterParameters> passengers)

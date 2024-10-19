@@ -11,5 +11,6 @@ namespace Application.Interfaces.ViewModels
 		RelayCommand CalculateCommand { get; }
 		RelayCommand ExportToExcelCommand { get; }
 		ObservableCollection<DefinedFilterParameters> Results { get; }
+		string LogOutput { get; }
 	}
 }

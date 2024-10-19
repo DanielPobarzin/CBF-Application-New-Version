@@ -1,12 +1,10 @@
-﻿using Application.Interfaces.Services;
-using Models.Entities.CalculationFilterEfficiency;
-using System.Collections.ObjectModel;
+﻿using Application.Parameters;
 
 namespace Application.Interfaces.ViewModels
 {
-    public interface IChartViewModel
-    {
-		//ObservableCollection<Dictionary<string, Dictionary<double, double>>> DependencyDegreeAshConsumptionAirSuction { get; set; }
-		ObservableCollection<DefinedFilterParameters> Results { get; }
+	public interface IChartViewModel
+	{
+		IEnumerable<ConcentrationStatisticsReport> AllData { get; set; }
+		IEnumerable<ConcentrationStatistics> Data { get; set; }
 	}
 }

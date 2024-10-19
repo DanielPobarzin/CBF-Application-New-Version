@@ -8,8 +8,8 @@
              d:DataContext="{d:DesignInstance Type=viewmodels:FilterVM}"
              xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" 
              mc:Ignorable="d" 
-             d:DesignHeight="600"
-             d:DesignWidth="622"
+             d:DesignHeight="1080"
+             d:DesignWidth="1120"
               Style="{StaticResource Page_Style}">
     <UserControl.Resources>
         <Menu:SelectedFilterConverter x:Key="SelectedFilterConverter"/>
@@ -34,7 +34,7 @@
                 BorderBrush="#3A4149" 
                 BorderThickness="5" 
                 CornerRadius="8,8,0,8">
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -50,8 +50,8 @@
                            Margin="0 0 0 50" 
                            VerticalAlignment="Bottom" 
                            HorizontalAlignment="Left"
-                           MaxHeight="700" 
-                           MaxWidth="700" 
+                           MaxHeight="1000"
+                           MaxWidth="1100"
                            Opacity="0.5"
                            Source="/Resources/Images/filters_page.png" 
                            Stretch="Uniform"/>
@@ -115,12 +115,12 @@
                             Grid.Column="1" 
                             Background="#373E46" 
                             Margin="10" 
-                            MaxHeight="450" 
+                            MaxHeight="500" 
                             MinWidth="300"
                             Opacity="0.9"
                             CornerRadius="25">
-                        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10">
-                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
                                 <FlowDocument>
                                     <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
                                         К ознакомлению

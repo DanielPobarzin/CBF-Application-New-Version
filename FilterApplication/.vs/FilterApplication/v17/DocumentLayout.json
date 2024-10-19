@@ -1,9 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\",
+  "WorkspaceRootPath": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EF07117-5013-428B-9056-0FE70C42F31B}|..\\Persistance\\Persistance.csproj|d:\\develop\\cbf-application-new-version\\persistance\\services\\calculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\app\\cbf-application-new-version\\filterapplication\\view\\splashscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\splashscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\app\\cbf-application-new-version\\filterapplication\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF07117-5013-428B-9056-0FE70C42F31B}|..\\Persistance\\Persistance.csproj|d:\\develop\\app\\cbf-application-new-version\\persistance\\services\\commandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\app\\cbf-application-new-version\\filterapplication\\resources\\helpers\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:resources\\helpers\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF07117-5013-428B-9056-0FE70C42F31B}|..\\Persistance\\Persistance.csproj|d:\\develop\\app\\cbf-application-new-version\\persistance\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\app\\cbf-application-new-version\\filterapplication\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|d:\\develop\\app\\cbf-application-new-version\\filterapplication\\resources\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF6850C1-4D29-44EC-BD1C-FDAF271247A2}|FilterApplication.csproj|solutionrelative:resources\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 313,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -24,16 +47,95 @@
               "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommandService.cs",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\Persistance\\Services\\CommandService.cs",
+              "RelativeDocumentMoniker": "..\\Persistance\\Services\\CommandService.cs",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\Persistance\\Services\\CommandService.cs",
+              "RelativeToolTip": "..\\Persistance\\Services\\CommandService.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwG4AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:01:58.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SplashScreen.cs",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\Resources\\Helpers\\SplashScreen.cs",
+              "RelativeDocumentMoniker": "Resources\\Helpers\\SplashScreen.cs",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\Resources\\Helpers\\SplashScreen.cs",
+              "RelativeToolTip": "Resources\\Helpers\\SplashScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:11:57.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwEkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:11:04.01Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CalculateService.cs",
-              "DocumentMoniker": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Services\\CalculateService.cs",
-              "RelativeDocumentMoniker": "..\\Persistance\\Services\\CalculateService.cs",
-              "ToolTip": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Services\\CalculateService.cs",
-              "RelativeToolTip": "..\\Persistance\\Services\\CalculateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Title": "SplashScreen.xaml",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\View\\SplashScreen.xaml",
+              "RelativeDocumentMoniker": "View\\SplashScreen.xaml",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\View\\SplashScreen.xaml",
+              "RelativeToolTip": "View\\SplashScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-19T13:04:41.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-19T13:42:03.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\Persistance\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\Persistance\\DependencyInjection.cs",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\Persistance\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\Persistance\\DependencyInjection.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwEUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T12:39:41.814Z",
+              "WhenOpened": "2024-10-19T14:01:21.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Button.xaml",
+              "DocumentMoniker": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\Resources\\Styles\\Button.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Button.xaml",
+              "ToolTip": "D:\\Develop\\App\\CBF-Application-New-Version\\FilterApplication\\Resources\\Styles\\Button.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Button.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-19T13:43:00.202Z",
               "EditorCaption": ""
             }
           ]

@@ -183,8 +183,8 @@
                     </Menu:Btn>
                 </StackPanel>
             </Grid>
-            <Grid Name="UserGrid"  Grid.Column="1">
-                <ContentControl x:Name="Pages" Content="{Binding Current}"/>
+            <Grid Name="UserGrid"  Grid.Column="1" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsContainerVirtualizable="True" VirtualizingPanel.VirtualizationMode="Recycling">
+                <ContentControl x:Name="Pages" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" Content="{Binding Current}"/>
             </Grid>
         </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="1">

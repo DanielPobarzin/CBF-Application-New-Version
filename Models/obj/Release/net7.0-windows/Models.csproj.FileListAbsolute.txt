@@ -1,0 +1,13 @@
+D:\Develop\App\CBF-Application-New-Version\Models\bin\Release\net7.0-windows\Models.deps.json
+D:\Develop\App\CBF-Application-New-Version\Models\bin\Release\net7.0-windows\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\bin\Release\net7.0-windows\Models.pdb
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.sourcelink.json
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\refint\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\Models.pdb
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Release\net7.0-windows\ref\Models.dll

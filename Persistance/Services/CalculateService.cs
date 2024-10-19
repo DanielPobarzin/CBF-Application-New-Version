@@ -9,7 +9,9 @@ using Models.Enums.Station;
 using Serilog;
 using System.Collections.Concurrent;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Globalization;
+using System.Text;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
@@ -29,11 +31,25 @@ namespace Persistance.Services
 		private readonly IValidator<Filter> _filterValidator;
 		private readonly IValidator<Station> _stationValidator;
 		private readonly IValidator<DefinedFilterParameters> _calculateValidator;
+		private readonly StringBuilder _logOutput;
+		public event Action LogUpdated;
 		/// <summary>
 		/// Коллекция с определенными параметрами, полученными в результате расчетов.
 		/// </summary>
 		public ObservableCollection<DefinedFilterParameters> Results { get; set; }
-
+		/// <summary>
+		/// Логирующая строка с выводом сообщений.
+		/// </summary>
+		public string LogOutput
+		{
+			get
+			{
+				lock (_logOutput)
+				{
+					return _logOutput.ToString();
+				}
+			}
+		}
 		/// <summary>
 		/// Событие, которое вызывается при загрузке результатов расчетов.
 		/// </summary>
@@ -66,51 +82,70 @@ namespace Persistance.Services
 			_calculateValidator = calculateValidator;
 			Results = new();
 			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAsync(parameter)));
+			_logOutput = new StringBuilder();
 		}
 
 		/// <summary>
 		/// Команда для запуска расчетов.
 		/// </summary>
 		public RelayCommand CalculateCommand => _calculateCommand.Value;
+		
 		private async Task StartInitAsync(object parameter)
+		{
+			if (ValidationInit())
+			{
+				await RunCalculationAsync();
+			}
+		}
+		private bool ValidationInit()
 		{
 			if (_filterValidator?.Validate(_currentParameter.SelectedFilter) is { IsValid: false } validationResultFilter)
 			{
+				AddLog("Validation failed:");
 				foreach (var error in validationResultFilter.Errors)
 				{
-					Log.Warning($"Validation failed for filter {_currentParameter.SelectedFilter.BrandFilter}:" +
-						$"\n- {error.PropertyName}: {error.ErrorMessage}");
+					Log.Warning($"Validation failed for filter {_currentParameter.SelectedFilter.BrandFilter}:\n - {error.PropertyName}: {error.ErrorMessage}");
+					AddLog($"{error.ErrorMessage}");
 				}
+				return false;
 			}
-			if (_stationValidator?.Validate(_currentParameter.CurrentPropertyStation) is { IsValid: false } validationResultStation)
-			{
-				Log.Warning($"Validation failed for station parameter.");
-				foreach (var error in validationResultStation.Errors)
-				{
-					Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
-				}
-			}
-			if (_currentParameter.SelectedFuels.Count == 0)
-			{
-				Log.Warning($"Validation failed for fuel:" +
-							$"\n- Не выбрана ни одна модель топлива.");
-			}
-			else
+			if (_currentParameter.SelectedFuels.Count != 0)
 			{
 				foreach (var fuel in _currentParameter.SelectedFuels)
 				{
 					if (_fuelValidator?.Validate(fuel) is { IsValid: false } validationResultFuel)
 					{
 						Log.Warning($"Validation failed for fuel {fuel.BrandFuel}");
+						AddLog($"Validation failed:");
 						foreach (var error in validationResultFuel.Errors)
 						{
 							Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
+							AddLog($"{error.ErrorMessage}");
 						}
+						return false;
 					}
 				}
+			}else
+			{
+				Log.Warning($"Validation failed for fuel:" +
+					  $"\n- Не выбрана ни одна модель топлива.");
+				AddLog($"Validation failed:" +
+					  $"\n- Не выбрана ни одна модель топлива.");
+				return false;
 			}
-			
-			await RunCalculationAsync();
+
+			if (_stationValidator?.Validate(_currentParameter.CurrentPropertyStation) is { IsValid: false } validationResultStation)
+			{
+				Log.Warning($"Validation failed for station parameter.");
+				AddLog($"Validation failed:");
+				foreach (var error in validationResultStation.Errors)
+				{
+					Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
+					AddLog($"{error.ErrorMessage}");
+				}
+				return false;
+			}
+			return true;
 		}
 		private async Task RunCalculationAsync()
 		{
@@ -118,22 +153,41 @@ namespace Persistance.Services
 			{
 				Results.Clear();
 				var results = new ConcurrentBag<DefinedFilterParameters>();
-				var calculationTasks = _currentParameter.SelectedFuels.Select(fuel => Task.Run(() =>
-				{
-					var result = Calculate(fuel);
-					if (_calculateValidator?.Validate(result) is { IsValid: false } validationResult)
-					{
-						Log.Warning($"Validation failed: Ошибки при расчете. Возможно, исходные данные некорректны.");
-						foreach (var error in validationResult.Errors)
-						{
-							Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
-						}
-						return;
-					}
-					results.Add(result);
-				}));
+				var tasks = new List<Task>();
 
-				await Task.WhenAll(calculationTasks).ConfigureAwait(false);
+				using (var logSemaphore = new SemaphoreSlim(1, 1))
+				{
+					foreach (var fuel in _currentParameter.SelectedFuels)
+					{
+						tasks.Add(Task.Run(async () =>
+						{
+							var result = Calculate(fuel);
+							if (_calculateValidator?.Validate(result) is { IsValid: false } validationResult)
+							{
+								await logSemaphore.WaitAsync();
+								try
+								{
+									AddLog($"Validation failed: {result.UseFuel}");
+									Log.Warning($"Validation failed: Ошибки при расчете. Возможно, исходные данные некорректны.");
+									foreach (var error in validationResult.Errors)
+									{
+										Log.Warning($"- {error.PropertyName}: {error.ErrorMessage}");
+										AddLog($"{error.ErrorMessage}");
+									}
+								}
+								finally
+								{
+									logSemaphore.Release();
+								}
+								return;
+							}
+
+							results.Add(result);
+						}));
+					}
+					await Task.WhenAll(tasks);
+				}
+
 				System.Windows.Application.Current.Dispatcher.Invoke(() => ResultsLoaded?.Invoke(results));
 				foreach (var result in results) { Results.Add(result); }
 			}
@@ -279,6 +333,20 @@ namespace Persistance.Services
 				(result.NumberGasesEnteringOneField * AshConcentration.Value * result.DegreeAshCaptureFirstField));
 			}
 			return result;
+		}
+		public event PropertyChangedEventHandler PropertyChanged;
+		protected void OnPropertyChanged(string propertyName)
+		{
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+		}
+		private void AddLog(string message)
+		{
+			lock (_logOutput)
+			{
+				string time = DateTime.Now.ToString();
+				_logOutput.AppendLine($"[{time} WRN]: {message}");
+				LogUpdated?.Invoke();
+			}
 		}
 		private void HandleError(Exception ex)
 		{

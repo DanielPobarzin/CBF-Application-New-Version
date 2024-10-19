@@ -9,6 +9,9 @@ using ViewModels.Utilities;
 
 namespace ViewModels.ViewModels
 {
+	/// <summary>
+	/// Представляет модель представления для навигации между различными представлениями.
+	/// </summary>
 	public class NavigationVM : ViewModelBase, INavigationViewModel
 	{
 		private readonly ICommandService _commandService;
@@ -20,8 +23,12 @@ namespace ViewModels.ViewModels
 		private readonly RelayCommand _stationsCommand;
 		private readonly RelayCommand _calculateCommand;
 		private readonly RelayCommand _chartsCommand;
-		
+
 		private object _currentView;
+
+		/// <summary>
+		/// Получает или задает текущее представление.
+		/// </summary>
 		public object Current
 		{
 			get => _currentView;
@@ -29,64 +36,92 @@ namespace ViewModels.ViewModels
 			{
 				_currentView = value;
 				OnPropertyChanged(nameof(Current));
-				
 			}
 		}
-		public NavigationVM (IKernel serviceProvider, ICommandService commandService)
+
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="NavigationVM"/>.
+		/// </summary>
+		/// <param name="serviceProvider">Сервис-провайдер для получения зависимостей.</param>
+		/// <param name="commandService">Сервис команд для управления навигацией.</param>
+		public NavigationVM(IKernel serviceProvider, ICommandService commandService)
 		{
 			_serviceProvider = serviceProvider;
 			_commandService = commandService;
 
-			_homeCommand = new RelayCommand(async (parameter) => await NavigateToHomeAsync());
-			_filtersCommand =  new RelayCommand(async (parameter) => await NavigateToFiltersAsync());
-			_fuelsCommand =  new RelayCommand(async (parameter) => await NavigateToFuelsAsync());
-			_stationsCommand =  new RelayCommand(async (parameter) => await NavigateToStationAsync());
-			_calculateCommand =  new RelayCommand(async (parameter) => await NavigateToCalculateAsync());
-			_chartsCommand =  new RelayCommand(async (parameter) => await NavigateToChartsAsync());
+			_homeCommand = new RelayCommand(async (parameter) => await NavigateToAsync<IHomeView>());
+			_filtersCommand = new RelayCommand(async (parameter) => await NavigateToAsync<IFiltersView>());
+			_fuelsCommand = new RelayCommand(async (parameter) => await NavigateToAsync<IFuelsView>());
+			_stationsCommand = new RelayCommand(async (parameter) => await NavigateToAsync<IStationView>());
+			_calculateCommand = new RelayCommand(async (parameter) => await NavigateToAsync<ICalculateView>());
+			_chartsCommand = new RelayCommand(async (parameter) => await NavigateToAsync<IChartsView>());
 			_currentView = _serviceProvider.Get<IHomeView>() as UserControl;
 			CurrentPageChanged += UpdatePage;
 		}
+
+		/// <summary>
+		/// Получает команду для закрытия навигационного меню.
+		/// </summary>
 		public RelayCommand CloseNavigationMenuCommand => _commandService.CloseNavigationMenuCommand;
+
+		/// <summary>
+		/// Получает команду для открытия навигационного меню.
+		/// </summary>
 		public RelayCommand OpenNavigationMenuCommand => _commandService.OpenNavigationMenuCommand;
+
+		/// <summary>
+		/// Получает команду для закрытия окна.
+		/// </summary>
 		public RelayCommand CloseCommand => _commandService.CloseCommand;
+
+		/// <summary>
+		/// Получает команду для максимизации окна.
+		/// </summary>
 		public RelayCommand MaxCommand => _commandService.MaxCommand;
+
+		/// <summary>
+		/// Получает команду для перемещения окна.
+		/// </summary>
 		public RelayCommand MoveWindowCommand => _commandService.MoveWindowCommand;
+
+		/// <summary>
+		/// Получает команду для навигации на главную страницу.
+		/// </summary>
 		public RelayCommand HomeCommand => _homeCommand;
+
+		/// <summary>
+		/// Получает команду для навигации к фильтрам.
+		/// </summary>
 		public RelayCommand FiltersCommand => _filtersCommand;
+
+		/// <summary>
+		/// Получает команду для навигации к топливу.
+		/// </summary>
 		public RelayCommand FuelsCommand => _fuelsCommand;
+
+		/// <summary>
+		/// Получает команду для навигации к станциям.
+		/// </summary>
 		public RelayCommand StationsCommand => _stationsCommand;
+
+		/// <summary>
+		/// Получает команду для навигации к расчетам.
+		/// </summary>
 		public RelayCommand CalculateCommand => _calculateCommand;
+
+		/// <summary>
+		/// Получает команду для навигации к диаграммам.
+		/// </summary>
 		public RelayCommand ChartsCommand => _chartsCommand;
 
-		private async Task NavigateToHomeAsync()
-		{
-			await NavigateToAsync<IHomeView>();
-		}
-		private async Task NavigateToFiltersAsync()
-		{
-			await NavigateToAsync<IFiltersView>();
-		}
-		private async Task NavigateToFuelsAsync()
-		{
-			await NavigateToAsync<IFuelsView>();
-		}
-		private async Task NavigateToStationAsync()
-		{
-			await NavigateToAsync<IStationView>();
-		}
-		private async Task NavigateToCalculateAsync()
-		{
-			await NavigateToAsync<ICalculateView>();
-		}
-
-		private async Task NavigateToChartsAsync()
-		{
-			await NavigateToAsync<IChartsView>();
-		}
-
+		/// <summary>
+		/// Асинхронно выполняет навигацию к указанному представлению.
+		/// </summary>
+		/// <typeparam name="T">Тип представления, к которому нужно перейти.</typeparam>
+		/// <returns>Задача, представляющая асинхронную операцию.</returns>
+		/// <exception cref="InvalidOperationException">Выбрасывается, если не удается получить представление указанного типа.</exception>
 		public async Task NavigateToAsync<T>() where T : class
 		{
-
 			if (_serviceProvider.Get<T>() is not UserControl view)
 			{
 				Log.Error($"Could not get a representation for the {typeof(T).Name} type");

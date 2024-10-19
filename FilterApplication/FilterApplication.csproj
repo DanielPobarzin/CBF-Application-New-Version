@@ -97,6 +97,9 @@
 		<Content Include="Resources\Images\calculate_page.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
+		<Content Include="Resources\Images\export.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 		<Content Include="Resources\Images\filters_page.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>

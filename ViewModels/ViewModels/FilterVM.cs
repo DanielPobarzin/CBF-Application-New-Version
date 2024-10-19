@@ -9,6 +9,9 @@ using ViewModels.Utilities;
 
 namespace ViewModels.ViewModels
 {
+	/// <summary>
+	/// Представляет модель представления для управления фильтрами.
+	/// </summary>
 	public class FilterVM : ViewModelBase, IFilterViewModel
 	{
 		private readonly ICrudService<Filter> _crudService;
@@ -17,6 +20,28 @@ namespace ViewModels.ViewModels
 		private readonly Lazy<RelayCommand> _selectCommand;
 		private ObservableCollection<Filter> filters;
 		private Filter selectedFilter;
+
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="FilterVM"/>.
+		/// </summary>
+		/// <param name="crudService">Сервис для выполнения операций CRUD с фильтрами.</param>
+		/// <param name="mapper">Объект для маппинга данных.</param>
+		/// <param name="parameters">Текущие параметры, связанные с фильтрами.</param>
+		public FilterVM(ICrudService<Filter> crudService, IMapper mapper, ICurrentParameterDTO parameters)
+		{
+			_parameters = parameters;
+			_mapper = mapper;
+			_crudService = crudService;
+			_crudService.EntitiesLoaded += OnFiltersLoaded;
+			GetAllCommand.Execute(this);
+			_selectCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await SelectFilterAsync(parameter)));
+			Filters = new();
+			SelectedFilter = new();
+		}
+
+		/// <summary>
+		/// Получает или задает коллекцию фильтров.
+		/// </summary>
 		public ObservableCollection<Filter> Filters
 		{
 			get { return filters; }
@@ -29,6 +54,10 @@ namespace ViewModels.ViewModels
 				}
 			}
 		}
+
+		/// <summary>
+		/// Получает или задает выбранный фильтр.
+		/// </summary>
 		public Filter SelectedFilter
 		{
 			get { return selectedFilter; }
@@ -42,23 +71,37 @@ namespace ViewModels.ViewModels
 				}
 			}
 		}
-		public FilterVM(ICrudService<Filter> crudService, IMapper mapper, ICurrentParameterDTO parameters)
-		{
-			_parameters = parameters;
-			_mapper = mapper;
-			_crudService = crudService;
-			_crudService.EntitiesLoaded += OnFiltersLoaded;
-			GetAllCommand.Execute(this);
-			_selectCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await SelectFilterAsync(parameter)));
-			Filters = new();
-			SelectedFilter = new();
-		}
+
+		/// <summary>
+		/// Получает команду для выбора фильтра.
+		/// </summary>
 		public RelayCommand SelectCommand => _selectCommand.Value;
+
+		/// <summary>
+		/// Получает команду для получения всех фильтров.
+		/// </summary>
 		public RelayCommand GetAllCommand => _crudService.GetAllCommand;
+
+		/// <summary>
+		/// Получает команду для удаления выбранного фильтра.
+		/// </summary>
 		public RelayCommand DeleteCommand => _crudService.DeleteCommand;
+
+		/// <summary>
+		/// Получает команду для обновления выбранного фильтра.
+		/// </summary>
 		public RelayCommand UpdateCommand => _crudService.UpdateCommand;
+
+		/// <summary>
+		/// Получает команду для создания нового фильтра.
+		/// </summary>
 		public RelayCommand CreateCommand => _crudService.CreateCommand;
+
+		/// <summary>
+		/// Получает команду для общего вставки данных.
+		/// </summary>
 		public RelayCommand GeneralInsertCommand => _crudService.GeneralInsertCommand;
+
 
 		private async void OnFiltersLoaded(List<Filter> filters)
 		{

@@ -4,6 +4,10 @@ using System.Collections.Concurrent;
 
 namespace Persistance.Services
 {
+	/// <summary>
+	/// Служба константных параметров, реализующая интерфейс <see cref="IConstParameterService"/>.
+	/// Предоставляет доступ к различным константным параметрам, связанным с процессами обработки.
+	/// </summary>
 	public class ConstParameterService : IConstParameterService
 	{
 		private static readonly ConcurrentDictionary<int, double> passageAshInactiveZonesThreeFields;
@@ -24,6 +28,10 @@ namespace Persistance.Services
 		private static readonly double coefficientElectrodeType;
 		private static readonly double mechanicalUnderburningFuel;
 		private static readonly ConcurrentDictionary<SlagRemoval, double> proportionCarriedAshDuringSlagRemoval;
+
+		/// <summary>
+		/// Статический конструктор для инициализации статических полей класса <see cref="ConstParameterService"/>.
+		/// </summary>
 		static ConstParameterService() {
 
 			passageAshInactiveZonesThreeFields = new()

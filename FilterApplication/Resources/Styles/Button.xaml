@@ -780,6 +780,71 @@
         </Setter>
 
     </Style>
+    <ImageBrush x:Key="export"
+         ImageSource="pack://application:,,,/FilterApplication;component/Resources/Images/export.png"
+         Stretch="UniformToFill" />
+
+    <Style x:Key="Export"
+    TargetType="{x:Type Button}">
+
+        <Setter Property="Height"
+         Value="40" />
+        <Setter Property="Width"
+         Value="40" />
+        <Setter Property="HorizontalAlignment"
+         Value="Right" />
+        <Setter Property="VerticalAlignment"
+         Value="Bottom" />
+        <Setter Property="Margin"
+         Value="0,0,0,0" />
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <Border x:Name="border"
+                     BorderThickness="0"
+                     Background="{StaticResource export}">
+
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsMouseOver"
+                          Value="True">
+
+                            <Setter Property="Height"
+                             TargetName="border"
+                             Value="35" />
+                            <Setter Property="Width"
+                             TargetName="border"
+                             Value="35" />
+
+                        </Trigger>
+
+                        <Trigger Property="IsPressed"
+                          Value="True">
+
+                            <Setter Property="Height"
+                                      TargetName="border"
+                                      Value="30" />
+                            <Setter Property="Width"
+                                      TargetName="border"
+                                      Value="30" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
 
 
 </ResourceDictionary>

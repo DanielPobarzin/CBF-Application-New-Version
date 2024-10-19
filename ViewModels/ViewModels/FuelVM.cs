@@ -9,6 +9,9 @@ using ViewModels.Utilities;
 
 namespace ViewModels.ViewModels
 {
+	/// <summary>
+	/// Представляет модель представления для управления топливом.
+	/// </summary>
 	public class FuelVM : ViewModelBase, IFuelViewModel
 	{
 		private readonly ICrudService<Fuel> _crudService;
@@ -16,6 +19,10 @@ namespace ViewModels.ViewModels
 		private readonly IMapper _mapper;
 		private ObservableCollection<Fuel> fuels;
 		private ObservableCollection<Fuel> selectedFuels;
+
+		/// <summary>
+		/// Получает или задает коллекцию топлива.
+		/// </summary>
 		public ObservableCollection<Fuel> Fuels
 		{
 			get { return fuels; }
@@ -28,9 +35,13 @@ namespace ViewModels.ViewModels
 				}
 			}
 		}
+
+		/// <summary>
+		/// Получает или задает коллекцию выбранного топлива.
+		/// </summary>
 		public ObservableCollection<Fuel> SelectedFuels
 		{
-			get {  return selectedFuels; }
+			get { return selectedFuels; }
 			set
 			{
 				if (selectedFuels != value)
@@ -42,6 +53,12 @@ namespace ViewModels.ViewModels
 			}
 		}
 
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="FuelVM"/>.
+		/// </summary>
+		/// <param name="crudService">Сервис для выполнения операций CRUD с топливом.</param>
+		/// <param name="mapper">Объект для маппинга данных.</param>
+		/// <param name="parameters">Текущие параметры, связанные с топливом.</param>
 		public FuelVM(ICrudService<Fuel> crudService, IMapper mapper, ICurrentParameterDTO parameters)
 		{
 			_parameters = parameters;
@@ -53,10 +70,29 @@ namespace ViewModels.ViewModels
 			SelectedFuels = new();
 		}
 
+		/// <summary>
+		/// Получает команду для получения всех топлив.
+		/// </summary>
 		public RelayCommand GetAllCommand => _crudService.GetAllCommand;
+
+		/// <summary>
+		/// Получает команду для удаления выбранного топлива.
+		/// </summary>
 		public RelayCommand DeleteCommand => _crudService.DeleteCommand;
+
+		/// <summary>
+		/// Получает команду для обновления выбранного топлива.
+		/// </summary>
 		public RelayCommand UpdateCommand => _crudService.UpdateCommand;
+
+		/// <summary>
+		/// Получает команду для создания нового топлива.
+		/// </summary>
 		public RelayCommand CreateCommand => _crudService.CreateCommand;
+
+		/// <summary>
+		/// Получает команду для общего вставки данных.
+		/// </summary>
 		public RelayCommand GeneralInsertCommand => _crudService.GeneralInsertCommand;
 
 		private async void OnFuelsLoaded(List<Fuel> fuels)

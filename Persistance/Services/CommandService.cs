@@ -6,6 +6,10 @@ using System.Windows.Controls;
 
 namespace Persistance.Services
 {
+	/// <summary>
+	/// Служба команд, реализующая интерфейс <see cref="ICommandService"/>.
+	/// Предоставляет команды для управления состоянием приложения и навигацией.
+	/// </summary>
 	public class CommandService : ICommandService
 	{
 		private readonly Lazy<RelayCommand> _closeCommand;
@@ -19,6 +23,10 @@ namespace Persistance.Services
 
 		private readonly IAnimationBehaviour _animationBehaviour;
 
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="CommandService"/>.
+		/// </summary>
+		/// <param name="animation">Объект, реализующий интерфейс <see cref="IAnimationBehaviour"/> для анимации.</param>
 		public CommandService(IAnimationBehaviour animation)
 		{
 			_animationBehaviour = animation;
@@ -54,13 +62,44 @@ namespace Persistance.Services
 				}
 			}));
 		}
+		/// <summary>
+		/// Получает команду для закрытия приложения.
+		/// </summary>
 		public RelayCommand CloseCommand => _closeCommand.Value;
+
+		/// <summary>
+		/// Получает команду для максимизации приложения.
+		/// </summary>
 		public RelayCommand MaxCommand => _maxCommand.Value;
+
+		/// <summary>
+		/// Получает команду для перемещения окна.
+		/// </summary>
 		public RelayCommand MoveWindowCommand => _moveWindowCommand.Value;
+
+		/// <summary>
+		/// Получает команду для закрытия навигационного меню.
+		/// </summary>
 		public RelayCommand CloseNavigationMenuCommand => _closeNavigationMenuCommand.Value;
+
+		/// <summary>
+		/// Получает команду для открытия навигационного меню.
+		/// </summary>
 		public RelayCommand OpenNavigationMenuCommand => _openNavigationMenuCommand.Value;
+
+		/// <summary>
+		/// Получает команду для закрытия формы данных.
+		/// </summary>
 		public RelayCommand CloseFormDataCommand => _closeFromDataCommand.Value;
+
+		/// <summary>
+		/// Получает команду для открытия формы данных.
+		/// </summary>
 		public RelayCommand OpenFormDataCommand => _openFormDataCommand.Value;
+
+		/// <summary>
+		/// Получает команду для сохранения свойств станции.
+		/// </summary>
 		public RelayCommand SavePropertyStationCommand => _savePropertyStationCommand.Value;
 		private static async Task CloseAppAsync(object obj)
 		{

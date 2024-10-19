@@ -52,20 +52,17 @@ namespace Models.Validators
 			.GreaterThanOrEqualTo(0).WithMessage("Относительная высота подъемной шахты отрицательная. Проверьте исходные данные.");
 			RuleFor(x => x.PassageAshTakingAccountGasLeaksZones)
 			.NotNull()
-			.GreaterThanOrEqualTo(0).WithMessage("Проскок золы через электрофильтр с учетом протечек газов через зоны отрицательный. Проверьте исходные данные.")
-			.LessThanOrEqualTo(1).WithMessage("Проскок золы через электрофильтр с учетом протечек газов через зоны превысил 100%. От фильтра одно название ...");
+			.GreaterThanOrEqualTo(0).WithMessage("Проскок золы через электрофильтр с учетом протечек газов через зоны отрицательный. Проверьте исходные данные.");
 			RuleFor(x => x.PassageAshInactiveZones)
 			.NotNull()
-			.GreaterThanOrEqualTo(0).WithMessage("Проскок золы через через неактивные зоны отрицательный. Проверьте исходные данные.")
-			.LessThanOrEqualTo(1).WithMessage("Проскок золы через через неактивные зоны превысил 100%. От фильтра одно название ...");
+			.GreaterThanOrEqualTo(0).WithMessage("Проскок золы через через неактивные зоны отрицательный. Проверьте исходные данные.");
 			RuleFor(x => x.DegreeAshCapture)
 			.NotNull()
 			.GreaterThanOrEqualTo(0).WithMessage("Степень улавливания золы отрицательная. Фильтр еще сверху своей золы накидывает ?")
 			.LessThanOrEqualTo(1).WithMessage("Степень улавливания золы превысила 100%. Срочно патентуйте свое открытие!");
 			RuleFor(x => x.AshConcentrationEntranceToFirstField)
 			.NotNull()
-			.GreaterThanOrEqualTo(0).WithMessage("Концентрация золы на входе в первое поле отрицательная. Проверьте исходные данные.")
-			.LessThanOrEqualTo(1).WithMessage("Концентрация золы на входе в первое поле превысила 100%. От фильтра одно название ...");
+			.GreaterThanOrEqualTo(0).WithMessage("Концентрация золы на входе в первое поле отрицательная. Проверьте исходные данные.");
 			RuleFor(x => x.OptimalAshShakingMode)
 		   .NotNull()
 		   .WithMessage("Оптимальный режим встряхивания не может быть null.")
@@ -92,9 +89,6 @@ namespace Models.Validators
 			RuleForEach(x => x.AshConcentrationEntranceMthField)
 				.Must(pair => pair.Value >= 0)
 				.WithMessage("Концентрация золы на входе в поле отрицательная. Проверьте исходные данные.");
-			RuleForEach(x => x.AshConcentrationEntranceMthField)
-				.Must(pair => pair.Value < 1)
-				.WithMessage("Концентрация золы на входе в поле превысила 100%.");
 		}
 	}
 }

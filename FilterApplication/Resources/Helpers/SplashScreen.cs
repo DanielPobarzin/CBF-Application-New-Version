@@ -46,9 +46,9 @@ namespace FilterApplication.Resources.Helpers
 		public void Dispose()
 		{
 			Close();
-			GC.Collect();
-			GC.SuppressFinalize(this);
+			GC.Collect();			
 			GC.WaitForPendingFinalizers();
+			GC.SuppressFinalize(this);
 		}
 
 		public void SetSplashInitialized()

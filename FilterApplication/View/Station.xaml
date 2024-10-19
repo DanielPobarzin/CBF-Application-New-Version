@@ -114,11 +114,12 @@
                             Grid.Row="2"
                             Opacity="0.8">
                         <Grid Margin="10">
-                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
                                 <RichTextBox IsReadOnly="True" 
                                              Background="Transparent" 
                                              Foreground="#DCE0E4" 
-                                             BorderBrush="Transparent">
+                                             BorderBrush="Transparent"
+                                             VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
                                     <FlowDocument>
                                         <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
                                             К ознакомлению
@@ -200,7 +201,7 @@
                                   MaxHeight="700"
                                   MinWidth="300"
                                   MaxWidth="500">
-                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition

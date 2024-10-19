@@ -64,6 +64,7 @@ namespace FilterApplication
 			Kernel.Get<IStationView>().SetViewModel(Kernel.Get<IStationViewModel>());
 			Kernel.Get<ICalculateView>().SetViewModel(Kernel.Get<ICalculateViewModel>());
 			Kernel.Get<IChartsView>().SetViewModel(Kernel.Get<IChartViewModel>());
+			Kernel.Get<MainWindow>().SetViewModel(Kernel.Get<INavigationViewModel>());
 
 			Log.Information("All application windows have been initialized");
 		}
@@ -87,7 +88,6 @@ namespace FilterApplication
 #endif
 					PreloadViews();
 					Log.Information("Start application...");
-					Kernel.Get<MainWindow>().SetViewModel(Kernel.Get<INavigationViewModel>());
 				}
 				catch (Exception ex)
 				{

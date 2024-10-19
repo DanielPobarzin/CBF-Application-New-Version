@@ -32,7 +32,6 @@ namespace Persistance
 			Bind<IConstParameterService>().To<ConstParameterService>().InSingletonScope();
 			Bind<ICrudService<Fuel>>().To<FuelDataService>().InSingletonScope();
 			Bind<ICrudService<Filter>>().To<FilterDataService>().InSingletonScope();
-			Bind<IChartsBuilderService>().To<ChartsBuilderService>().InSingletonScope();
 			Bind<IExportService>().To<ExportService>().InSingletonScope();
 
 			/// <summary>
@@ -66,14 +65,14 @@ namespace Persistance
 			Bind(typeof(ICurrentParameterDTO)).To<CurrentParameterDTO>().InSingletonScope();
 
 			/// <summary>
-			/// Привязывает поведение анимации к его реализации в области видимости Thread.
+			/// Привязывает поведение анимации к его реализации в области видимости Singleton.
 			/// </summary>
-			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InThreadScope();
+			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InSingletonScope();
 
 			/// <summary>
-			/// Привязывает конвертер значений к его реализации при внедрении в <see cref="CalculateService"/> в области видимости Transient.
+			/// Привязывает конвертер значений к его реализации при внедрении в <see cref="CalculateService"/> в области видимости Singleton.
 			/// </summary>
-			Bind<IValueConverter>().To<RandomColorConverter>().WhenInjectedInto<CalculateService>().InTransientScope();
+			Bind<IValueConverter>().To<RandomColorConverter>().WhenInjectedInto<CalculateService>().InSingletonScope();
 		}
 	}
 }

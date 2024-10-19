@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Models.Entities.HeatPowerPlant.StationProperty;
+using Models.Enums.Station;
 
 namespace Models.Validators
 {
@@ -20,7 +21,7 @@ namespace Models.Validators
 
 			RuleFor(x => x.NumberSmokePumps)
 				.NotEmpty().WithMessage("Количество дымососов не указано.")
-				.GreaterThanOrEqualTo(0).WithMessage("Количество дымососов не может быть меньше нуля.");
+				.GreaterThan(0).WithMessage("Количество дымососов должно быть больше 0.");
 
 			RuleFor(x => x.AirSuction)
 				.NotEmpty().WithMessage("Величина присососов воздуха не указана.")
@@ -28,20 +29,23 @@ namespace Models.Validators
 
 			RuleFor(x => x.NumberGrids)
 				.NotEmpty().WithMessage("Количество решеток не указано.")
-				.GreaterThanOrEqualTo(0).WithMessage("Количество решеток не должно быть отрицательным.");
+				.GreaterThan(0).WithMessage("Количество решеток должно быть больше 0.");
 
 			RuleFor(x => x.HeightLiftShaft)
 				.NotEmpty().WithMessage("Высота подъемной шахты не указана.")
 				.GreaterThanOrEqualTo(0).WithMessage("Высота подъемной шахты должна быть положительной.");
 
 			RuleFor(x => x.SchemeBunkerPartitions)
-				.NotEmpty().WithMessage("Не выбрана схема бункерных перегородок.");
+				.NotEmpty().WithMessage("Не выбрана схема бункерных перегородок.")
+				.NotEqual(SchemeBunkerPartitions.None).WithMessage("Выберите необходимую схему бункерных перегородок на странице 'Станция'.");
 
 			RuleFor(x => x.SlagRemoval)
-				.NotEmpty().WithMessage("Не выбран тип шлакоудаления.");
+				.NotEmpty().WithMessage("Не выбран тип шлакоудаления.")
+				.NotEqual(SlagRemoval.None).WithMessage("Укажите тип шлакудаления на странице 'Станция'.");
 
 			RuleFor(x => x.TypeFlueGasSupply)
-			.NotEmpty().WithMessage("Не выбран тип подвода газа.");
+			.NotEmpty().WithMessage("Не выбран тип подвода газа.")
+			.NotEqual(TypeFlueGasSupply.None).WithMessage("Укажите тип подвода газа на странице 'Станция'.");
 
 		}
 	}

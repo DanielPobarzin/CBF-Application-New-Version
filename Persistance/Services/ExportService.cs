@@ -15,18 +15,32 @@ using System.Windows;
 
 namespace Persistance.Services
 {
+	/// <summary>
+	/// Служба экспорта данных, реализующая интерфейс <see cref="IExportService"/>.
+	/// Предоставляет возможность экспортировать данные в файл Excel.
+	/// </summary>
 	public class ExportService : IExportService
 	{
 		private readonly Lazy<RelayCommand> _exportToExcelCommand;
 		private readonly ICalculateService _calculateService;
 		private readonly ICurrentParameterDTO _currentParameters;
 		private int currentRow = 1;
+
+		/// <summary>
+		/// Инициализирует новый экземпляр класса <see cref="ExportService"/>.
+		/// </summary>
+		/// <param name="calculateService">Сервис для выполнения расчетов.</param>
+		/// <param name="currentParameters">Текущие параметры для экспорта.</param>
 		public ExportService(ICalculateService calculateService, ICurrentParameterDTO currentParameters)
 		{
 			_calculateService = calculateService;
 			_currentParameters = currentParameters;
 			_exportToExcelCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await DialogExportToExcelAsync(parameter)));
 		}
+
+		/// <summary>
+		/// Команда для экспорта данных в Excel.
+		/// </summary>
 		public RelayCommand ExportToExcelCommand => _exportToExcelCommand.Value;
 		private async Task DialogExportToExcelAsync(object obj)
 		{

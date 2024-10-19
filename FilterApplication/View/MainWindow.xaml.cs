@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces.ViewModels;
 using Application.Parameters;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -23,32 +24,41 @@ namespace FilterApplication
 		}
 		private void MovingWin(object sender, MouseButtonEventArgs e)
 		{
-			if (e.ButtonState == MouseButtonState.Pressed)
+			Task.Run(() =>
 			{
-				var command = _viewModel.MoveWindowCommand;
-				if (command.CanExecute(this))
+				if (e.ButtonState == MouseButtonState.Pressed)
 				{
-					command.Execute(this);
+					var command = _viewModel.MoveWindowCommand;
+					if (command.CanExecute(this))
+					{
+						Dispatcher.Invoke(() => command.Execute(this));
+					}
 				}
-			}
+			});
 		}
 		private void WindowSizeChanged(object sender, SizeChangedEventArgs e)
 		{
-			var parameters = new NavigationMenuParameter
+			Task.Run(() =>
 			{
-				CloseMenu = MenuClose,
-				OpenMenu = MenuOpen,
-				Panel = NavigationGrid
-			};
-			if (ResponsiveWindow.ActualWidth < 810 && _previousWidth >= 810)
-			{
-				_viewModel.CloseNavigationMenuCommand.Execute(parameters);
-			}
-			else if (ResponsiveWindow.ActualWidth >= 810 && _previousWidth < 810)
-			{
-				_viewModel.OpenNavigationMenuCommand.Execute(parameters);
-			}
-			_previousWidth = ResponsiveWindow.ActualWidth;
+				var parameters = new NavigationMenuParameter
+				{
+					CloseMenu = MenuClose,
+					OpenMenu = MenuOpen,
+					Panel = NavigationGrid
+				};
+
+				if (ResponsiveWindow.ActualWidth < 810 && _previousWidth >= 810)
+				{
+					Dispatcher.Invoke(() => _viewModel.CloseNavigationMenuCommand.Execute(parameters));
+				}
+				else if (ResponsiveWindow.ActualWidth >= 810 && _previousWidth < 810)
+				{
+
+					Dispatcher.Invoke(() => _viewModel.OpenNavigationMenuCommand.Execute(parameters));
+				}
+
+				_previousWidth = ResponsiveWindow.ActualWidth;
+			});
 		}
 	}
 }
