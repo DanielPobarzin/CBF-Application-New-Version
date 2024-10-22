@@ -19,7 +19,6 @@ namespace Persistance.Services
 		private readonly Lazy<RelayCommand> _openNavigationMenuCommand;
 		private readonly Lazy<RelayCommand> _closeFromDataCommand;
 		private readonly Lazy<RelayCommand> _openFormDataCommand;
-		private readonly Lazy<RelayCommand> _savePropertyStationCommand;
 
 		private readonly IAnimationBehaviour _animationBehaviour;
 
@@ -97,15 +96,11 @@ namespace Persistance.Services
 		/// </summary>
 		public RelayCommand OpenFormDataCommand => _openFormDataCommand.Value;
 
-		/// <summary>
-		/// Получает команду для сохранения свойств станции.
-		/// </summary>
-		public RelayCommand SavePropertyStationCommand => _savePropertyStationCommand.Value;
 		private static async Task CloseAppAsync(object obj)
 		{
 			if (obj is Window win)
 			{
-				await win.Dispatcher.InvokeAsync(() => win.Close()); 
+				await win.Dispatcher.InvokeAsync(() => win.Close());
 			}
 		}
 		private async Task CloseNavigationMenuAsync(Grid panel, Button closeMenu, Button openMenu)
@@ -128,7 +123,7 @@ namespace Persistance.Services
 			}));
 			await _animationBehaviour.AnimatePropertyAsync(panel, "(FrameworkElement.Height)",
 														   panel.ActualHeight, panel.MinHeight,
-														   TimeSpan.FromSeconds(1));
+														   TimeSpan.FromSeconds(0.6));
 		}
 		private async Task OpenFormDataAsync(Grid panel, Button closeMenu, Button openMenu)
 		{
@@ -139,7 +134,7 @@ namespace Persistance.Services
 			}));
 			await _animationBehaviour.AnimatePropertyAsync(panel, "(FrameworkElement.Height)",
 														   panel.ActualHeight, panel.MaxHeight,
-														   TimeSpan.FromSeconds(1));
+														   TimeSpan.FromSeconds(0.6));
 		}
 		private async Task OpenNavigationAppAsync(Grid panel, Button closeMenu, Button openMenu)
 		{

@@ -15,7 +15,7 @@ namespace Application.Extensions
 		{
 			FieldInfo fi = value.GetType().GetField(value.ToString());
 			DescriptionAttribute[] attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
-			return attributes.Length > 0 ? attributes[0].Description : null; 
+			return attributes.Length > 0 ? attributes[0].Description : null;
 		}
 	}
 }

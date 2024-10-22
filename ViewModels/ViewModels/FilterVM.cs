@@ -35,8 +35,8 @@ namespace ViewModels.ViewModels
 			_crudService.EntitiesLoaded += OnFiltersLoaded;
 			GetAllCommand.Execute(this);
 			_selectCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await SelectFilterAsync(parameter)));
-			Filters = new();
-			SelectedFilter = new();
+			filters = new();
+			selectedFilter = new();
 		}
 
 		/// <summary>
@@ -102,7 +102,6 @@ namespace ViewModels.ViewModels
 		/// </summary>
 		public RelayCommand GeneralInsertCommand => _crudService.GeneralInsertCommand;
 
-
 		private async void OnFiltersLoaded(List<Filter> filters)
 		{
 			await HandleFiltersLoadedAsync(filters).ConfigureAwait(false);
@@ -122,7 +121,7 @@ namespace ViewModels.ViewModels
 			}
 			Log.Information($"Filter type data has been uploaded");
 		}
-		private async Task SelectFilterAsync(object filterName)
+		private Task SelectFilterAsync(object filterName)
 		{
 			if (filterName is string brandFilter)
 			{
@@ -130,6 +129,8 @@ namespace ViewModels.ViewModels
 				if (selectFilter != null)
 					SelectedFilter = selectFilter;
 			}
+			return Task.CompletedTask;
 		}
 	}
 }
+

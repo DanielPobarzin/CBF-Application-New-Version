@@ -7,10 +7,11 @@ using System.Windows.Media;
 namespace Application.Interfaces.ViewModels
 {
 	public interface ICalculateViewModel
-    {
+	{
 		RelayCommand CalculateCommand { get; }
 		RelayCommand ExportToExcelCommand { get; }
 		ObservableCollection<DefinedFilterParameters> Results { get; }
+		bool IsValidInputData { get; }
 		string LogOutput { get; }
 	}
 }

@@ -29,7 +29,9 @@ namespace ViewModels.ViewModels
 			_parameters = parameters;
 			_calculateService = calculateService;
 			_exportService = exportService;
+			_logOutput = string.Empty;
 			Results = new ObservableCollection<DefinedFilterParameters>();
+
 			_calculateService.ResultsLoaded += OnResultsLoaded;
 			_calculateService.LogUpdated += OnLogUpdated;
 		}
@@ -50,6 +52,7 @@ namespace ViewModels.ViewModels
 			}
 		}
 
+		public bool IsValidInputData => _calculateService.IsValidInputData;
 		private void OnLogUpdated()
 		{
 			LogOutput = _calculateService.LogOutput;
@@ -83,11 +86,12 @@ namespace ViewModels.ViewModels
 					}
 				});
 			}
-			catch (Exception ex) {
+			catch (Exception ex)
+			{
 
 				Log.Error(ex.Message);
 			}
-		
+
 		}
 	}
 };

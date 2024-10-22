@@ -2,8 +2,8 @@
 
 namespace Application.Interfaces.Services
 {
-	public interface ICommandService 
-    {
+	public interface ICommandService
+	{
 		RelayCommand CloseCommand { get; }
 		RelayCommand MaxCommand { get; }
 		RelayCommand MoveWindowCommand { get; }
@@ -11,6 +11,5 @@ namespace Application.Interfaces.Services
 		RelayCommand OpenNavigationMenuCommand { get; }
 		RelayCommand CloseFormDataCommand { get; }
 		RelayCommand OpenFormDataCommand { get; }
-		RelayCommand SavePropertyStationCommand { get; }
 	}
 }

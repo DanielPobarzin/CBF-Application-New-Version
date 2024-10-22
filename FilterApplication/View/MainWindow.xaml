@@ -18,6 +18,13 @@
                 ResizeMode="CanResizeWithGrip"
                 WindowStartupLocation="CenterScreen"
                 WindowStyle="None"
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.IsContainerVirtualizable="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                VirtualizingPanel.CacheLengthUnit="Pixel"
+                VirtualizingPanel.CacheLength="100000"
+                VirtualizingPanel.ScrollUnit="Item"
                 Background="Transparent"
                 MouseLeftButtonDown="MovingWin">
 
@@ -183,8 +190,17 @@
                     </Menu:Btn>
                 </StackPanel>
             </Grid>
-            <Grid Name="UserGrid"  Grid.Column="1" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsContainerVirtualizable="True" VirtualizingPanel.VirtualizationMode="Recycling">
-                <ContentControl x:Name="Pages" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling" Content="{Binding Current}"/>
+            <Grid Name="UserGrid"  Grid.Column="1">
+                <ContentControl x:Name="Pages" 
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.IsContainerVirtualizable="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                VirtualizingPanel.CacheLengthUnit="Pixel"
+                VirtualizingPanel.CacheLength="1000"
+                VirtualizingPanel.ScrollUnit="Item"
+                                
+                Content="{Binding Current}"/>
             </Grid>
         </Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="1">

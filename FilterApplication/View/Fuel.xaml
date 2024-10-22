@@ -7,8 +7,15 @@
              xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" 
              d:DataContext="{d:DesignInstance Type=viewmodels:FuelVM}"
              mc:Ignorable="d" 
-             d:DesignHeight="1000"
-             d:DesignWidth="1622"
+              VirtualizingPanel.IsVirtualizing="True"
+              VirtualizingPanel.IsContainerVirtualizable="True"
+              VirtualizingPanel.VirtualizationMode="Recycling"
+              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+              VirtualizingPanel.CacheLengthUnit="Pixel"
+              VirtualizingPanel.CacheLength="10000"
+              VirtualizingPanel.ScrollUnit="Pixel"
+             d:DesignHeight="500"
+             d:DesignWidth="900"
              Style="{StaticResource Page_Style}">
     <UserControl.Resources>
         <telerik:InvertedBooleanConverter x:Key="InvertedBooleanConverter" />
@@ -34,7 +41,13 @@
     </UserControl.Resources>
     <Grid Background="Transparent">
         <Border Background="#212529" BorderBrush="#3A4149" BorderThickness="5" CornerRadius="8,8,0,8">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+            <ScrollViewer  VirtualizingPanel.IsVirtualizing="True"
+  VirtualizingPanel.IsContainerVirtualizable="True"
+  VirtualizingPanel.VirtualizationMode="Recycling"
+  VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+  VirtualizingPanel.CacheLengthUnit="Pixel"
+  VirtualizingPanel.CacheLength="1000"
+  VirtualizingPanel.ScrollUnit="Item">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -76,6 +89,13 @@
                                          RowIndicatorVisibility="Collapsed"
                                          DataLoadMode="Asynchronous"
                                          NewRowPosition="Bottom"
+                                          VirtualizingPanel.IsVirtualizing="True"
+                                          VirtualizingPanel.IsContainerVirtualizable="True"
+                                          VirtualizingPanel.VirtualizationMode="Recycling"
+                                          VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                          VirtualizingPanel.CacheLengthUnit="Item"
+                                          VirtualizingPanel.CacheLength="10"
+                                          VirtualizingPanel.ScrollUnit="Item"
                                          ShowColumnHeaders="True"
                                          ShowSearchPanel="True" 
                                          ShowColumnSortIndexes="True"

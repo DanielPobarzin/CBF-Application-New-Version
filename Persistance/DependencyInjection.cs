@@ -25,14 +25,31 @@ namespace Persistance
 		/// </summary>
 		public override void Load()
 		{
-
 			/// <summary>
-			/// Привязывает сервисы к их реализации в области видимости Singleton.
+			/// Регистрация сервиса констант.
 			/// </summary>
 			Bind<IConstParameterService>().To<ConstParameterService>().InSingletonScope();
-			Bind<ICrudService<Fuel>>().To<FuelDataService>().InSingletonScope();
-			Bind<ICrudService<Filter>>().To<FilterDataService>().InSingletonScope();
-			Bind<IExportService>().To<ExportService>().InSingletonScope();
+
+			/// <summary>
+			/// Регистрация служб взаимодействия с репозиториями данных в области видимости Transient.
+			/// </summary>
+			Bind<ICrudService<Fuel>>().To<FuelDataService>().InTransientScope();
+			Bind<ICrudService<Filter>>().To<FilterDataService>().InTransientScope();
+
+			/// <summary>
+			/// Регистрация службы экспорта данных в Excel в области видимости Transient.
+			/// </summary>
+			Bind<IExportService>().To<ExportService>().InTransientScope();
+
+			/// <summary>
+			/// Регистрация службы расчета данных в области видимости Singleton.
+			/// </summary>
+			Bind<ICalculateService>().To<CalculateService>().InSingletonScope();
+
+			/// <summary>
+			/// Регистрация службы основных команд навигации и состояния в области видимости Singleton.
+			/// </summary>
+			Bind<ICommandService>().To<CommandService>().InSingletonScope();
 
 			/// <summary>
 			/// Привязывает контекст базы данных для фильтров с использованием SQLite в области видимости Transient.
@@ -60,17 +77,17 @@ namespace Persistance
 			Bind(typeof(IRepositoryAsync<Filter>)).To<FilterRepository>().InTransientScope();
 
 			/// <summary>
-			/// Привязывает DTO текущих параметров к его реализации в области видимости Singleton.
+			/// Привязывает объект передачи данных текущих параметров к его реализации в области видимости Singleton.
 			/// </summary>
 			Bind(typeof(ICurrentParameterDTO)).To<CurrentParameterDTO>().InSingletonScope();
 
 			/// <summary>
-			/// Привязывает поведение анимации к его реализации в области видимости Singleton.
+			/// Привязывает поведение анимации к его реализации в области видимости Thread.
 			/// </summary>
-			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InSingletonScope();
+			Bind(typeof(IAnimationBehaviour)).To<AnimationBehaviour>().InThreadScope();
 
 			/// <summary>
-			/// Привязывает конвертер значений к его реализации при внедрении в <see cref="CalculateService"/> в области видимости Singleton.
+			/// Привязывает конвертер значений цвета к его реализации при внедрении в <see cref="CalculateService"/> в области видимости Singleton.
 			/// </summary>
 			Bind<IValueConverter>().To<RandomColorConverter>().WhenInjectedInto<CalculateService>().InSingletonScope();
 		}

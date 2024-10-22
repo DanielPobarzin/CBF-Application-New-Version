@@ -9,7 +9,6 @@ namespace Application.Interfaces.ViewModels
 		Station CurrentPropertyStation { get; }
 		RelayCommand CloseFormDataCommand { get; }
 		RelayCommand OpenFormDataCommand { get; }
-		RelayCommand SavePropertyStationCommand { get; }
 		RelayCommand SelectSchemeBunkerPatritionsCommand { get; }
 		Dictionary<string, SlagRemoval> SlagRemovalOptions { get; }
 		Dictionary<string, TypeFlueGasSupply> TypeFlueGasSupplyOptions { get; }

@@ -908,6 +908,22 @@
           }
         }
       },
+      "Serilog.Sinks.File/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Serilog.Sinks.File.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Serilog.Sinks.File.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpDX/4.2.0": {
         "type": "package",
         "dependencies": {
@@ -4064,6 +4080,29 @@
         "lib/netstandard2.0/Serilog.Sinks.Console.xml",
         "serilog.sinks.console.6.0.0.nupkg.sha512",
         "serilog.sinks.console.nuspec"
+      ]
+    },
+    "Serilog.Sinks.File/6.0.0": {
+      "sha512": "lxjg89Y8gJMmFxVkbZ+qDgjl+T4yC5F7WSLTvA+5q0R04tfKVLRL/EHpYoJ/MEQd2EeCKDuylBIVnAYMotmh2A==",
+      "type": "package",
+      "path": "serilog.sinks.file/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Serilog.Sinks.File.dll",
+        "lib/net462/Serilog.Sinks.File.xml",
+        "lib/net471/Serilog.Sinks.File.dll",
+        "lib/net471/Serilog.Sinks.File.xml",
+        "lib/net6.0/Serilog.Sinks.File.dll",
+        "lib/net6.0/Serilog.Sinks.File.xml",
+        "lib/net8.0/Serilog.Sinks.File.dll",
+        "lib/net8.0/Serilog.Sinks.File.xml",
+        "lib/netstandard2.0/Serilog.Sinks.File.dll",
+        "lib/netstandard2.0/Serilog.Sinks.File.xml",
+        "serilog-sink-nuget.png",
+        "serilog.sinks.file.6.0.0.nupkg.sha512",
+        "serilog.sinks.file.nuspec"
       ]
     },
     "SharpDX/4.2.0": {
@@ -7882,6 +7921,7 @@
       "SQLitePCLRaw.core >= 2.1.10",
       "Serilog >= 4.0.1",
       "Serilog.Sinks.Console >= 6.0.0",
+      "Serilog.Sinks.File >= 6.0.0",
       "Telerik.UI.for.Wpf.70.Xaml >= 2023.1.117",
       "ViewModels >= 1.0.0",
       "WpfAnimatedGif >= 2.0.2"
@@ -7959,6 +7999,10 @@
             "version": "[4.0.1, )"
           },
           "Serilog.Sinks.Console": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
+          "Serilog.Sinks.File": {
             "target": "Package",
             "version": "[6.0.0, )"
           },

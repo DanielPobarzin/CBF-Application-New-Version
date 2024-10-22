@@ -35,14 +35,14 @@ namespace Persistance.Services
 		{
 			_calculateService = calculateService;
 			_currentParameters = currentParameters;
-			_exportToExcelCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await DialogExportToExcelAsync(parameter)));
+			_exportToExcelCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await DialogExportToExcelAsync()));
 		}
 
 		/// <summary>
 		/// Команда для экспорта данных в Excel.
 		/// </summary>
 		public RelayCommand ExportToExcelCommand => _exportToExcelCommand.Value;
-		private async Task DialogExportToExcelAsync(object obj)
+		private async Task DialogExportToExcelAsync()
 		{
 			SaveFileDialog saveFileDialog = new()
 			{
@@ -71,24 +71,24 @@ namespace Persistance.Services
 					await WriteDefinedDataAsync(excelPackage);
 
 					excelPackage.SaveAs(new FileInfo(filePath));
-					MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных", 
+					MessageBox.Show("Экспорт завершен успешно!", "Экспорт данных",
 									MessageBoxButton.OK, MessageBoxImage.Information);
 				}
-				catch (Exception ex) 
+				catch (Exception ex)
 				{
-					MessageBox.Show($"Невозможно совершить экспорт.", "Экспорт данных", 
+					MessageBox.Show($"Невозможно совершить экспорт.", "Экспорт данных",
 									MessageBoxButton.OK, MessageBoxImage.Error);
 					Log.Error(ex.Message);
 				}
 			}
-			
+
 		}
-		private async Task GetTemplateExportFileAsync(ExcelPackage excelPackage)
+		private static async Task GetTemplateExportFileAsync(ExcelPackage excelPackage)
 		{
 			var existingFile = new FileInfo(Path.Combine(Environment.CurrentDirectory, @"Resources\Templates\Template.xlsx"));
 			if (existingFile.Exists)
 			{
-				await Task.Run(() => 
+				await Task.Run(() =>
 				{
 					using (var existingPackage = new ExcelPackage(existingFile))
 					{
@@ -138,7 +138,8 @@ namespace Persistance.Services
 						currentRow++;
 						var cell = worksheet.Cells[currentRow, 1];
 						worksheet.Cells.AutoFitColumns();
-						cell.Value = properties[i].GetCustomAttribute<DescriptionAttribute>().Description;
+						var attribute = properties[i].GetCustomAttribute<DescriptionAttribute>();
+						cell.Value = attribute?.Description ?? String.Empty;
 						StyleCell(cell);
 
 						if (instance != null && type != typeof(Fuel))
@@ -179,12 +180,11 @@ namespace Persistance.Services
 						var nameCell = worksheet.Cells[currentRow, 1];
 						var valueCell = worksheet.Cells[currentRow, 2];
 						worksheet.Cells.AutoFitColumns();
-						nameCell.Value = properties[i].GetCustomAttribute<DescriptionAttribute>().Description;
+						nameCell.Value = properties[i].GetCustomAttribute<DescriptionAttribute>()?.Description;
 						if (properties[i].PropertyType.IsGenericType &&
 							 properties[i].PropertyType.GetGenericTypeDefinition() == typeof(Dictionary<,>))
 						{
-							var dictionary = properties[i].GetValue(instance) as IDictionary<string, double>;
-							foreach (var keyValue in dictionary)
+							foreach (var keyValue in properties[i].GetValue(instance) as IDictionary<string, double>)
 							{
 								currentRow++;
 								worksheet.Cells[currentRow, 1].Value = keyValue.Key;
@@ -225,7 +225,7 @@ namespace Persistance.Services
 					return attribute.Description;
 				}
 			}
-			return value.ToString(); 
+			return value.ToString();
 		}
 		private void SetCellBorders(ExcelRange cell)
 		{

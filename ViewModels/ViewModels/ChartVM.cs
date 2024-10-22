@@ -4,6 +4,8 @@ using Application.Parameters;
 using Models.Entities.CalculationFilterEfficiency;
 using Serilog;
 using System.Collections;
+using System.Collections.ObjectModel;
+using System.Windows.Media;
 using Telerik.Windows.Controls;
 
 namespace ViewModels.ViewModels
@@ -25,12 +27,9 @@ namespace ViewModels.ViewModels
 		{
 			_calculateService = calculateService;
 			_calculateService.ResultsLoaded += OnResultsLoaded;
-
-			var data = new ConcentrationStatisticsReport();
-			var list = new List<ConcentrationStatisticsReport>();
-			list.Add(data);
-
-			AllData = list;
+			_data = new List<ConcentrationStatistics> { new() };
+			_allData = new List<ConcentrationStatisticsReport> { new() };
+			Results = new ObservableCollection<DefinedFilterParameters> { new() };
 			GetDataCompleted(AllData);
 		}
 
@@ -59,14 +58,17 @@ namespace ViewModels.ViewModels
 				OnPropertyChanged(nameof(AllData));
 			}
 		}
-		private ConcentrationStatisticsReport GetData(DefinedFilterParameters result)
+		public ObservableCollection<DefinedFilterParameters> Results { get; private set; }
+		private static ConcentrationStatisticsReport GetData(DefinedFilterParameters result)
 		{
-			ConcentrationStatisticsReport data = new();
-			data.FuelName = result.UseFuel;
-			data.FirstFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №1");
-			data.SecondFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №2");
-			data.ThirdFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №3");
-			data.FourthFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №4");
+			ConcentrationStatisticsReport data = new()
+			{
+				FuelName = result.UseFuel,
+				FirstFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №1"),
+				SecondFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №2"),
+				ThirdFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №3"),
+				FourthFieldConcentration = GetValueOrDefault(result.AshConcentrationEntranceMthField, "Поле №4")
+			};
 			for (int i = 1; i <= result.AshConcentrationEntranceMthField.Count; i++)
 			{
 				if (GetValueOrDefault(result.AshConcentrationEntranceMthField, $"Поле №{i}") == 0)
@@ -83,7 +85,9 @@ namespace ViewModels.ViewModels
 		}
 		private void GetDataCompleted(IEnumerable data)
 		{
-			this.AllData = data as IEnumerable<ConcentrationStatisticsReport>;
+			this.AllData = data is IEnumerable<ConcentrationStatisticsReport> enumerable
+			? enumerable
+			: Enumerable.Empty<ConcentrationStatisticsReport>();
 
 			var firstField = from c in this.AllData
 							 select new ConcentrationStatistics()
@@ -93,38 +97,39 @@ namespace ViewModels.ViewModels
 								 AshConcentration = c.FirstFieldConcentration
 							 };
 			var secondField = from c in this.AllData
-							   select new ConcentrationStatistics()
-							   {
-								   FuelName = c.FuelName,
-								   FieldName = "Поле №2",
-								   AshConcentration = c.SecondFieldConcentration
-							   };
+							  select new ConcentrationStatistics()
+							  {
+								  FuelName = c.FuelName,
+								  FieldName = "Поле №2",
+								  AshConcentration = c.SecondFieldConcentration
+							  };
 			var thirdField = from c in this.AllData
 							 select new ConcentrationStatistics()
 							 {
 								 FuelName = c.FuelName,
 								 FieldName = "Поле №3",
 								 AshConcentration = c.ThirdFieldConcentration
-							   };
+							 };
 			var fourthField = from c in this.AllData
 							  select new ConcentrationStatistics()
 							  {
 								  FuelName = c.FuelName,
 								  FieldName = "Поле №4",
 								  AshConcentration = c.FourthFieldConcentration
-							 };
+							  };
 			var outField = from c in this.AllData
 						   select new ConcentrationStatistics()
 						   {
 							   FuelName = c.FuelName,
 							   FieldName = "Выход",
 							   AshConcentration = c.OutConcentration
-							  };
+						   };
 
 			this.Data = firstField.Concat(secondField).Concat(thirdField).Concat(fourthField).Concat(outField);
 		}
 		private void OnResultsLoaded(IEnumerable<DefinedFilterParameters> results)
 		{
+			Results.Clear();
 			try
 			{
 				System.Windows.Application.Current.Dispatcher.Invoke(() =>
@@ -133,9 +138,9 @@ namespace ViewModels.ViewModels
 					foreach (var result in results)
 					{
 						chartData.Add(GetData(result));
+						Results.Add(result);
 					}
 					AllData = chartData;
-					GetDataCompleted(AllData);
 				});
 			}
 			catch (Exception ex)
@@ -151,3 +156,4 @@ namespace ViewModels.ViewModels
 
 	}
 }
+

@@ -24,17 +24,14 @@ namespace FilterApplication
 		}
 		private void MovingWin(object sender, MouseButtonEventArgs e)
 		{
-			Task.Run(() =>
+			if (e.ButtonState == MouseButtonState.Pressed)
 			{
-				if (e.ButtonState == MouseButtonState.Pressed)
+				var command = _viewModel.MoveWindowCommand;
+				if (command.CanExecute(this))
 				{
-					var command = _viewModel.MoveWindowCommand;
-					if (command.CanExecute(this))
-					{
-						Dispatcher.Invoke(() => command.Execute(this));
-					}
+					Dispatcher.Invoke(() => command.Execute(this));
 				}
-			});
+			}
 		}
 		private void WindowSizeChanged(object sender, SizeChangedEventArgs e)
 		{

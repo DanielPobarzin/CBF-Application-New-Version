@@ -5,8 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" d:DataContext="{d:DesignInstance Type=viewmodels:CalculateVM}"
              mc:Ignorable="d" 
-             d:DesignHeight="1080"
-             d:DesignWidth="1622"
+              VirtualizingPanel.IsVirtualizing="True"
+              VirtualizingPanel.IsContainerVirtualizable="True"
+              VirtualizingPanel.VirtualizationMode="Recycling"
+              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+              VirtualizingPanel.CacheLengthUnit="Pixel"
+              VirtualizingPanel.CacheLength="10000"
+              VirtualizingPanel.ScrollUnit="Item"
+             d:DesignHeight="500"
+             d:DesignWidth="622"
               Style="{StaticResource Page_Style}">
     <UserControl.Resources>
         <Menu:RandomColorConverter x:Key="RandomColorConverter"/>
@@ -68,7 +75,7 @@
         </Style>
         <Style x:Key="ElementBorder" TargetType="Border">
             <Setter Property="CornerRadius" Value="1"/>
-            <Setter Property="Height" Value="20"/>
+            <Setter Property="Height" Value="30"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Background" Value="#152335"/>
             <Setter Property="BorderBrush" Value="#6a8bb3"/>
@@ -80,10 +87,12 @@
             <Setter Property="TextAlignment" Value="Center"/>
             <Setter Property="TextWrapping" Value="Wrap"/>
             <Setter Property="FontFamily" Value="/Resources/Fonts/#Raleway SemiBold"/>
-            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="FontSize" Value="11"/>
         </Style>
         <Style x:Key="HeaderBorder" TargetType="Border">
             <Setter Property="CornerRadius" Value="1"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="100"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Background" Value="#1d314a"/>
             <Setter Property="BorderBrush" Value="#6a8bb3"/>
@@ -104,7 +113,13 @@
               BorderBrush="#3A4149" 
               BorderThickness="5" 
               CornerRadius="8,8,0,8">
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <ScrollViewer VerticalScrollBarVisibility="Auto"  VirtualizingPanel.IsVirtualizing="True"
+                          VirtualizingPanel.IsContainerVirtualizable="True"
+                          VirtualizingPanel.VirtualizationMode="Recycling"
+                          VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                          VirtualizingPanel.CacheLengthUnit="Pixel"
+                          VirtualizingPanel.CacheLength="1000"
+                          VirtualizingPanel.ScrollUnit="Item">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -158,33 +173,26 @@
                                      TextWrapping="NoWrap" 
                                      FontFamily="Century Gothic"/>
                         </Border>
-                        <Grid Height="200" Name="GridLoad" Visibility="Collapsed"
-                           Width="200"
+                        <Grid Height="120" Name="GridLoad" Visibility="Collapsed"
+
                            VerticalAlignment="Top"
                            HorizontalAlignment="Center">
-                            <Image x:Name="ProccessCalculateImage" 
-                                 Height="140" 
-                                 Visibility="Visible"
-                                 Width="140"
-                                 VerticalAlignment="Center"
-                                 HorizontalAlignment="Center"
-                                 Source="{StaticResource Dial_Image}"
-                                 Stretch="Uniform"/>
-                            <Ellipse Height="160"
-                               Width="160"
-                               Opacity="0.7"
-                               Stroke="#212529"
-                               StrokeThickness="15"
+                            <Ellipse Height="100"
+                               Width="100"
+                                     Opacity="0.8"
+                               Stroke="#4D4D4D"
+                               StrokeThickness="50"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Center" />
                             <Ellipse Height="100"
-                               Width="100"
-                               Stroke="#4D4D4D"
-                               StrokeThickness="10"
-                               VerticalAlignment="Center"
-                               HorizontalAlignment="Center" />
+                                     Width="100"
+                                     Stroke="#FF07A8D1"
+                                     Opacity="0.9"
+                                     StrokeThickness="10"
+                                     VerticalAlignment="Center"
+                                     HorizontalAlignment="Center" />
                             <TextBlock x:Name="TimerLabel"
-                                      Foreground="#FEF200"
+                                      Foreground="Yellow"
                                       Height="60"
                                       Width="60"
                                       FontSize="30"
@@ -215,7 +223,7 @@
                                     Width="50"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Top"
-                                    Command="{Binding CalculateCommand}"
+                                    Click="Handle"
                                     Style="{StaticResource PlayBtn_Style}"
                                     IsChecked="False">
                         </ToggleButton>
@@ -226,22 +234,22 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <StackPanel Grid.Row="0" Width="500" Orientation="Vertical">
-                                <DockPanel LastChildFill="True" Name="ResultsTable" Background="Transparent" Width="500" VerticalAlignment="Top">
+                                <DockPanel LastChildFill="True" Name="ResultsTable" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Top">
                                     <Border Height="40" x:Name="Header" Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=DockPanel}}" DockPanel.Dock="Top" Background="Transparent">
-                                        <StackPanel Orientation="Horizontal">
-                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderFuel" Width="100">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderFuel">
                                                 <TextBlock Style="{StaticResource TextBlockHeader}" Text="Используемое топливо"></TextBlock>
                                             </Border>
-                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderFields" Width="100">
+                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderFields">
                                                 <TextBlock Style="{StaticResource TextBlockHeader}" Text="Поля электрофильтра" ></TextBlock>
                                             </Border>
-                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderConcentrateAsh" Width="100">
+                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderConcentrateAsh">
                                                 <TextBlock Style="{StaticResource TextBlockHeader}" Text="Время встряхивания, с" ></TextBlock>
                                             </Border>
-                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderOptimalShakeMode" Width="100">
+                                            <Border Style="{StaticResource HeaderBorder}" x:Name="HeaderOptimalShakeMode">
                                                 <TextBlock Style="{StaticResource TextBlockHeader}" Text="Концентрация золы, г/м3" ></TextBlock>
                                             </Border>
-                                            <Border Style="{StaticResource HeaderBorder}" x:Name="DegreeAshCapture" Width="100">
+                                            <Border Style="{StaticResource HeaderBorder}" x:Name="DegreeAshCapture">
                                                 <TextBlock Style="{StaticResource TextBlockHeader}" Text="Степень золоулавливания" ></TextBlock>
                                             </Border>
                                         </StackPanel>
@@ -269,7 +277,7 @@
                                                                          Margin="5" 
                                                                          Grid.Column="1"
                                                                          TextWrapping="Wrap" 
-                                                                         FontSize="8" 
+                                                                         FontSize="10" 
                                                                          Text="{Binding UseFuel}"></TextBlock>
                                                                         <Border   VerticalAlignment="Stretch" 
                                                               HorizontalAlignment="Center" 
@@ -277,7 +285,7 @@
                                                                CornerRadius="2" 
                                                                Margin="5">
                                                                             <Border.Background>
-                                                                                <SolidColorBrush Color="{Binding СolorResult}"/>
+                                                                                <SolidColorBrush Color="{Binding ColorResult}"/>
                                                                             </Border.Background>
                                                                             <Border.Effect>
                                                                                 <DropShadowEffect 
@@ -314,7 +322,7 @@
                                                                         <ItemsControl.ItemTemplate>
                                                                             <DataTemplate>
                                                                                 <Border Style="{StaticResource ElementBorder}" MaxHeight="20">
-                                                                                    <TextBlock Style="{StaticResource TextBlockHeader}" Text="{Binding Value}"></TextBlock>
+                                                                                    <TextBlock Style="{StaticResource TextBlockHeader}" Text="{Binding Value, StringFormat={}{0:F2}}"></TextBlock>
                                                                                 </Border>
                                                                             </DataTemplate>
                                                                         </ItemsControl.ItemTemplate>
@@ -325,7 +333,7 @@
                                                                         <ItemsControl.ItemTemplate>
                                                                             <DataTemplate>
                                                                                 <Border Style="{StaticResource ElementBorder}" MaxHeight="20">
-                                                                                    <TextBlock Style="{StaticResource TextBlockHeader}" Text="{Binding Value}"></TextBlock>
+                                                                                    <TextBlock Style="{StaticResource TextBlockHeader}" Text="{Binding Value, StringFormat={}{0:F4}}"></TextBlock>
                                                                                 </Border>
                                                                             </DataTemplate>
                                                                         </ItemsControl.ItemTemplate>
@@ -333,7 +341,7 @@
                                                                 </StackPanel>
                                                                 <StackPanel Orientation="Vertical" Height="Auto" Grid.Column="3" Width="{Binding ActualWidth, ElementName=DegreeAshCapture}">
                                                                     <Border Style="{StaticResource ElementBorder}" Height="{Binding ActualHeight, ElementName=PanelWithResult}">
-                                                                        <TextBlock Style="{StaticResource TextBlockHeader}" Text="{Binding DegreeAshCapture}"></TextBlock>
+                                                                        <TextBlock Style="{StaticResource TextBlockHeader}" Text="{Binding DegreeAshCapture, StringFormat={}{0:F4}}"></TextBlock>
                                                                     </Border>
                                                                 </StackPanel>
                                                             </Grid>
@@ -348,47 +356,46 @@
                         </Grid>
                     </Border>
 
-                    <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right">
-                        <Button Style="{StaticResource Export}" Command="{Binding ExportToExcelCommand}"></Button>
+                    <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch">
+                        <Button Style="{StaticResource Export}" Command="{Binding ExportToExcelCommand}">
+                        </Button>
+                        <Border Margin="5 0 5 5" x:Name="ConsoleBorder" 
+                                  VerticalAlignment="Stretch"
+                                  MinHeight="200"
+                                  MaxHeight="500"
+                                  BorderBrush="#FF8A8D92" 
+                                  BorderThickness="3" 
+                                  Opacity="0.8" Background="#FF1F1D1D">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <DockPanel Grid.Row="0" Height="40" VerticalAlignment="Top" Background="#FF47494D">
+                                    <DockPanel x:Name="Console" DockPanel.Dock="Top">
+                                        <TextBlock DockPanel.Dock="Left"  Foreground="AliceBlue">Вывод</TextBlock>
+                                        <Border Margin="4" DockPanel.Dock="Right" HorizontalAlignment="Stretch" Grid.ColumnSpan="3" Background="{StaticResource DotPattern}"></Border>
+                                    </DockPanel>
+                                    <DockPanel DockPanel.Dock="Bottom">
+                                        <TextBlock  Foreground="#FF959BA0">Отображение сообщений, возникающих в результате работы</TextBlock>
+                                    </DockPanel>
+                                </DockPanel>
+                                <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                                    <TextBox x:Name="OutputTextBox" 
+                                               VerticalAlignment="Stretch" 
+                                               IsReadOnly="True"
+                                               Background="#FF1F1D1D"
+                                               Foreground="#FFC9F3CF"
+                                               FontSize="12"
+                                               FontFamily="Rubik"
+                                               Text="{Binding LogOutput, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
+                                               AcceptsReturn="True"
+                                               TextWrapping="Wrap"/>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
                     </StackPanel>
-                    <Border Margin="5 0 5 5" x:Name="ConsoleBorder" 
-                          Grid.Row="4" 
-                          VerticalAlignment="Stretch"
-                          Grid.ColumnSpan="3" 
-                          MinHeight="150"
-                          MaxHeight="500"
-                          HorizontalAlignment="Stretch"
-                          BorderBrush="#FF8A8D92" 
-                          BorderThickness="3" 
-                          Opacity="0.8" Background="#FF1F1D1D">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="1*"/>
-                            </Grid.RowDefinitions>
-                            <DockPanel Grid.Row="0" Height="40" VerticalAlignment="Top" Background="#FF47494D">
-                                <DockPanel x:Name="Console" DockPanel.Dock="Top">
-                                    <TextBlock DockPanel.Dock="Left"  Foreground="AliceBlue">Вывод</TextBlock>
-                                    <Border Margin="4" DockPanel.Dock="Right" HorizontalAlignment="Stretch" Grid.ColumnSpan="3" Background="{StaticResource DotPattern}"></Border>
-                                </DockPanel>
-                                <DockPanel DockPanel.Dock="Bottom">
-                                    <TextBlock  Foreground="#FF959BA0">Отображение сообщений, возникающих в результате работы</TextBlock>
-                                </DockPanel>
-                            </DockPanel>
-                            <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
-                                <TextBox x:Name="OutputTextBox" 
-                                       VerticalAlignment="Stretch" 
-                                       IsReadOnly="True"
-                                       Background="#FF1F1D1D"
-                                       Foreground="#FFC9F3CF"
-                                       FontSize="12"
-                                       FontFamily="Rubik"
-                                       Text="{Binding LogOutput, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"
-                                       AcceptsReturn="True"
-                                       TextWrapping="Wrap"/>
-                            </ScrollViewer>
-                        </Grid>
-                    </Border>
+
                 </Grid>
             </ScrollViewer>
         </Border>

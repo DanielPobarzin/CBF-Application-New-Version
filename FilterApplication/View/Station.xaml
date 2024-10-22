@@ -9,6 +9,13 @@
              xmlns:viewmodels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" 
              d:DataContext="{d:DesignInstance Type=viewmodels:StationVM}"
              mc:Ignorable="d"
+               VirtualizingPanel.IsVirtualizing="True"
+              VirtualizingPanel.IsContainerVirtualizable="True"
+              VirtualizingPanel.VirtualizationMode="Recycling"
+              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+              VirtualizingPanel.CacheLengthUnit="Pixel"
+              VirtualizingPanel.CacheLength="10000"
+              VirtualizingPanel.ScrollUnit="Item"
             d:DesignHeight="600"
             d:DesignWidth="622"
             Style="{StaticResource Page_Style}">
@@ -88,7 +95,13 @@
                 BorderBrush="#3A4149"
                 BorderThickness="5"
                 CornerRadius="8,8,0,8">
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <ScrollViewer VerticalScrollBarVisibility="Auto"  VirtualizingPanel.IsVirtualizing="True"
+                  VirtualizingPanel.IsContainerVirtualizable="True"
+                  VirtualizingPanel.VirtualizationMode="Recycling"
+                  VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                  VirtualizingPanel.CacheLengthUnit="Pixel"
+                  VirtualizingPanel.CacheLength="1000"
+                  VirtualizingPanel.ScrollUnit="Item">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.6*" 
@@ -114,7 +127,14 @@
                             Grid.Row="2"
                             Opacity="0.8">
                         <Grid Margin="10">
-                            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+                            <ScrollViewer 
+                                 VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.IsContainerVirtualizable="True"
+                                  VirtualizingPanel.VirtualizationMode="Recycling"
+                                  VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                  VirtualizingPanel.CacheLengthUnit="Item"
+                                  VirtualizingPanel.CacheLength="10"
+                                  VirtualizingPanel.ScrollUnit="Item">
                                 <RichTextBox IsReadOnly="True" 
                                              Background="Transparent" 
                                              Foreground="#DCE0E4" 
@@ -193,7 +213,10 @@
                             HorizontalAlignment="Left" 
                             CornerRadius="25" 
                             Grid.ColumnSpan="3" 
-                            Grid.RowSpan="2">
+                            Grid.RowSpan="2"
+                            VirtualizingPanel.IsVirtualizing="True"
+                            VirtualizingPanel.IsContainerVirtualizable="True"
+                            VirtualizingPanel.VirtualizationMode="Recycling">
 
                         <Grid Margin="20" x:Name="FormGrid"  
                                   Height="50" 
@@ -201,7 +224,13 @@
                                   MaxHeight="700"
                                   MinWidth="300"
                                   MaxWidth="500">
-                            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+                            <ScrollViewer VirtualizingPanel.IsVirtualizing="True"
+                                          VirtualizingPanel.IsContainerVirtualizable="True"
+                                          VirtualizingPanel.VirtualizationMode="Recycling"
+                                          VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                          VirtualizingPanel.CacheLengthUnit="Item"
+                                          VirtualizingPanel.CacheLength="10"
+                                          VirtualizingPanel.ScrollUnit="Item">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition
@@ -300,7 +329,6 @@
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
                                         Text="Тип шлакоудаления">
                                         </TextBlock>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
 
 
@@ -321,7 +349,6 @@
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
                                                Text="Расход топлива">
                                         </TextBlock>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <TextBox Name="FuelConsumption" 
                                              Style="{StaticResource TextBoxUniformStyle}"
@@ -350,7 +377,6 @@
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="8">
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
                                          Text="Температура уходящих газов"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <TextBox Name="ExhaustGasTemperature" 
                                              Style="{StaticResource TextBoxUniformStyle}"
@@ -379,7 +405,6 @@
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="10">
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
                                          Text="Высота подъемной шахты"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <TextBox Name="HeightLiftShift" 
                                            Style="{StaticResource TextBoxUniformStyle}"
@@ -408,7 +433,6 @@
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="12">
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
                                         Text="Количество дымососoв"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <telerik:RadComboBox x:Name="radComboBoxSmokePumps" 
                                               Margin="0, 10, 10, 0" 
@@ -423,7 +447,6 @@
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="14">
                                         <TextBlock Style="{StaticResource TextBlockForm}" 
                                         Text="Величина избытка воздуха"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <TextBox Name="AirSuction" 
                                            Style="{StaticResource TextBoxUniformStyle}"
@@ -452,7 +475,6 @@
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="2"  Grid.Row="16">
                                         <TextBlock Style="{StaticResource TextBlockForm}"
                                         Text="Схема бункерных перегородок"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <Menu:Btn Style="{StaticResource SchemeBtnStyle}" 
                                               GroupName="SchemaGroup" 
@@ -513,7 +535,6 @@
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="19">
                                         <TextBlock Style="{StaticResource TextBlockForm}"
                                         Text="Количество решеток"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <telerik:RadComboBox x:Name="radComboBoxNumberGrids" 
                                               Margin="0, 10, 10, 0" 
@@ -528,7 +549,6 @@
                                     <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2"  Grid.Row="21">
                                         <TextBlock Style="{StaticResource TextBlockForm}"
                                         Text="Тип подвода газа"/>
-                                        <TextBlock Text="*" Foreground="Red" FontSize="14" VerticalAlignment="Center"/>
                                     </StackPanel>
                                     <telerik:RadComboBox x:Name="radComboBoxTypeFlueGasSupply" 
                                                Margin="0, 10, 10, 0" 

@@ -4,10 +4,13 @@ using System.Threading.Tasks;
 
 namespace FilterApplication.Resources.Helpers
 {
+	/// <summary>
+	/// Загрузочное окно
+	/// </summary>
 	public partial class SplashScreen : IDisposable
 	{
 		private volatile View.SplashScreen splashWindow;
-		private TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
+		private readonly TaskCompletionSource<bool> tcs = new();
 
 		public SplashScreen(string title = "SplashWindow")
 		{
@@ -18,8 +21,10 @@ namespace FilterApplication.Resources.Helpers
 		{
 			var thread = new Thread(() =>
 			{
-				splashWindow = new View.SplashScreen();
-				splashWindow.Title = title;
+				splashWindow = new View.SplashScreen
+				{
+					Title = title
+				};
 				splashWindow.Show();
 				System.Windows.Threading.Dispatcher.Run();
 			});
@@ -46,7 +51,7 @@ namespace FilterApplication.Resources.Helpers
 		public void Dispose()
 		{
 			Close();
-			GC.Collect();			
+			GC.Collect();
 			GC.WaitForPendingFinalizers();
 			GC.SuppressFinalize(this);
 		}

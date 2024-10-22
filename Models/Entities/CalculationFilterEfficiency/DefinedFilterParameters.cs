@@ -50,14 +50,14 @@ namespace Models.Entities.CalculationFilterEfficiency
 		/// <summary>
 		/// Цвет для графиков и выделения блоков
 		/// </summary>
-		public Color СolorResult
+		public Color ColorResult
 		{
 			get { return colorResult; }
 			set
 			{
 				if (colorResult != value)
 					colorResult = value;
-				OnPropertyChanged(nameof(СolorResult));
+				OnPropertyChanged(nameof(ColorResult));
 			}
 		}
 		/// <summary>

@@ -8,7 +8,7 @@
     <ImageBrush x:Key="load_data_mo"
             ImageSource="pack://application:,,,/FilterApplication;component/Resources/Images/load_data_mo.png"
             Stretch="UniformToFill" />
-    
+
     <ImageBrush x:Key="save_data_def"
         ImageSource="pack://application:,,,/FilterApplication;component/Resources/Images/save_data_def.png"
         Stretch="UniformToFill" />
@@ -16,7 +16,7 @@
     <ImageBrush x:Key="save_data_mo"
         ImageSource="pack://application:,,,/FilterApplication;component/Resources/Images/save_data_mo.png"
         Stretch="UniformToFill" />
-    
+
     <Style x:Key="ComboBoxButton" TargetType="Button">
         <Setter Property="OverridesDefaultStyle" Value="True"/>
         <Setter Property="Background" Value="#FF272E3B"/>
@@ -230,7 +230,7 @@
                              Background="{StaticResource load_data_def}">
                             </Border>
                         </StackPanel>
-                       
+
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver"
@@ -243,7 +243,7 @@
                                     Value="#FFFFFF" />
                             <Setter Property="Background"
                                     TargetName="load_border"
-                                    Value="{StaticResource load_data_mo}" />        
+                                    Value="{StaticResource load_data_mo}" />
                         </Trigger>
                         <Trigger Property="IsPressed"
                                  Value="True">
@@ -255,7 +255,7 @@
                                     Value="#292F34" />
                             <Setter Property="Background"
                                     TargetName="load_border"
-                                    Value="{StaticResource load_data_mo}" />    
+                                    Value="{StaticResource load_data_mo}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -788,7 +788,7 @@
     TargetType="{x:Type Button}">
 
         <Setter Property="Height"
-         Value="40" />
+         Value="50" />
         <Setter Property="Width"
          Value="40" />
         <Setter Property="HorizontalAlignment"
@@ -803,12 +803,17 @@
             <Setter.Value>
 
                 <ControlTemplate TargetType="{x:Type Button}">
+                    <StackPanel Orientation="Vertical">
+                        <Border x:Name="border"
+                                   Height="30"
+                                   BorderThickness="0"
+                                   Background="{StaticResource export}">
+                        </Border>
+                        <TextBlock FontSize="9"
+                                   Foreground="White"
+                                   FontFamily="Century Gothic">Экспорт</TextBlock>
+                    </StackPanel>
 
-                    <Border x:Name="border"
-                     BorderThickness="0"
-                     Background="{StaticResource export}">
-
-                    </Border>
 
                     <ControlTemplate.Triggers>
 

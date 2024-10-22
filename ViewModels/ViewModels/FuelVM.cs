@@ -66,7 +66,7 @@ namespace ViewModels.ViewModels
 			_crudService = crudService;
 			_crudService.EntitiesLoaded += OnFuelsLoaded;
 			GetAllCommand.Execute(this);
-			Fuels = new();
+			fuels = new();
 			SelectedFuels = new();
 		}
 

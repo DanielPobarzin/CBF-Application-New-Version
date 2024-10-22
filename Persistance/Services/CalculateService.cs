@@ -65,8 +65,8 @@ namespace Persistance.Services
 		/// <param name="filterValidator">Валидатор для проверки выбранного фильтра.</param>
 		/// <param name="stationValidator">Валидатор для проверки параметров станции.</param>
 		/// <param name="calculateValidator">Валидатор для проверки результатов расчетов.</param>
-		public CalculateService(IValueConverter valueConverter, 
-			ICurrentParameterDTO currentParameterDTO, 
+		public CalculateService(IValueConverter valueConverter,
+			ICurrentParameterDTO currentParameterDTO,
 			IConstParameterService constParameters,
 			IValidator<Fuel> fuelValidator,
 			IValidator<Filter> filterValidator,
@@ -81,7 +81,7 @@ namespace Persistance.Services
 			_stationValidator = stationValidator;
 			_calculateValidator = calculateValidator;
 			Results = new();
-			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAsync(parameter)));
+			_calculateCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await StartInitAsync()));
 			_logOutput = new StringBuilder();
 		}
 
@@ -89,13 +89,10 @@ namespace Persistance.Services
 		/// Команда для запуска расчетов.
 		/// </summary>
 		public RelayCommand CalculateCommand => _calculateCommand.Value;
-		
-		private async Task StartInitAsync(object parameter)
+		public bool IsValidInputData => ValidationInit();
+		private async Task StartInitAsync()
 		{
-			if (ValidationInit())
-			{
-				await RunCalculationAsync();
-			}
+			await RunCalculationAsync();
 		}
 		private bool ValidationInit()
 		{
@@ -125,7 +122,8 @@ namespace Persistance.Services
 						return false;
 					}
 				}
-			}else
+			}
+			else
 			{
 				Log.Warning($"Validation failed for fuel:" +
 					  $"\n- Не выбрана ни одна модель топлива.");
@@ -147,6 +145,7 @@ namespace Persistance.Services
 			}
 			return true;
 		}
+
 		private async Task RunCalculationAsync()
 		{
 			try
@@ -217,7 +216,8 @@ namespace Persistance.Services
 			var result = new DefinedFilterParameters();
 
 			result.UseFuel = fuel.BrandFuel;
-			result.СolorResult = (Color)_valueConverter.Convert(null, typeof(Color), null, CultureInfo.InvariantCulture);
+			result.ColorResult = (Color)_valueConverter.
+				Convert(null, typeof(Color), null, CultureInfo.InvariantCulture);
 
 			// Расчет объемного расхода газа
 			result.VolumetricGasConsumption = _currentParameter.CurrentPropertyStation.FuelConsumption *
@@ -240,18 +240,18 @@ namespace Persistance.Services
 			// Расчет коэффициента вторичного уноса уловленной золы
 			result.CoeffSecondaryEntrainmentTrappedAsh = result.HeightCoefficientElectrode * _constParameters.СoefficientElectrodeType *
 				_currentParameter.SelectedFilter.СoefficientShakingMode * (1 - 0.25 * (result.FlueGasVelocity - 1));
-			
+
 			// Расчет параметра золоулавливания при равномерном поле скоростей
 			result.ParameterAshCollectionUNIFORMVelocityField = 0.2 * result.CoeffSecondaryEntrainmentTrappedAsh *
 				Math.Sqrt(result.TrateDriftAshParticles / result.FlueGasVelocity) * _currentParameter.SelectedFilter.NumberFields *
 				_currentParameter.SelectedFilter.ActiveFieldLength / _currentParameter.SelectedFilter.DistanceCPDevices;
-			
+
 			// Расчет просокока золы при равномерном поле скоростей
 			result.AshEmissionUniformVelocityField = Math.Exp(-result.ParameterAshCollectionUNIFORMVelocityField);
 
 			// Расчет степени золоулавливания при равномерном поле скоростей
 			result.DegreeAshCaptureUNIFORMVelocityField = 1 - result.AshEmissionUniformVelocityField;
-			
+
 			// Расчет коэффициента относительного увеличения влияния неравномерности
 			result.CoeffRelativeIncreaseInfluenceUnevenness = 0.125 * (1 + result.ParameterAshCollectionUNIFORMVelocityField) *
 				result.ParameterAshCollectionUNIFORMVelocityField;
@@ -285,7 +285,7 @@ namespace Persistance.Services
 			result.DegreeAshCapture = 1 - result.PassageAshTakingAccountGasLeaksZones;
 			if (result.DegreeAshCapture < 0.99)
 			{
-				var message = $"Степень улавливания золы для топлива типа {fuel.BrandFuel} ниже минимально допустимого значения. Желаете продолжить расчет?";
+				var message = $"Степень улавливания золы для топлива типа '{fuel.BrandFuel}' ниже минимально допустимого значения. Желаете продолжить расчет?";
 				MessageBoxResult dialog = MessageBox.Show(message, "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
 				if (dialog == MessageBoxResult.No)
 				{
@@ -348,10 +348,11 @@ namespace Persistance.Services
 				LogUpdated?.Invoke();
 			}
 		}
-		private void HandleError(Exception ex)
+		private static void HandleError(Exception ex)
 		{
 			MessageBox.Show($"Возникла ошибка при выполнении расчета: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
 			Log.Error("An error occurred: {0}", ex.Message);
 		}
 	}
 }
+

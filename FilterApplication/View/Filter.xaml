@@ -8,8 +8,15 @@
              d:DataContext="{d:DesignInstance Type=viewmodels:FilterVM}"
              xmlns:Menu="clr-namespace:Application.Utilities;assembly=Application" 
              mc:Ignorable="d" 
-             d:DesignHeight="1080"
-             d:DesignWidth="1120"
+               VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.IsContainerVirtualizable="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                VirtualizingPanel.CacheLengthUnit="Pixel"
+                VirtualizingPanel.CacheLength="1000"
+                VirtualizingPanel.ScrollUnit="Item"
+             d:DesignHeight="500"
+             d:DesignWidth="900"
               Style="{StaticResource Page_Style}">
     <UserControl.Resources>
         <Menu:SelectedFilterConverter x:Key="SelectedFilterConverter"/>
@@ -27,6 +34,17 @@
             <Setter Property="MinWidth" Value="50"/>
             <Setter Property="ValidatesOnDataErrors" Value="InViewMode"/>
         </Style>
+        <DataTemplate x:Key="BackgroundImage">
+            <Image Grid.RowSpan="3" Grid.ColumnSpan="2" 
+                Margin="0 0 0 50" 
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Left"
+                MaxHeight="1000"
+                MaxWidth="1100"
+                Opacity="0.5"
+                Source="/Resources/Images/filters_page.png" 
+                Stretch="Uniform"/>
+        </DataTemplate>
     </UserControl.Resources>
 
     <Grid Background="Transparent" >
@@ -34,7 +52,13 @@
                 BorderBrush="#3A4149" 
                 BorderThickness="5" 
                 CornerRadius="8,8,0,8">
-            <ScrollViewer VerticalScrollBarVisibility="Auto" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+            <ScrollViewer  VirtualizingPanel.IsVirtualizing="True"
+                          VirtualizingPanel.IsContainerVirtualizable="True"
+                          VirtualizingPanel.VirtualizationMode="Recycling"
+                          VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                          VirtualizingPanel.CacheLengthUnit="Pixel"
+                          VirtualizingPanel.CacheLength="1000"
+                          VirtualizingPanel.ScrollUnit="Item">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -74,6 +98,13 @@
                                           ItemsSource="{Binding Filters, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" 
                                           IsReadOnly="False"
                                           RowIndicatorVisibility="Collapsed"
+                                            VirtualizingPanel.IsVirtualizing="True"
+                                            VirtualizingPanel.IsContainerVirtualizable="True"
+                                            VirtualizingPanel.VirtualizationMode="Recycling"
+                                            VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                            VirtualizingPanel.CacheLengthUnit="Item"
+                                            VirtualizingPanel.CacheLength="1"
+                                            VirtualizingPanel.ScrollUnit="Item"
                                           DataLoadMode="Asynchronous"
                                           NewRowPosition="Bottom"
                                           ShowColumnHeaders="True"

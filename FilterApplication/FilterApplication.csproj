@@ -23,9 +23,6 @@
   <Page Include="Resources\Styles\ComboBoxStyle.xaml">
     <Generator>MSBuild:Compile</Generator>
   </Page>
-  <Page Include="Resources\Styles\DataTemplate.xaml">
-    <Generator>MSBuild:Compile</Generator>
-  </Page>
   <Page Include="Resources\Styles\Image.xaml">
     <Generator>MSBuild:Compile</Generator>
   </Page>
@@ -229,6 +226,7 @@
   </ItemGroup>
 	
   <ItemGroup>
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
     <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.10" />
     <PackageReference Include="SQLitePCLRaw.core" Version="2.1.10" />
     <PackageReference Include="Telerik.UI.for.Wpf.70.Xaml" Version="2023.1.117" />

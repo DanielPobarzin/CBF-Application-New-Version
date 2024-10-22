@@ -64,11 +64,6 @@ namespace ViewModels.ViewModels
 		public RelayCommand OpenFormDataCommand => _commands.OpenFormDataCommand;
 
 		/// <summary>
-		/// Получает команду для сохранения текущей станции.
-		/// </summary>
-		public RelayCommand SavePropertyStationCommand => _commands.SavePropertyStationCommand;
-
-		/// <summary>
 		/// Получает доступные варианты удаления шлака.
 		/// </summary>
 		public Dictionary<string, SlagRemoval> SlagRemovalOptions =>
@@ -80,12 +75,12 @@ namespace ViewModels.ViewModels
 		/// <summary>
 		/// Получает доступные варианты насосов для дыма.
 		/// </summary>
-		public List<int> SmokePumpsOptions => new List<int> { 1, 2, 3 };
+		public List<int> SmokePumpsOptions => new() { 1, 2, 3 };
 
 		/// <summary>
 		/// Получает доступные варианты количества решеток.
 		/// </summary>
-		public List<int> NumberGridsOptions => new List<int> { 1, 2 };
+		public List<int> NumberGridsOptions => new() { 1, 2 };
 
 		/// <summary>
 		/// Получает доступные варианты типов подачи дымовых газов.
