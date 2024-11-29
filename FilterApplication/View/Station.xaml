@@ -1,0 +1,583 @@
+﻿ <UserControl x:Class="FilterApplication.View.Station"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
+             xmlns:menu="clr-namespace:Application.Utilities;assembly=Application" 
+              xmlns:models="clr-namespace:Models.Enums.Station;assembly=Models" 
+             xmlns:viewModels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" 
+             d:DataContext="{d:DesignInstance Type=viewModels:StationVm}"
+             mc:Ignorable="d"
+               VirtualizingPanel.IsVirtualizing="True"
+              VirtualizingPanel.IsContainerVirtualizable="True"
+              VirtualizingPanel.VirtualizationMode="Recycling"
+              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+              VirtualizingPanel.CacheLengthUnit="Pixel"
+              VirtualizingPanel.CacheLength="10000"
+              VirtualizingPanel.ScrollUnit="Item"
+            d:DesignHeight="600"
+            d:DesignWidth="622"
+            Style="{StaticResource PageStyle}">
+    <UserControl.Resources>
+        <menu:MultiUiNavigationConverter x:Key="MultiParameterConverter"/>
+        <Style x:Key="TextBoxUniformStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="#FF11141A"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Foreground" Value="#FFA6AAB4"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderBrush" Value="#FF6E7073"/>
+            <Setter Property="Padding" Value="10,0,0,0"/>
+            <Setter Property="FontFamily" Value="/Resources/Fonts/#Raleway SemiBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid x:Name="root" Height="{TemplateBinding Height}"
+                                            Width="{TemplateBinding Width}" 
+                                            SnapsToDevicePixels="True">
+                            <Border x:Name="Background" 
+                                    BorderThickness="1" 
+                                    CornerRadius="2"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"/>
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          BorderThickness="0"
+                                          Padding="{TemplateBinding Padding}"
+                                          IsTabStop="False"
+                                          Background="{x:Null}"
+                                          TextElement.Foreground="{TemplateBinding Foreground}">
+
+                            </ScrollViewer>
+
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF383C44"/>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF3D578C"/>
+                                <Setter Property="Background" Value="#FF0E1116"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TextBlockForm" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="0, 10, 0, 0"/>
+            <Setter Property="MinHeight" Value="20"/>
+            <Setter Property="MaxHeight" Value="80"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="MaxWidth" Value="350"/>
+            <Setter Property="Foreground" Value="#DCE0E4"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontFamily" Value="/Resources/Fonts/#Raleway SemiBold"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Border Background="#212529"  
+                BorderBrush="#3A4149"
+                BorderThickness="5"
+                CornerRadius="8,8,0,8">
+            <ScrollViewer VerticalScrollBarVisibility="Auto"  VirtualizingPanel.IsVirtualizing="True"
+                  VirtualizingPanel.IsContainerVirtualizable="True"
+                  VirtualizingPanel.VirtualizationMode="Recycling"
+                  VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                  VirtualizingPanel.CacheLengthUnit="Pixel"
+                  VirtualizingPanel.CacheLength="1000"
+                  VirtualizingPanel.ScrollUnit="Item">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*" 
+                                          MinWidth="350" 
+                                          MaxWidth="500"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Image Source="/Resources/Images/station_page.png" 
+                           Grid.ColumnSpan="3" 
+                           Grid.RowSpan="2" 
+                           Stretch="UniformToFill"/>
+                    <Border Background="#373E46" 
+                            MaxHeight="400" 
+                            VerticalAlignment="Top" 
+                            Margin="20" 
+                            CornerRadius="25" 
+                            Grid.ColumnSpan="3" Grid.Column="0"
+                            Grid.Row="2"
+                            Opacity="0.8">
+                        <Grid Margin="10">
+                            <ScrollViewer 
+                                 VirtualizingPanel.IsVirtualizing="True"
+                                  VirtualizingPanel.IsContainerVirtualizable="True"
+                                  VirtualizingPanel.VirtualizationMode="Recycling"
+                                  VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                  VirtualizingPanel.CacheLengthUnit="Item"
+                                  VirtualizingPanel.CacheLength="10"
+                                  VirtualizingPanel.ScrollUnit="Item">
+                                <RichTextBox IsReadOnly="True" 
+                                             Background="Transparent" 
+                                             Foreground="#DCE0E4" 
+                                             BorderBrush="Transparent"
+                                             VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+                                    <FlowDocument>
+                                        <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
+                                            К ознакомлению
+                                        </Paragraph>
+                                        <Section FontFamily="Fonts/#Raleway SemiBold" FontSize="14" Padding="5 0 0 0">
+                                            <Paragraph TextIndent="10">
+                                                Топливное хозяйство в зависимости от вида используемого на станции топлива включает приемно-разгрузочное устройство, 
+                                                транспортные механизмы, топливные склады твердого и жидкого топлива, устройства для предварительной подготовки топлива 
+                                                (дробильные установки для угля). 
+                                                Подготовка твердого топлива к сжиганию состоит из размола и сушки его в пылеприготовительной установке.
+                                            </Paragraph>
+                                            <Paragraph TextIndent="10">
+                                                Необходимый для горения топлива воздух подается в топочное пространство котла дутьевыми вентиляторами. 
+                                                Продукты сгорания топлива — дымовые газы — отсасываются дымососами и отводятся через дымовые трубы в атмосферу. 
+                                                Совокупность каналов (воздуховодов и газоходов) и различных элементов оборудования, по которым проходит воздух 
+                                                и дымовые газы, образует газовоздушный тракт тепловой электростанции. 
+                                                Входящие в его состав дымососы, дымовая труба и дутьевые вентиляторы составляют тягодутьевую установку. 
+                                                В зоне горения топлива входящие в его состав негорючие (минеральные) примеси претерпевают химико-физические превращения 
+                                                и удаляются из котла частично в виде шлака, а значительная их часть выносится дымовыми газами в виде мелких частиц золы. 
+                                                Для защиты атмосферного воздуха от выбросов золы перед дымососами (для предотвращения их золового износа) устанавливают 
+                                                золоуловители. Шлак и уловленная зола удаляются обычно гидравлическим способом на золоотвалы.
+                                            </Paragraph>
+                                            <Paragraph TextIndent="10">
+                                                При сжигании топлива химически связанная энергия превращается в тепловую. 
+                                                В результате образуются продукты сгорания, которые в поверхностях нагрева котла 
+                                                отдают теплоту воде и образующемуся из нее пару.
+                                                Совокупность оборудования, отдельных его элементов, трубопроводов, по которым движутся вода и пар, образуют пароводяной тракт станции.
+                                                В котле вода нагревается до температуры насыщения, испаряется, а образующийся из кипящей котловой воды насыщенный пар 
+                                                перегревается. Из котла перегретый пар направляется по трубопроводам в турбину, 
+                                                где его тепловая энергия превращается в механическую, передаваемую на вал турбины.
+                                                Отработавший в турбине пар поступает в конденсатор, отдает теплоту охлаждающей воде и конденсируется.
+                                                На  современных  ТЭС  и  ТЭЦ с агрегатами единичной мощностью 200 МВт и выше применяют промежуточный перегрев пара. 
+                                                В этом случае турбина имеет две части: часть высокого и часть низкого давления. Отработавший в части высокого давления 
+                                                турбины пар направляется в промежуточный перегреватель, где к нему дополнительно подводится теплота. Далее пар возвращается
+                                                в турбину (в часть низкого давления) и из нее поступает в конденсатор. 
+                                                Промежуточный перегрев пара увеличивает КПД турбинной установки и повышает надежность ее работы.
+                                                Из конденсатора конденсат откачивается конденсационным насосом и, пройдя через подогреватели низкого давления, 
+                                                поступает в деаэратор. Здесь он нагревается паром до температуры насыщения, при этом из него выделяются и удаляются 
+                                                в атмосферу кислород и углекислота для предотвращения коррозии оборудования. Деаэрированная вода, называемая питательной, 
+                                                насосом подается через подогреватели высокого давления (ПВД) в котел.
+                                                Конденсат в ПНД и деаэраторе, а также питательная вода в ПВД подогреваются паром, отбираемым из турбины. 
+                                                Такой способ подогрева означает возврат (регенерацию) теплоты в цикл и называется регенеративным подогревом. 
+                                                Благодаря ему уменьшается поступление пара в конденсатор, а следовательно, и количество теплоты, передаваемой 
+                                                охлаждающей воде, что приводит к повышению КПД паротурбинной установки.
+                                            </Paragraph>
+                                            <Paragraph TextIndent="10">
+                                                Совокупность элементов, обеспечивающих конденсаторы охлаждающей водой, называется системой технического водоснабжения. 
+                                                К ней относятся: источник водоснабжения (река, водохранилище, башенный охладитель — градирня), 
+                                                циркуляционный насос, подводящие и отводящие водоводы. 
+                                                В конденсаторе охлаждаемой воде передается примерно 55%  теплоты пара, поступающего в турбину; 
+                                                эта часть теплоты не используется для выработки электроэнергии и бесполезно пропадает.
+                                                Эти потери значительно уменьшаются, если отбирать из турбины частично отработавший пар 
+                                                и его теплоту использовать для технологических нужд промышленных предприятий или подогрева воды 
+                                                на отопление и горячее водоснабжение. Таким образом, станция становится теплоэлектроцентралью (ТЭЦ),
+                                                обеспечивающей комбинированную выработку электрической и тепловой энергии. 
+                                                На ТЭС существуют внутренние потери пара и конденсата, обусловленные неполной 
+                                                герметичностью пароводяного тракта, а также невозвратным расходом пара и конденсата 
+                                                на технические нужды станции. Они составляют приблизительно 1 — 1,5%  от общего расхода пара на турбины.
+                                            </Paragraph>
+                                        </Section>
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </ScrollViewer>
+                        </Grid>
+                    </Border>
+                    <Border Name="FormBorder"
+                            Background="#373E46" 
+                            VerticalAlignment="Top" 
+                            Margin="20" 
+                            Opacity="0.9"
+                            HorizontalAlignment="Left" 
+                            CornerRadius="25" 
+                            Grid.ColumnSpan="3" Grid.Column="0"
+                            Grid.Row="0" Grid.RowSpan="2"
+                            VirtualizingPanel.IsVirtualizing="True"
+                            VirtualizingPanel.IsContainerVirtualizable="True"
+                            VirtualizingPanel.VirtualizationMode="Recycling">
+
+                        <Grid Margin="20" x:Name="FormGrid"  
+                                  Height="50" 
+                                  MinHeight="50"
+                                  MaxHeight="700"
+                                  MinWidth="300"
+                                  MaxWidth="500">
+                            <ScrollViewer VirtualizingPanel.IsVirtualizing="True"
+                                          VirtualizingPanel.IsContainerVirtualizable="True"
+                                          VirtualizingPanel.VirtualizationMode="Recycling"
+                                          VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                          VirtualizingPanel.CacheLengthUnit="Item"
+                                          VirtualizingPanel.CacheLength="10"
+                                          VirtualizingPanel.ScrollUnit="Item">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition
+                                            Width="1*" />
+                                        <ColumnDefinition
+                                            Width="1*" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                        <RowDefinition 
+                                        Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock  Grid.ColumnSpan="2"
+                                                HorizontalAlignment="Center"
+                                                Grid.Row="0" 
+                                                Foreground="#DCE0E4" 
+                                                FontSize="22"  
+                                                Text="Форма данных" 
+                                                TextAlignment="Center" 
+                                                TextWrapping="Wrap" 
+                                                FontFamily="Fonts/#Raleway SemiBold" />
+                                    <TextBlock Style="{StaticResource TextBlockForm}" 
+                                               Grid.ColumnSpan="2" Grid.Column="0"
+                                               Grid.Row="1" 
+                                               Text="Тип мельницы">
+                                    </TextBlock>
+                                    <TextBox Name="Mill" Style="{StaticResource TextBoxUniformStyle}"
+                                             Grid.ColumnSpan="2" Grid.Column="0"
+                                             Text="{Binding CurrentPropertyStation.Mill}" 
+                                             Grid.Row="2"/>
+                                    <TextBlock  IsHitTestVisible="False" 
+                                                FontSize="14" 
+                                                Text="Необязательное поле"
+                                                Grid.ColumnSpan="2" Grid.Column="0"
+                                                Grid.Row="2"
+                                                Margin="12 5 5 5"
+                                                VerticalAlignment="Center" Foreground="#FF535559">
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=Mill}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3">
+                                        <TextBlock Style="{StaticResource TextBlockForm}" 
+                                        Text="Тип шлакоудаления">
+                                        </TextBlock>
+                                    </StackPanel>
+
+
+                                    <telerik:RadComboBox x:Name="RadComboBoxTypeSlagRemoval" 
+                                             Margin="0, 10, 10, 0" 
+                                             Grid.ColumnSpan="2" Grid.Column="0"
+                                             Grid.Row="5"
+                                             EmptyText="Выберите тип шлакоудаления ..." 
+                                             MaxHeight="40"            
+                                             FontFamily="Century Gothic" 
+                                             FontSize="12"
+                                             DisplayMemberPath="Key"
+                                             SelectedValuePath="Value"
+                                             SelectedValue="{Binding CurrentPropertyStation.SlagRemoval}"
+                                             ItemsSource="{Binding SlagRemovalOptions}"/>
+
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6">
+                                        <TextBlock Style="{StaticResource TextBlockForm}" 
+                                               Text="Расход топлива">
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <TextBox Name="FuelConsumption" 
+                                             Style="{StaticResource TextBoxUniformStyle}"
+                                             Grid.ColumnSpan="2" Grid.Column="0"
+                                             Text="{Binding CurrentPropertyStation.FuelConsumption}"
+                                             Grid.Row="7">
+                                    </TextBox>
+                                    <TextBlock  IsHitTestVisible="False" 
+                                      FontSize="14" 
+                                      Text="Введите значение в кг/c"
+                                      Grid.ColumnSpan="2" Grid.Column="0"
+                                      Grid.Row="7"
+                                      Margin="12 5 5 5"
+                                      VerticalAlignment="Center" Foreground="#FF535559">
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=FuelConsumption}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="8">
+                                        <TextBlock Style="{StaticResource TextBlockForm}" 
+                                         Text="Температура уходящих газов"/>
+                                    </StackPanel>
+                                    <TextBox Name="ExhaustGasTemperature" 
+                                             Style="{StaticResource TextBoxUniformStyle}"
+                                             Grid.ColumnSpan="2" Grid.Column="0"
+                                             Text="{Binding CurrentPropertyStation.ExhaustGasTemperature}"
+                                             Grid.Row="9">
+                                    </TextBox>
+                                    <TextBlock  IsHitTestVisible="False" 
+                                           FontSize="14" 
+                                           Text="Введите значение в °C"
+                                           Grid.ColumnSpan="2" Grid.Column="0"
+                                           Grid.Row="9"
+                                           Margin="12 5 5 5"
+                                           VerticalAlignment="Center" Foreground="#FF535559">
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=ExhaustGasTemperature}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="10">
+                                        <TextBlock Style="{StaticResource TextBlockForm}" 
+                                         Text="Высота подъемной шахты"/>
+                                    </StackPanel>
+                                    <TextBox Name="HeightLiftShift" 
+                                           Style="{StaticResource TextBoxUniformStyle}"
+                                           Grid.ColumnSpan="2" Grid.Column="0"
+                                           Text="{Binding CurrentPropertyStation.HeightLiftShaft}"
+                                           Grid.Row="11">
+                                    </TextBox>
+                                    <TextBlock  IsHitTestVisible="False" 
+                                         FontSize="14" 
+                                         Text="Введите значение в метрах"
+                                         Grid.ColumnSpan="2" Grid.Column="0"
+                                         Grid.Row="11"
+                                         Margin="12 5 5 5"
+                                         VerticalAlignment="Center" Foreground="#FF535559">
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=HeightLiftShift}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="12">
+                                        <TextBlock Style="{StaticResource TextBlockForm}" 
+                                        Text="Количество дымососoв"/>
+                                    </StackPanel>
+                                    <telerik:RadComboBox x:Name="RadComboBoxSmokePumps" 
+                                              Margin="0, 10, 10, 0" 
+                                              Grid.ColumnSpan="2" Grid.Column="0"
+                                              Grid.Row="13"
+                                              EmptyText="Выберите количество дымососoв ..." 
+                                              MaxHeight="40"            
+                                              FontFamily="Century Gothic" 
+                                              FontSize="12"
+                                              SelectedValue="{Binding CurrentPropertyStation.NumberSmokePumps, Mode=TwoWay}"
+                                              ItemsSource="{Binding SmokePumpsOptions}"/>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="14">
+                                        <TextBlock Style="{StaticResource TextBlockForm}" 
+                                        Text="Величина избытка воздуха"/>
+                                    </StackPanel>
+                                    <TextBox Name="AirSuction" 
+                                           Style="{StaticResource TextBoxUniformStyle}"
+                                           Grid.ColumnSpan="2" Grid.Column="0"
+                                           Grid.Row="15"
+                                           Text="{Binding CurrentPropertyStation.AirSuction}">
+                                    </TextBox>
+                                    <TextBlock  IsHitTestVisible="False" 
+                                         FontSize="14" 
+                                         Text="Введите коэффициент избытка α"
+                                         Grid.ColumnSpan="2" Grid.Column="0"
+                                         Grid.Row="15"
+                                         Margin="12 5 5 5"
+                                         VerticalAlignment="Center" Foreground="#FF535559">
+                                        <TextBlock.Style>
+                                            <Style TargetType="{x:Type TextBlock}">
+                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=AirSuction}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="2"
+                                                Grid.Column="0" Grid.Row="16">
+                                        <TextBlock Style="{StaticResource TextBlockForm}"
+                                        Text="Схема бункерных перегородок"/>
+                                    </StackPanel>
+                                    <menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPartitionsCommand}" 
+                                              CommandParameter="{x:Static models:SchemeBunkerPartitions.WithTwoCurvedPartition}" 
+                                              Grid.Column="0" 
+                                              Grid.Row="17"
+                                              Margin="10 10 10 10">
+                                        <Image Source="/Resources/Images/Schema_1.png"  
+                                                    HorizontalAlignment="Center" 
+                                                    VerticalAlignment="Center"
+                                                    Stretch="Uniform"/>
+                                    </menu:Btn>
+                                    <menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPartitionsCommand}" 
+                                              CommandParameter="{x:Static models:SchemeBunkerPartitions.WithTwoCurvedAndOneStraightPartition}" 
+                                              Grid.Column="1" 
+                                              Grid.Row="17" 
+                                              Margin="10 10 10 10">
+                                        <Image Source="/Resources/Images/Schema_2.png"  
+                                                    HorizontalAlignment="Center" 
+                                                    VerticalAlignment="Center"
+                                                    Stretch="Uniform"/>
+                                    </menu:Btn>
+                                    <menu:Btn Style="{StaticResource SchemeBtnStyle}"
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPartitionsCommand}" 
+                                              CommandParameter="{x:Static models:SchemeBunkerPartitions.WithFivePartitions}" 
+                                              Grid.Column="0" 
+                                              Grid.Row="18" 
+                                              Margin="10 10 10 10">
+                                        <Image Source="/Resources/Images/Schema_3.png"  
+                                                    HorizontalAlignment="Center" 
+                                                    VerticalAlignment="Center"
+                                                    Stretch="Uniform"/>
+                                    </menu:Btn>
+                                    <menu:Btn Style="{StaticResource SchemeBtnStyle}" 
+                                              GroupName="SchemaGroup" 
+                                              Command="{Binding SelectSchemeBunkerPartitionsCommand}" 
+                                              CommandParameter="{x:Static models:SchemeBunkerPartitions.ThreeObliquePartitions}" 
+                                              Grid.Column="1" 
+                                              Grid.Row="18" 
+                                              Margin="10 10 10 10">
+                                        <Image Source="/Resources/Images/Schema_4.png"  
+                                                    HorizontalAlignment="Center" 
+                                                    VerticalAlignment="Center"
+                                                    Stretch="Uniform"/>
+                                    </menu:Btn>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="19">
+                                        <TextBlock Style="{StaticResource TextBlockForm}"
+                                        Text="Количество решеток"/>
+                                    </StackPanel>
+                                    <telerik:RadComboBox x:Name="RadComboBoxNumberGrids" 
+                                              Margin="0, 10, 10, 0" 
+                                              Grid.ColumnSpan="2" Grid.Column="0"
+                                              Grid.Row="20"
+                                              EmptyText="Выберите количество решеток ..." 
+                                              MaxHeight="40"            
+                                              FontFamily="Century Gothic" 
+                                              FontSize="12"
+                                              SelectedValue="{Binding CurrentPropertyStation.NumberGrids, Mode=TwoWay}"
+                                              ItemsSource="{Binding NumberGridsOptions}"/>
+                                    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="21">
+                                        <TextBlock Style="{StaticResource TextBlockForm}"
+                                        Text="Тип подвода газа"/>
+                                    </StackPanel>
+                                    <telerik:RadComboBox x:Name="RadComboBoxTypeFlueGasSupply" 
+                                               Margin="0, 10, 10, 0" 
+                                               Grid.ColumnSpan="2" Grid.Column="0"
+                                               Grid.Row="22"
+                                               EmptyText="Выберите тип подвода газа ..." 
+                                               MaxHeight="40"            
+                                               FontFamily="Century Gothic" 
+                                               FontSize="12"
+                                               DisplayMemberPath="Key"
+                                               SelectedValuePath="Value"
+                                               SelectedValue="{Binding CurrentPropertyStation.TypeFlueGasSupply, Mode=TwoWay}"
+                                               ItemsSource="{Binding TypeFlueGasSupplyOptions}"/>
+                                    <Button Name="MenuClose" 
+                                            Visibility="Collapsed" 
+                                            Grid.Column="2" 
+                                            Grid.Row="0"
+                                            Command="{Binding CloseFormDataCommand}"
+                                            Style="{StaticResource CloseMenuButton}">
+                                        <Button.CommandParameter>
+                                            <MultiBinding Converter="{StaticResource MultiParameterConverter}">
+                                                <Binding ElementName="FormGrid"/>
+                                                <Binding ElementName="MenuClose"/>
+                                                <Binding ElementName="MenuOpen"/>
+                                            </MultiBinding>
+                                        </Button.CommandParameter>
+                                    </Button>
+                                    <Button Name="MenuOpen" 
+                                            Grid.Column="0" 
+                                            Grid.Row="0" 
+                                             Command="{Binding OpenFormDataCommand}"
+                                            Style="{StaticResource HamburgerMenuButton}">
+                                        <Button.CommandParameter>
+                                            <MultiBinding Converter="{StaticResource MultiParameterConverter}">
+                                                <Binding ElementName="FormGrid"/>
+                                                <Binding ElementName="MenuClose"/>
+                                                <Binding ElementName="MenuOpen"/>
+                                            </MultiBinding>
+                                        </Button.CommandParameter>
+                                    </Button>
+                                </Grid>
+                            </ScrollViewer>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

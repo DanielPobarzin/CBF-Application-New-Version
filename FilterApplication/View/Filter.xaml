@@ -1,0 +1,362 @@
+﻿<UserControl x:Class="FilterApplication.View.Filter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             xmlns:viewModels="clr-namespace:ViewModels.ViewModels;assembly=ViewModels" 
+             d:DataContext="{d:DesignInstance Type=viewModels:FilterVm}"
+             xmlns:menu="clr-namespace:Application.Utilities;assembly=Application" 
+             mc:Ignorable="d" 
+               VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.IsContainerVirtualizable="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                VirtualizingPanel.CacheLengthUnit="Pixel"
+                VirtualizingPanel.CacheLength="1000"
+                VirtualizingPanel.ScrollUnit="Item"
+             d:DesignHeight="500"
+             d:DesignWidth="900"
+              Style="{StaticResource PageStyle}">
+    <UserControl.Resources>
+        <Style x:Key="GridViewDataColumnStyle" TargetType="telerik:GridViewDataColumn">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="HeaderTextAlignment" Value="Center"/>
+            <Setter Property="HeaderTextWrapping" Value="Wrap"/>
+            <Setter Property="MinWidth" Value="50"/>
+            <Setter Property="ValidatesOnDataErrors" Value="InViewMode"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="Transparent" >
+        <Border Background="#212529" 
+                BorderBrush="#3A4149" 
+                BorderThickness="5" 
+                CornerRadius="8,8,0,8">
+            <ScrollViewer  VirtualizingPanel.IsVirtualizing="True"
+                          VirtualizingPanel.IsContainerVirtualizable="True"
+                          VirtualizingPanel.VirtualizationMode="Recycling"
+                          VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                          VirtualizingPanel.CacheLengthUnit="Pixel"
+                          VirtualizingPanel.CacheLength="1000"
+                          VirtualizingPanel.ScrollUnit="Item">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="0.8*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.RowSpan="3" Grid.ColumnSpan="2" 
+                           Margin="0 0 0 50" 
+                           VerticalAlignment="Bottom" 
+                           HorizontalAlignment="Left"
+                           MaxHeight="1000"
+                           MaxWidth="1100"
+                           Opacity="0.5"
+                           Source="/Resources/Images/filters_page.png" 
+                           Stretch="Uniform"/>
+                    <StackPanel Orientation="Horizontal" 
+                                HorizontalAlignment="Center"
+                                Grid.Row="0" 
+                                Grid.ColumnSpan="2" Grid.Column="0"
+                                Margin="0,50,0,5">
+                        <telerik:RadButton Style="{StaticResource LoadDataFromDataBase}"
+                                           Command="{Binding GetAllCommand}"/>
+                        <telerik:RadButton Style="{StaticResource SaveDataToDataBase}"
+                                                  Command="{Binding GeneralInsertCommand}" 
+                                                  CommandParameter="{Binding Filters}"/>
+                    </StackPanel>
+                    <telerik:RadGridView  Name="FiltersGrid" GroupRenderMode="Flat" Grid.Row="1" Grid.ColumnSpan="2"
+                                          Grid.Column="0"
+                                          Margin="8,15,8,8"
+                                          Height="Auto"
+                                          VerticalAlignment="Top"
+                                          AutoGenerateColumns="False"
+                                          ItemsSource="{Binding Filters, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" 
+                                          IsReadOnly="False"
+                                          RowIndicatorVisibility="Collapsed"
+                                            VirtualizingPanel.IsVirtualizing="True"
+                                            VirtualizingPanel.IsContainerVirtualizable="True"
+                                            VirtualizingPanel.VirtualizationMode="Recycling"
+                                            VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                                            VirtualizingPanel.CacheLengthUnit="Item"
+                                            VirtualizingPanel.CacheLength="1"
+                                            VirtualizingPanel.ScrollUnit="Item"
+                                          DataLoadMode="Asynchronous"
+                                          NewRowPosition="Bottom"
+                                          ShowColumnHeaders="True"
+                                          ShowSearchPanel="True" 
+                                          ShowColumnSortIndexes="True"
+                                          Keyboard.PreviewKeyDown="filtersGrid_PreviewKeyDown"
+                                          IsLocalizationLanguageRespected="True">
+                        <telerik:RadGridView.Columns>
+
+                            <telerik:GridViewDataColumn Header="Модель фильтра" Style="{DynamicResource GridViewDataColumnStyle}"
+								DataMemberBinding="{Binding BrandFilter, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Площадь активного сечения ω, м²" Style="{DynamicResource GridViewDataColumnStyle}"
+							    DataMemberBinding="{Binding AreaActiveSection,  UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Активная длина поля Lₚ, м" Style="{DynamicResource GridViewDataColumnStyle}"
+							    DataMemberBinding="{Binding ActiveFieldLength, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Общая площадь осаждения А, м²" Style="{DynamicResource GridViewDataColumnStyle}"
+							    DataMemberBinding="{Binding TotalDepositionArea,  UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Масса, т" Style="{DynamicResource GridViewDataColumnStyle}" 
+							    DataMemberBinding="{Binding Weight, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Длина, м" Style="{DynamicResource GridViewDataColumnStyle}" 
+							    DataMemberBinding="{Binding Length, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Ширина (по осям опор), м" Style="{DynamicResource GridViewDataColumnStyle}"
+							    DataMemberBinding="{Binding Width, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Высота, м" Style="{DynamicResource GridViewDataColumnStyle}" 
+							    DataMemberBinding="{Binding Height, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Высота электрода, м"  Style="{DynamicResource GridViewDataColumnStyle}"
+							    DataMemberBinding="{Binding ElectrodeHeight, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Коэфф. режима встряхивания, Квс"  Style="{DynamicResource GridViewDataColumnStyle}"
+								DataMemberBinding="{Binding CoefficientShakingMode, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Количество полей"  Style="{DynamicResource GridViewDataColumnStyle}"
+								DataMemberBinding="{Binding NumberFields, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                            <telerik:GridViewDataColumn Header="Расстояние между коронирующем и осадительным электродом t, м"  Style="{DynamicResource GridViewDataColumnStyle}"
+								DataMemberBinding="{Binding DistanceCpDevices, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, IsAsync=True}" />
+                        </telerik:RadGridView.Columns>
+                    </telerik:RadGridView>
+                    <Border Grid.Row="2"  
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Left" 
+                            Grid.Column="1" 
+                            Background="#373E46" 
+                            Margin="10" 
+                            MaxHeight="500" 
+                            MinWidth="300"
+                            Opacity="0.9"
+                            CornerRadius="25">
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+                            <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+                                <FlowDocument>
+                                    <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
+                                        К ознакомлению
+                                    </Paragraph>
+                                    <Section FontFamily="Fonts/#Raleway SemiBold" FontSize="14" Padding="5 0 0 0">
+                                        <Paragraph TextIndent="10">
+                                            В настоящее время основными типами золоуловителей, применяемых на угольных ТЭС, являются сухие золоуловители, главным образом электрофильтры. 
+                                            Наряду с этим на вновь вводимых зарубежных энергоблоках возрастает доля рукавных фильтров (более 100 энергоблоков в США). 
+                                            Поскольку только сухие золоуловители позволяют широко использовать в качестве вторичного продукта уловленную летучую золу без загрязнения грунтовых вод и почвы,
+                                            применение сухих золоуловителей предпочтительно при техперевооружении действующих ТЭС, оснащенных мокрыми золоуловителями. 
+                                            В некоторых странах применение мокрых технологий для улавливания твердых частиц вообще запрещено.
+                                        </Paragraph>
+                                        <Paragraph TextIndent="10">
+                                            <Figure Width="250" Padding="5" HorizontalAnchor="ContentLeft" FontSize="14" FontStyle="Italic">
+                                                <BlockUIContainer Margin="10">
+                                                    <Image Source="/Resources/Images/calculate_page.png"  MinWidth="150" Height="auto" />
+                                                </BlockUIContainer>
+                                                <Paragraph>Модель электрофильтра</Paragraph>
+                                            </Figure>
+                                        </Paragraph>
+                                        <Paragraph TextIndent="10">
+                                            Электрофильтры являются аппаратами, позволяющими обеспечить высокоэффективную очистку больших 
+                                            объемов дымовых газов при минимальных затратах на электропитание и преодоление гидравлического сопротивления. 
+                                            В то же время ужесточение нормативных требований по степени очистки при одновременных ограничениях в располагаемых 
+                                            для размещения электрофильтров площадях, особенно при реконструкции действующих ТЭС, требует максимальной интенсификации процессов 
+                                            электроочистки и полного использования объема аппаратов.
+                                        </Paragraph>
+                                        <Paragraph TextIndent="10">
+                                            В России имеется обширный опыт разработки и промышленной эксплуатации электрофильтров на угольных 
+                                            ТЭС. Все энергоблоки, работающие на твердом топливе, 
+                                            мощностью 150 МВт и более оборудованы электрофильтрами.
+                                            Горизонтальный электрофильтр модификации А (ЭГА) предназначен для очищения пылегазового потока, температура которого может достигать 3300С. Электрофильтр типа ЭГА 
+                                            используют в таких отраслях промышленности как:
+                                        </Paragraph>
+                                        <List MarkerStyle="Decimal">
+                                            <ListItem>
+                                                <Paragraph>энергетическая;</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>химическая;</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>строительная;</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>и другие.</Paragraph>
+                                            </ListItem>
+                                        </List>
+                                        <Paragraph TextIndent="10">
+                                            В зависимости от конструкции устройства после аббревиатуры могут стоять цифры, имеющие следующие обозначения:
+                                        </Paragraph>
+                                        <List MarkerStyle="Circle">
+                                            <ListItem>
+                                                <Paragraph>1-ая показывает, сколько секций содержит в себе газоочистное оборудование.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>2-ая – это количество газовых проходов.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>3-ей цифрой принято обозначать номинальную высоту электродов (м).</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>4-ая указывает на количество элементов в осадительном электроде.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>5-ая – электрические поля.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>6-ая обозначает температуру в электрофильтре типа ЭГА (значения указаны в оС).</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Все остальные цифры – это дополнительные данные.</Paragraph>
+                                            </ListItem>
+                                        </List>
+                                        <Paragraph TextIndent="10">
+                                            Так как данные устройства работают с повышенными температурами, корпус изготавливается из стали, 
+                                        а снаружи его покрывают теплоизоляционными материалами. Корпуса могут выдерживать сейсмоактивность до 7 баллов.
+                                        </Paragraph>
+                                    </Section>
+                                </FlowDocument>
+                            </RichTextBox>
+                        </ScrollViewer>
+                    </Border>
+                    <Grid Margin="20" 
+                          x:Name="Root" 
+                          Grid.Row="2" 
+                          HorizontalAlignment="Left" 
+                          Grid.Column="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                        <Grid Name="ComboBoxFilter" Grid.Row="1" 
+                              MinHeight="50" 
+                              MaxHeight="250" 
+                              Width="200" 
+                              HorizontalAlignment="Left" 
+                              VerticalAlignment="Top"
+                              Margin="27,5,0,0" 
+                              Visibility="Hidden">
+                            <Polygon Fill="Black" StrokeThickness="2" Stroke="#FF0C0101"
+                                      Points="0,8,
+                                      0,145,
+                                      190,145,
+                                      190,8,
+                                      37,8,
+                                      29,0
+                                      21,8"/>
+                            <Polygon Fill="#FF272E3B" StrokeThickness="1"
+                                      Points="0,8,
+                                      0,145,
+                                      190,145,
+                                      190,8,
+                                      37,8,
+                                      29,0
+                                      21,8" Stroke="#FF40454E"/>
+
+                            <Grid Width="190" 
+                                  MaxHeight="125" 
+                                  HorizontalAlignment="Left" 
+                                  VerticalAlignment="Top" 
+                                  Margin="0,10,0,0">
+                                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                    <StackPanel>
+                                        <ItemsControl ItemsSource="{Binding Filters}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <menu:Btn GroupName="Filters"
+                                                    Style="{StaticResource ComboBoxList}"
+                                                    Content="{Binding BrandFilter}" Command="{Binding DataContext.SelectCommand, 
+                                                   RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"  CommandParameter="{Binding BrandFilter}"/>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </Grid>
+                        </Grid>
+                        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                            <Border x:Name="CbmBorder" Height="26" Width="Auto" HorizontalAlignment="Left"
+                                    VerticalAlignment="Top" Margin="25,5,0,0" CornerRadius="5"
+                                    BorderThickness="1" Background="#FF272E3B">
+                                <Border.Style>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="BorderBrush" Value="#FF333842"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="BorderBrush" Value="#FF51555C"/>
+                                            </Trigger>
+                                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ColorAnimation Storyboard.TargetProperty="BorderBrush.Color"
+                                                                        Duration="0:0:0.100" To="#FF333B42"/>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                            <EventTrigger RoutedEvent="PreviewMouseUp">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ColorAnimation Storyboard.TargetProperty="BorderBrush.Color"
+                                                                        Duration="0:0:0:0.100" To="#FF51555C"/>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Style="{StaticResource ComboBoxButton}" Click="ButtonComboBoxClick">
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                                            <Image Height="18" Width="18" Margin="5,0,0,0">
+                                                <Image.Style>
+                                                    <Style TargetType="{x:Type Image}">
+                                                        <Setter Property="Source" Value="/Resources/Images/img_filter.png"/>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                            <Image Height="14" Width="14" Margin="0,0,5,0">
+                                                <Image.Style>
+                                                    <Style TargetType="{x:Type Image}">
+                                                        <Setter Property="Source" Value="/Resources/Images/combobox_off.png"/>
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding Path=Visibility, ElementName=ComboBoxFilter}" Value="Visible">
+                                                                <Setter Property="Source" Value="/Resources/Images/combobox_on.png"/>
+                                                            </DataTrigger>
+                                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource 
+                                                                        FindAncestor, AncestorType={x:Type Button},
+                                                                        AncestorLevel=1}, Path=IsPressed}" Value="True">
+                                                                <Setter Property="Source" Value="/Resources/Images/combobox_off.png"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </StackPanel>
+                                    </Button>
+                                    <TextBlock Text="Выбрать модель фильтра" VerticalAlignment="Center" Foreground="#FFACB3BF"
+                    HorizontalAlignment="Left" Margin="0,0,5,0" FontSize="12"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+                    <telerik:RadDataPager x:Name="RadDataPager" 
+                                          FontFamily="Century Gothic"
+				                          Grid.Row="3" FontSize="12"
+                                          Grid.ColumnSpan="2" Grid.Column="0"
+                                          Source="{Binding ElementName=FiltersGrid, Path=Items}"
+				                          DisplayMode="All"
+                                          PageSize="10"
+                                          IsEnabled="True"
+                                          IsTotalItemCountFixed="True" />
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

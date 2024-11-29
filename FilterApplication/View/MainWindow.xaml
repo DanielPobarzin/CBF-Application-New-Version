@@ -1,0 +1,212 @@
+﻿<Window x:Class="FilterApplication.View.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:vm="clr-namespace:ViewModels.ViewModels;assembly=ViewModels"
+                xmlns:menu="clr-namespace:Application.Utilities;assembly=Application" 
+                d:DataContext="{d:DesignInstance Type=vm:NavigationVm}" 
+                mc:Ignorable="d"        
+                Title="CBF App PRO"
+                Name="ResponsiveWindow"
+                Height="500" 
+                Width="900"
+                MinWidth="800"
+                MinHeight="420"
+                SizeChanged="WindowSizeChanged"
+                AllowsTransparency="True"
+                ResizeMode="CanResizeWithGrip"
+                WindowStartupLocation="CenterScreen"
+                WindowStyle="None"
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.IsContainerVirtualizable="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                VirtualizingPanel.CacheLengthUnit="Pixel"
+                VirtualizingPanel.CacheLength="100000"
+                VirtualizingPanel.ScrollUnit="Item"
+                Background="Transparent"
+                MouseLeftButtonDown="MovingWin">
+
+    <Window.Icon>
+        <BitmapImage UriSource="/Resources/Images/OST.ico"/>
+    </Window.Icon>
+    <Window.Resources>
+        <menu:MultiUiNavigationConverter x:Key="MultiParameterConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.Effect>
+            <DropShadowEffect BlurRadius="30"
+                                  ShadowDepth="2"
+                                  Direction="-90"
+                                  Color="Gray">
+            </DropShadowEffect>
+        </Grid.Effect>
+        <!--// Window Border //-->
+        <Border x:Name="Bord" Background="#222222"
+         BorderBrush="#3A4149"
+         BorderThickness="5"
+         CornerRadius="20"/>
+
+        <Grid x:Name="BasGrid">
+            <!--// Base Grid //-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" 
+                                  MaxWidth="228"/>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <!--// Navigation Panel //-->
+            <Grid Name="NavigationGrid" MinWidth="80" MaxWidth="230" HorizontalAlignment="Left" Grid.Column="0">
+                <Border  Background="#272B2F" MinWidth="60" MaxWidth="240"
+                        BorderThickness="5"
+                        CornerRadius="20,0,0,20" />
+                <Button Name="MenuClose" 
+                        Visibility="Visible" 
+                        Margin="10"
+                        Command="{Binding CloseNavigationMenuCommand}"
+                        Style="{StaticResource CloseMenuButton}">
+                    <Button.CommandParameter>
+                        <MultiBinding Converter="{StaticResource MultiParameterConverter}">
+                            <Binding ElementName="NavigationGrid"/>
+                            <Binding ElementName="MenuClose"/>
+                            <Binding ElementName="MenuOpen"/>
+                        </MultiBinding>
+                    </Button.CommandParameter>
+                </Button>
+                <Button Name="MenuOpen"  
+                        Visibility="Collapsed" 
+                        HorizontalAlignment="Right" 
+                        Margin="10" 
+                         Command="{Binding OpenNavigationMenuCommand}"
+                        Style="{StaticResource HamburgerMenuButton}">
+                    <Button.CommandParameter>
+                        <MultiBinding Converter="{StaticResource MultiParameterConverter}">
+                            <Binding ElementName="NavigationGrid"/>
+                            <Binding ElementName="MenuClose"/>
+                            <Binding ElementName="MenuOpen"/>
+                        </MultiBinding>
+                    </Button.CommandParameter>
+                </Button>
+
+                <StackPanel Name="NavigationPanel" Visibility="Visible" Height="340" Margin="5 0 5 0"
+                            Width="220">
+                    <!--// Home //-->
+                    <menu:Btn Name="Главная" Style="{DynamicResource BtnStyle}" Command="{Binding HomeCommand, IsAsync=True}"
+                        IsChecked="True">
+
+                        <Grid>
+                            <Image Source="/Resources/Images/img_home.png"
+                         Style="{StaticResource ImageStyle}" />
+
+                            <TextBlock Text="Главная"
+                         Style="{StaticResource TextStyle}" />
+
+                        </Grid>
+                    </menu:Btn>
+
+                    <!--// Фильтр //-->
+
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Фильтры"
+                        Command="{Binding FiltersCommand, IsAsync=True}">
+
+                        <Grid>
+                            <Image Source="/Resources/Images/img_filter.png"
+                         Style="{StaticResource ImageStyle}" />
+                            <TextBlock Text="Фильтры"
+                         Style="{StaticResource TextStyle}" />
+
+                        </Grid>
+                    </menu:Btn>
+                    <!--// Топлво //-->
+
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Топливо"
+                     Command="{Binding FuelsCommand}">
+
+                        <Grid>
+
+                            <Image Source="/Resources/Images/img_fuel.png"
+                             Style="{StaticResource ImageStyle}" />
+
+                            <TextBlock Text="Топливо"
+                    Style="{StaticResource TextStyle}" />
+
+                        </Grid>
+
+                    </menu:Btn>
+
+                    <!--// Станция //-->
+
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Станция"
+           Command="{Binding StationsCommand, IsAsync=True}">
+
+                        <Grid>
+
+                            <Image Source="/Resources/Images/img_station.png"
+                Style="{StaticResource ImageStyle}" />
+
+                            <TextBlock Text="Станция"
+                    Style="{StaticResource TextStyle}" />
+
+                        </Grid>
+
+                    </menu:Btn>
+
+                    <!--// Расчет //-->
+
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Расчеты"
+           Command="{Binding CalculateCommand}">
+
+                        <Grid>
+
+                            <Image Source="/Resources/Images/img_calculate.png"
+                Style="{StaticResource ImageStyle}" />
+
+                            <TextBlock Text="Расчеты"
+                    Style="{StaticResource TextStyle}" />
+
+                        </Grid>
+
+                    </menu:Btn>
+
+                    <!--// Настройки //-->
+
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Графики"
+           Command="{Binding ChartsCommand}">
+
+                        <Grid>
+
+                            <Image Source="/Resources/Images/img_setting.png"
+                Style="{StaticResource ImageStyle}" />
+
+                            <TextBlock Text="Графики"
+                    Style="{StaticResource TextStyle}" />
+
+                        </Grid>
+
+                    </menu:Btn>
+                </StackPanel>
+            </Grid>
+            <Grid Name="UserGrid"  Grid.Column="1">
+                <ContentControl x:Name="Pages" 
+                VirtualizingPanel.IsVirtualizing="True"
+                VirtualizingPanel.IsContainerVirtualizable="True"
+                VirtualizingPanel.VirtualizationMode="Recycling"
+                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+                VirtualizingPanel.CacheLengthUnit="Pixel"
+                VirtualizingPanel.CacheLength="1000"
+                VirtualizingPanel.ScrollUnit="Item"
+                                
+                Content="{Binding CurrentView}"/>
+            </Grid>
+        </Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
+            <Button Command="{Binding MaxCommand}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+            Style="{StaticResource MaxAppStyle}" />
+            <Button Command="{Binding CloseCommand}"
+            CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+            Style="{StaticResource ExitApp}"/>
+        </StackPanel>
+    </Grid>
+</Window>

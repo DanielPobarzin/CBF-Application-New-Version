@@ -1,0 +1,209 @@
+﻿<UserControl x:Class="FilterApplication.View.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+            d:DesignHeight="600"
+            d:DesignWidth="622"
+              VirtualizingPanel.IsVirtualizing="True"
+              VirtualizingPanel.IsContainerVirtualizable="True"
+              VirtualizingPanel.VirtualizationMode="Recycling"
+              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
+              VirtualizingPanel.CacheLengthUnit="Pixel"
+              VirtualizingPanel.CacheLength="10000"
+              VirtualizingPanel.ScrollUnit="Item"
+    Background="Transparent"
+    Style="{DynamicResource PageStyle}">
+    <Grid>
+        <Image Source="/Resources/Images/home_page.png"
+               Stretch="Fill" Opacity="0.3" />
+        <Border BorderBrush="#3A4149"
+        BorderThickness="5"
+        CornerRadius="20 20 5 20">
+        <Grid x:Name="BaseGrid"
+                Background="Transparent"
+                Margin="8">
+
+                <Border Height="30"
+               Width="230"
+               Background="#373E46"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               BorderThickness="5,0,5,0"
+               BorderBrush="#FF0BCDFF"
+               CornerRadius="5">
+                    <Grid>
+                        <TextBlock Text="Electrofilter P R O"
+                          FontFamily="Fonts/#Saira Regular"
+                          FontSize="18"
+                 
+                          VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          Foreground="#DCE0E4" />
+
+                </Grid>
+
+            </Border>
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+                <Grid x:Name="CardGrid"
+             Background="Transparent"
+             VerticalAlignment="Top"
+             Margin="10,0,10,0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition
+                                 Width="1*" />
+                            <ColumnDefinition 
+                                 Width="1*" />
+                            <ColumnDefinition 
+                                 Width="Auto" />
+                            <ColumnDefinition 
+                                 Width="Auto" />
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition x:Name="CgR1"
+                            Height="50" />
+                            <RowDefinition x:Name="CgR2"
+                            Height="0.5*" />
+                            <RowDefinition x:Name="CgR3"
+                            Height="30" />
+                            <RowDefinition x:Name="CgR4"
+                            Height="0.4*" />
+
+
+                        </Grid.RowDefinitions>
+                        <Border Grid.ColumnSpan="4"
+                                Grid.Row="1"
+                                Height="300"
+                                HorizontalAlignment="Stretch"
+                                Margin="5"
+                                Background="#3A4149"
+                                CornerRadius="30">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="0.3*"/>
+                                    <RowDefinition Height="0.3*"/>
+                                    <RowDefinition Height="0.4*"/>
+                                </Grid.RowDefinitions>
+                                <Viewbox 
+                                    Grid.Column="2"
+                                    Grid.ColumnSpan="4"
+                                    Grid.RowSpan="4">
+                                    <Image Source="/Resources/Images/home_img.png"
+                                     Stretch="None"
+                                     Margin="100" />
+                                </Viewbox>
+                                <StackPanel VerticalAlignment="Center" 
+                                            HorizontalAlignment="Left"
+                                    Orientation="Vertical"
+                                            Grid.Row="0" Grid.RowSpan="4"
+                                            Grid.ColumnSpan="2" Grid.Column="0">
+                                    <TextBlock FontSize="26"
+                                               TextWrapping="Wrap"
+                                               FontWeight="Bold"
+                                               Foreground="#DCE0E4"
+                                               FontFamily="Fonts/#Open Sans Regular"
+                                               Margin="20,20,10,0"
+                                               Text="Сделай выбор подходящего электрофильтра!">
+
+                                    </TextBlock>
+                                    <TextBlock FontSize="14"
+                                                TextWrapping="Wrap"
+                                                FontWeight="Bold"
+                                               TextAlignment="Left"
+                                               HorizontalAlignment="Left"
+                                                Foreground="#ACB4BD"
+                                                FontFamily="Fonts/#Open Sans Regular"
+                                                Margin="20,10,10,0"
+                                                Text="Нет необходимости выполнять расчет и подбор модели электрофильтра вручную. Эта программа сделает все за вас.">
+                                    </TextBlock>
+                                    <Border CornerRadius="15"
+                                            Margin="15"
+                                            HorizontalAlignment="Left"
+                                            Background="#FF0BCDFF"
+                                            Height="30"
+                                            Width="150">
+                                        <TextBlock Foreground="#292F34"
+                                                   FontSize="14"
+                                                   VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center">Добро пожаловать</TextBlock>
+                                    </Border>
+                                </StackPanel>
+                            </Grid>
+
+                        </Border>
+                        <Border Grid.ColumnSpan="4" Grid.Column="0"
+                                Grid.Row="3"
+                               Height="450"
+                               HorizontalAlignment="Stretch"
+                               Margin="5"
+                               Background="#3A4149"
+                               CornerRadius="30">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling">
+                                <RichTextBox IsReadOnly="True" Background="Transparent" Foreground="#DCE0E4" BorderBrush="Transparent" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+                                    <FlowDocument>
+                                        <Paragraph FontFamily="Fonts/#Raleway SemiBold" FontSize="20" Padding="10 10 0 0">
+                                           Введение
+                                        </Paragraph>
+                                        <Section FontFamily="Fonts/#Raleway SemiBold" FontSize="14" Padding="5 0 0 0">
+                                            <Paragraph TextIndent="10">
+                                                В современном мире эффективное управление выбросами и соблюдение экологических стандартов 
+                                                становятся все более актуальными задачами. В этом контексте разработка программного обеспечения, 
+                                                которое помогает в расчетах и анализе параметров электрофильтров, играет важную роль в обеспечении 
+                                                устойчивого развития энергетических систем.
+                                            </Paragraph>
+                                            <Paragraph TextIndent="10">
+                                                Данное приложение представляет собой специализированную расчетную программу, 
+                                                предназначенную для анализа работы электрофильтров золоулавливающих установок. 
+                                                Оно включает несколько страниц, каждая из которых выполняет свою уникальную функцию:
+                                            </Paragraph>
+                                            <List MarkerStyle="Decimal">
+                                                <ListItem>
+                                                    <Paragraph>1. Выбор типа электрофильтра – пользователь может выбрать наиболее подходящий тип устройства в зависимости от специфики применения.</Paragraph>
+                                                </ListItem>
+                                                <ListItem>
+                                                    <Paragraph>2. Выбор топлива (марки) – на этой странице осуществляется выбор марки топлива, что позволяет учитывать его характеристики в расчетах.</Paragraph>
+                                                </ListItem>
+                                                <ListItem>
+                                                    <Paragraph>3. Ввод параметров электростанции – пользователи могут вводить необходимые данные, являющиеся основой для дальнейших расчетов.</Paragraph>
+                                                </ListItem>
+                                                <ListItem>
+                                                    <Paragraph>4. Вывод расчетных параметров – отображение ключевых показателей, такие как степень золоулавливания и концентрация золы.</Paragraph>
+                                                </ListItem>
+                                                <ListItem>
+                                                    <Paragraph>5. Диаграммы – визуализация результатов позволяет легко анализировать зависимости и принимать обоснованные решения.</Paragraph>
+                                                </ListItem>
+                                            </List>
+                                            <Paragraph TextIndent="10">
+                                                Данное приложение создано с целью упрощения процесса проектирования и оптимизации работы электрофильтров, что способствует улучшению экологической ситуации и повышению эффективности энергетических установок.
+                                            </Paragraph>
+                                        </Section>
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </ScrollViewer>
+                        </Border>
+
+
+                    </Grid>
+
+            </ScrollViewer>
+
+        </Grid>
+        </Border>
+    </Grid>
+</UserControl>

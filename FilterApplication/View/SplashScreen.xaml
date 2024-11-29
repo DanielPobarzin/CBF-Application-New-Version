@@ -1,0 +1,46 @@
+﻿<Window x:Class="FilterApplication.View.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Height="500" 
+            Width="900"
+            MinWidth="340"
+            MinHeight="420"
+            AllowsTransparency="True"
+            WindowStartupLocation="CenterScreen"
+            WindowStyle="None"
+            Background="Transparent">
+    <Window.Icon>
+        <BitmapImage UriSource="pack://application:,,,/Resources/Images/OST.ico"/>
+    </Window.Icon>
+    <Grid>
+        <Border x:Name="Bord" Background="#4b7187"
+             BorderBrush="#3A4149"
+             BorderThickness="5"
+             CornerRadius="20">
+            <Image HorizontalAlignment="Right" Height="450" Source="/Resources/Images/0001.gif" ></Image>
+        </Border>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal">
+                <Polygon Margin="20 0 0 0" Points="30,0 50,0 20,70 0,70" 
+              Fill="#FF89C009"/>
+                <Polygon Points="10,0 30,0 0,70 -20,70" 
+              Fill="#FF89C009"/>
+                <Canvas>
+                    <Polygon Points="10,0 300,0 270,70 -20,70" 
+  Fill="#FF89C009">
+                    </Polygon>
+                    <TextBlock VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Foreground="White" FontStyle="Italic" FontFamily="Berlin Sans FB Demi" Canvas.Top="15" HorizontalAlignment="Center">ElectricFilter PRO</TextBlock>
+                </Canvas>
+            </StackPanel>
+            <Border Height="20" Width="340" CornerRadius="10" Background="White" Margin="20 10 0 0">
+                <Border x:Name="Loading" Height="15" Width="15" MaxWidth="330" CornerRadius="10" HorizontalAlignment="Left" Background="#FF89C009" Margin="5 0 0 0"/>
+            </Border>
+            <TextBlock VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="White" FontStyle="Italic" FontFamily="Berlin Sans FB Demi" HorizontalAlignment="Center">Загрузка ...</TextBlock>
+        </StackPanel>
+       
+        
+    </Grid>
+</Window>
