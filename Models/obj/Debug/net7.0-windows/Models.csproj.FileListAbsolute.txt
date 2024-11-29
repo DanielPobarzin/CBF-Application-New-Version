@@ -1,0 +1,88 @@
+D:\Develop\App\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.deps.json
+D:\Develop\App\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.dll
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\refint\Models.dll
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\FilterApplication.v2\Models\obj\Debug\net7.0-windows\ref\Models.dll
+C:\All\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.deps.json
+C:\All\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.dll
+C:\All\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.pdb
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.dll
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\refint\Models.dll
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.pdb
+C:\All\FilterApplication.v2\Models\obj\Debug\net7.0-windows\ref\Models.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.deps.json
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\refint\Models.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\ref\Models.dll
+D:\Develop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.deps.json
+D:\Develop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\FilterApplication.v2\Models\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.sourcelink.json
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.dll
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\refint\Models.dll
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\Models.pdb
+D:\Develop\FilterApplication.v2\Models\obj\Debug\net7.0-windows\ref\Models.dll
+D:\Develop\CBF-Application-New-Version\Models\bin\Debug\net7.0-windows\Models.deps.json
+D:\Develop\CBF-Application-New-Version\Models\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\CBF-Application-New-Version\Models\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.sourcelink.json
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.dll
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\refint\Models.dll
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.pdb
+D:\Develop\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\ref\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\bin\Debug\net7.0-windows\Models.deps.json
+D:\Develop\App\CBF-Application-New-Version\Models\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.sourcelink.json
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\refint\Models.dll
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\CBF-Application-New-Version\Models\obj\Debug\net7.0-windows\ref\Models.dll
+D:\Develop\Новая папка\Models\bin\Debug\net7.0-windows\Models.deps.json
+D:\Develop\Новая папка\Models\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\Новая папка\Models\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.csproj.AssemblyReference.cache
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.AssemblyInfoInputs.cache
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.AssemblyInfo.cs
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.csproj.CoreCompileInputs.cache
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.sourcelink.json
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.dll
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\refint\Models.dll
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\Models.pdb
+D:\Develop\Новая папка\Models\obj\Debug\net7.0-windows\ref\Models.dll

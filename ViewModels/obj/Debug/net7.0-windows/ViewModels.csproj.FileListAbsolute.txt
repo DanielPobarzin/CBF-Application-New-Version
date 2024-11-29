@@ -1,0 +1,123 @@
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\App\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.dll
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.dll
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+C:\All\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+C:\All\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\FilterApplication.v2\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.sourcelink.json
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\FilterApplication.v2\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.sourcelink.json
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\App\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.sourcelink.json
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\Новая папка\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.sourcelink.json
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll

@@ -1,0 +1,1614 @@
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.pdb
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\DataTemplate.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.lref
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+D:\Develop\App\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+D:\Develop\App\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\DataTemplate.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.lref
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_error.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_information.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_warning.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.pdb
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+C:\All\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+C:\All\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_error.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_information.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_warning.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\DataTemplate.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.lref
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\schema_station.png
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\EPPlus.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\EPPlus.Interfaces.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\EPPlus.System.Drawing.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Formats.Asn1.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encoding.CodePages.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Text.Json.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+C:\Users\Даниил\OneDrive\Desktop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_error.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_information.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_warning.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\schema_station.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\EPPlus.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\EPPlus.Interfaces.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\EPPlus.System.Drawing.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Formats.Asn1.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encoding.CodePages.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\System.Text.Json.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Persistance.pdb
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\FilterApplication.v2\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\DataTemplate.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.lref
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\CustomMessageBox.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.sourcelink.json
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+D:\Develop\FilterApplication.v2\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\App.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_error.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_information.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_warning.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\schema_station.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\EPPlus.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\EPPlus.Interfaces.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\EPPlus.System.Drawing.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Formats.Asn1.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encoding.CodePages.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Text.Json.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.sourcelink.json
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+D:\Develop\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\charts_page.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Templates\Template.xlsx
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\charts_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\export.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_error.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_information.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_warning.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\schema_station.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Templates\Template.xlsx
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\EPPlus.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\EPPlus.Interfaces.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\EPPlus.System.Drawing.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Formats.Asn1.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encoding.CodePages.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\System.Text.Json.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Persistance.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Persistance.pdb
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\App.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.lref
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.sourcelink.json
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+D:\Develop\App\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.File.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\export.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.File.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Persistence.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Persistence.pdb
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.exe
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\charts_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\calculate_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\export.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\filters_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\fuels_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_error.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_information.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\icon_warning.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_def.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\load_data_mo.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_mo.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\save_data_def.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\OST.ico
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\schema_station.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\station_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_calculate.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_filter.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_fuel.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_home.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_setting.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\img_station.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\setting_page.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_def.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\shutdown_mo.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_icon.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\hamburger_mo.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_def.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\max_mo.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\home_img.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_mo.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\close_menu_def.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\0001.gif
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_1.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_2.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_3.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\Schema_4.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_on.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\combobox_off.png
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Resources\Templates\Template.xlsx
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.deps.json
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.runtimeconfig.json
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\AutoMapper.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\EPPlus.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\EPPlus.Interfaces.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\EPPlus.System.Drawing.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\FluentValidation.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\MediatR.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\MediatR.Contracts.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Data.Sqlite.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Client.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.OData.Edm.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Microsoft.Spatial.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Ninject.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Serilog.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.Console.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Serilog.Sinks.File.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct2D1.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D10.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Direct3D9.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SharpDX.Mathematics.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.batteries_v2.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\System.Formats.Asn1.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encoding.CodePages.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\System.Text.Json.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\MediaFoundation.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Documents.SpreadsheetStreaming.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.Core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Adomd.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Queryable.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Pivot.DataProviders.Xmla.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.Controls.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Cloud.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.Direct2D.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Chart.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Charting.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ConversationalUI.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Data.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataServices.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.DataVisualization.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Extensions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.Ribbon.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Diagrams.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Docking.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.EntityFrameworkCore.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Expressions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FileDialogs.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewers.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.FixedDocumentViewersUI.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GanttView.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.Export.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.GridView.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ImageEditor.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Input.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Media.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Navigation.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Pivot.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.PivotFieldList.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RibbonView.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.RichTextBox.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.ScheduleView.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.Spreadsheet.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SpreadsheetUI.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.SyntaxEditor.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.VirtualGrid.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Controls.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Data.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Diagrams.Core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.CMapUtils.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.DrawingML.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Fixed.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Doc.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Flow.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Proofing.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Documents.Spreadsheet.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.MediaFoundation.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.PersistenceFramework.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Scheduling.Core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\it\Telerik.Windows.Controls.resources.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\nl\Telerik.Windows.Controls.resources.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\tr\Telerik.Windows.Controls.resources.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm\native\e_sqlite3.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x64\native\e_sqlite3.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\win-x86\native\e_sqlite3.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Persistence.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Persistence.pdb
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\Новая папка\FilterApplication\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.AssemblyReference.cache
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Button.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Page.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\ComboBoxStyle.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Image.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Styles.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\Resources\Styles\Text.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Charts.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Filter.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Home.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Station.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\App.baml
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Calculate.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Charts.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Filter.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Fuel.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Home.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\MainWindow.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\SplashScreen.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\View\Station.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\App.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_Content.g.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication_MarkupCompile.cache
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.g.resources
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfoInputs.cache
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.AssemblyInfo.cs
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.csproj.CoreCompileInputs.cache
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.sourcelink.json
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterAp.C1E1B36F.Up2Date
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.dll
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\refint\FilterApplication.dll
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
+D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
