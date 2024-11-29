@@ -9,13 +9,7 @@
              mc:Ignorable="d"
              d:DesignHeight="600"
              d:DesignWidth="622"
-              VirtualizingPanel.IsVirtualizing="True"
-              VirtualizingPanel.IsContainerVirtualizable="True"
-              VirtualizingPanel.VirtualizationMode="Recycling"
-              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
-              VirtualizingPanel.CacheLengthUnit="Pixel"
-              VirtualizingPanel.CacheLength="10000"
-              VirtualizingPanel.ScrollUnit="Item"
+             telerik:DiagramSurface.IsVirtualizing="True"
              Style="{StaticResource PageStyle}">
 
     <Grid Background="Transparent">
@@ -36,7 +30,7 @@
                             <RowDefinition Height="0.1*"/>
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" Margin="20" FontFamily="Century Gothic" FontStyle="Italic" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" FontSize="18"  VerticalAlignment="Center" Foreground="AliceBlue">Степени золоулавливания</TextBlock>
-                        <telerik:RadCartesianChart Name="ChartDegreeAsh" MinHeight="300" Grid.Row="1" Margin="10" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
+                        <telerik:RadCartesianChart telerik:DiagramSurface.IsVirtualizing="True" Name="ChartDegreeAsh" MinHeight="300" Grid.Row="1" Margin="10" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
                             <telerik:RadCartesianChart.HorizontalAxis>
                                 <telerik:CategoricalAxis LabelInterval="1" PlotMode="BetweenTicks" LabelFitMode="Rotate">
                                     <telerik:CategoricalAxis.LabelStyle>
@@ -93,7 +87,7 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" Margin="20" FontFamily="Century Gothic" FontStyle="Italic" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" FontSize="18"  VerticalAlignment="Center" Foreground="AliceBlue">Значения концентрации золы на входе в каждое поле электрофильтра, г/м³</TextBlock>
-                        <telerik:RadCartesianChart Name="Chart" MinHeight="300" Grid.Row="1" Margin="10" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
+                        <telerik:RadCartesianChart telerik:DiagramSurface.IsVirtualizing="True" Name="Chart" MinHeight="300" Grid.Row="1" Margin="10" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
                             <telerik:RadCartesianChart.HorizontalAxis>
                                 <telerik:CategoricalAxis LabelInterval="1" PlotMode="BetweenTicks" LabelFitMode="Rotate">
                                     <telerik:CategoricalAxis.LabelStyle>

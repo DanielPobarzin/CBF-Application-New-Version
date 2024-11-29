@@ -144,7 +144,7 @@ namespace FilterApplication.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FilterApplication;component/view/fuel.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FilterApplication;V1.0.0.0;component/view/fuel.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\Fuel.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

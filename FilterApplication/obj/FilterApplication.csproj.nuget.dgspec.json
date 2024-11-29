@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Develop\\Новая папка\\FilterApplication\\FilterApplication.csproj": {}
+    "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\FilterApplication.csproj": {}
   },
   "projects": {
-    "D:\\Develop\\Новая папка\\Application\\Application.csproj": {
+    "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develop\\Новая папка\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Develop\\Новая папка\\Application\\Application.csproj",
+        "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\d.pobarzin\\.nuget\\packages\\",
-        "outputPath": "D:\\Develop\\Новая папка\\Application\\obj\\",
+        "outputPath": "D:\\Develop\\CBF-Application-New-Version\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Develop\\Новая папка\\FilterApplication\\NuGet.Config",
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
           "C:\\Users\\d.pobarzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -28,7 +28,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Develop\\Новая папка\\FilterApplication\\Resources\\NuGet": {},
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.owen.ru/nuget": {}
         },
@@ -36,8 +36,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "D:\\Develop\\Новая папка\\Models\\Models.csproj": {
-                "projectPath": "D:\\Develop\\Новая папка\\Models\\Models.csproj"
+              "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj": {
+                "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj"
               }
             }
           }
@@ -101,20 +101,20 @@
         }
       }
     },
-    "D:\\Develop\\Новая папка\\FilterApplication\\FilterApplication.csproj": {
+    "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\FilterApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develop\\Новая папка\\FilterApplication\\FilterApplication.csproj",
+        "projectUniqueName": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\FilterApplication.csproj",
         "projectName": "FilterApplication",
-        "projectPath": "D:\\Develop\\Новая папка\\FilterApplication\\FilterApplication.csproj",
+        "projectPath": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\FilterApplication.csproj",
         "packagesPath": "C:\\Users\\d.pobarzin\\.nuget\\packages\\",
-        "outputPath": "D:\\Develop\\Новая папка\\FilterApplication\\obj\\",
+        "outputPath": "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Develop\\Новая папка\\FilterApplication\\NuGet.Config",
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
           "C:\\Users\\d.pobarzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -125,7 +125,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Develop\\Новая папка\\FilterApplication\\Resources\\NuGet": {},
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.owen.ru/nuget": {}
         },
@@ -133,11 +133,11 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "D:\\Develop\\Новая папка\\Persistance\\Persistence.csproj": {
-                "projectPath": "D:\\Develop\\Новая папка\\Persistance\\Persistence.csproj"
+              "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Persistence.csproj": {
+                "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Persistence.csproj"
               },
-              "D:\\Develop\\Новая папка\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "D:\\Develop\\Новая папка\\ViewModels\\ViewModels.csproj"
+              "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -209,20 +209,20 @@
         }
       }
     },
-    "D:\\Develop\\Новая папка\\Models\\Models.csproj": {
+    "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develop\\Новая папка\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\Develop\\Новая папка\\Models\\Models.csproj",
+        "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\d.pobarzin\\.nuget\\packages\\",
-        "outputPath": "D:\\Develop\\Новая папка\\Models\\obj\\",
+        "outputPath": "D:\\Develop\\CBF-Application-New-Version\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Develop\\Новая папка\\FilterApplication\\NuGet.Config",
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
           "C:\\Users\\d.pobarzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -233,7 +233,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Develop\\Новая папка\\FilterApplication\\Resources\\NuGet": {},
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.owen.ru/nuget": {}
         },
@@ -294,20 +294,20 @@
         }
       }
     },
-    "D:\\Develop\\Новая папка\\Persistance\\Persistence.csproj": {
+    "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develop\\Новая папка\\Persistance\\Persistence.csproj",
+        "projectUniqueName": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\Develop\\Новая папка\\Persistance\\Persistence.csproj",
+        "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\Persistence.csproj",
         "packagesPath": "C:\\Users\\d.pobarzin\\.nuget\\packages\\",
-        "outputPath": "D:\\Develop\\Новая папка\\Persistance\\obj\\",
+        "outputPath": "D:\\Develop\\CBF-Application-New-Version\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Develop\\Новая папка\\FilterApplication\\NuGet.Config",
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
           "C:\\Users\\d.pobarzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -318,7 +318,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Develop\\Новая папка\\FilterApplication\\Resources\\NuGet": {},
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.owen.ru/nuget": {}
         },
@@ -326,8 +326,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "D:\\Develop\\Новая папка\\Application\\Application.csproj": {
-                "projectPath": "D:\\Develop\\Новая папка\\Application\\Application.csproj"
+              "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj": {
+                "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj"
               }
             }
           }
@@ -383,20 +383,20 @@
         }
       }
     },
-    "D:\\Develop\\Новая папка\\ViewModels\\ViewModels.csproj": {
+    "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Develop\\Новая папка\\ViewModels\\ViewModels.csproj",
+        "projectUniqueName": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj",
         "projectName": "ViewModels",
-        "projectPath": "D:\\Develop\\Новая папка\\ViewModels\\ViewModels.csproj",
+        "projectPath": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj",
         "packagesPath": "C:\\Users\\d.pobarzin\\.nuget\\packages\\",
-        "outputPath": "D:\\Develop\\Новая папка\\ViewModels\\obj\\",
+        "outputPath": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Develop\\Новая папка\\FilterApplication\\NuGet.Config",
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
           "C:\\Users\\d.pobarzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -407,7 +407,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Develop\\Новая папка\\FilterApplication\\Resources\\NuGet": {},
+          "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.owen.ru/nuget": {}
         },
@@ -415,11 +415,11 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "D:\\Develop\\Новая папка\\Application\\Application.csproj": {
-                "projectPath": "D:\\Develop\\Новая папка\\Application\\Application.csproj"
+              "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj": {
+                "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj"
               },
-              "D:\\Develop\\Новая папка\\Models\\Models.csproj": {
-                "projectPath": "D:\\Develop\\Новая папка\\Models\\Models.csproj"
+              "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj": {
+                "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj"
               }
             }
           }
