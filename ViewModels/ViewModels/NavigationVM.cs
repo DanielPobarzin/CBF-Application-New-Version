@@ -77,6 +77,11 @@ namespace ViewModels.ViewModels
 		public RelayCommand MaxCommand => _commandService.MaxCommand;
 
 		/// <summary>
+		/// Получает команду для сворачивания окна.
+		/// </summary>
+		public RelayCommand MinCommand => _commandService.MinCommand;
+
+		/// <summary>
 		/// Получает команду для перемещения окна.
 		/// </summary>
 		public RelayCommand MoveWindowCommand => _commandService.MoveWindowCommand;

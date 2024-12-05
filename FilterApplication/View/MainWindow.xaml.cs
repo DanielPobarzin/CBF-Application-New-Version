@@ -7,7 +7,7 @@ using Application.Parameters;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Основное окно приложения. Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class MainWindow
 	{

@@ -9,7 +9,7 @@ using Telerik.Windows.Controls;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Логика взаимодействия для Filter.xaml
+	/// Страница "Фильтры". Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class Filter : IFiltersView
 	{

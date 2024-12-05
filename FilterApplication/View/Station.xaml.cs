@@ -5,7 +5,7 @@ using Models.Enums.View;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Логика взаимодействия для Station.xaml
+	/// Страница "Станция". Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class Station : IStationView
 	{

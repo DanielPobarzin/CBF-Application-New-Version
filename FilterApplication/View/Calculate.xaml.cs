@@ -10,7 +10,7 @@ using System.Windows.Threading;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Логика взаимодействия для Calculate.xaml
+	/// Страница "Расчеты". Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class Calculate : ICalculateView
 	{

@@ -80,6 +80,7 @@
 		<Folder Include="Resources\Fonts\" />
 		<Folder Include="Resources\NuGet\" />
 		<Folder Include="Resources\Styles\" />
+		<Folder Include="Resources\NuGet\" />
 	</ItemGroup>
 	<ItemGroup>
 		<Resource Include="Resources\Fonts\Rubik-Medium.ttf">
@@ -116,6 +117,12 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 		<Content Include="Resources\Images\load_data_mo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resources\Images\min_def.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Resources\Images\min_mo.png">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 		<Content Include="Resources\Images\save_data_mo.png">
@@ -232,7 +239,6 @@
     <PackageReference Include="Telerik.UI.for.Wpf.70.Xaml" Version="2023.1.117" />
 	  <PackageReference Include="Serilog" Version="4.0.1" />
 	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
-	  <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 	
   <ItemGroup>

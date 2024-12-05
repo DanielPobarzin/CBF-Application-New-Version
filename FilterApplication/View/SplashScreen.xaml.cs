@@ -5,7 +5,7 @@ using System.Windows;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Логика взаимодействия для SplashScreen.xaml
+	/// Загрузочное окно. Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class SplashScreen
 	{

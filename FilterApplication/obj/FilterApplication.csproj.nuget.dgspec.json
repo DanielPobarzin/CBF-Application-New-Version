@@ -180,10 +180,6 @@
             "Telerik.UI.for.Wpf.70.Xaml": {
               "target": "Package",
               "version": "[2023.1.117, )"
-            },
-            "WpfAnimatedGif": {
-              "target": "Package",
-              "version": "[2.0.2, )"
             }
           },
           "imports": [

@@ -15,8 +15,7 @@
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "6.0.0",
           "Telerik.UI.for.Wpf.70.Xaml": "2023.1.117",
-          "ViewModels": "1.0.0",
-          "WpfAnimatedGif": "2.0.2"
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "FilterApplication.dll": {}
@@ -1690,14 +1689,6 @@
           }
         }
       },
-      "WpfAnimatedGif/2.0.2": {
-        "runtime": {
-          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.2.0"
-          }
-        }
-      },
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
@@ -2686,13 +2677,6 @@
       "sha512": "sha512-QqZ9R7chaccgAt06ra1p8+AF7m9GSsWLULmY2vv8Xfg5brqtzvrfgABXaGGj1aDDFfcUdeV1Y9jnoAzAtdEVzw==",
       "path": "telerik.ui.for.wpf.70.xaml/2023.1.117",
       "hashPath": "telerik.ui.for.wpf.70.xaml.2023.1.117.nupkg.sha512"
-    },
-    "WpfAnimatedGif/2.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-B0j9SqtThyHVTiOPvu6yR+39Te0g3o+7Jjb+qEm7+Iz1HRqbE5/4QV+ntHWOYYBPOUFr9x1mdzGl/EzWP+nKiA==",
-      "path": "wpfanimatedgif/2.0.2",
-      "hashPath": "wpfanimatedgif.2.0.2.nupkg.sha512"
     },
     "Application/1.0.0": {
       "type": "project",

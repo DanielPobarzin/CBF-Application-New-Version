@@ -6,6 +6,7 @@ namespace Application.Interfaces.Services
 	{
 		RelayCommand CloseCommand { get; }
 		RelayCommand MaxCommand { get; }
+		RelayCommand MinCommand { get; }
 		RelayCommand MoveWindowCommand { get; }
 		RelayCommand CloseNavigationMenuCommand { get; }
 		RelayCommand OpenNavigationMenuCommand { get; }

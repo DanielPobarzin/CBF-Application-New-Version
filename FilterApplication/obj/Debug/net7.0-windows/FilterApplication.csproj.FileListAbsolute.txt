@@ -1073,7 +1073,6 @@ D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-window
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.SyntaxEditor.Core.dll
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.Extensions.dll
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Telerik.Windows.Zip.dll
-D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\de\Telerik.Windows.Controls.resources.dll
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\es\Telerik.Windows.Controls.resources.dll
 D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\fr\Telerik.Windows.Controls.resources.dll
@@ -1612,3 +1611,5 @@ D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\refi
 D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.pdb
 D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\FilterApplication.genruntimeconfig.cache
 D:\Develop\Новая папка\FilterApplication\obj\Debug\net7.0-windows\ref\FilterApplication.dll
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\min_def.png
+D:\Develop\CBF-Application-New-Version\FilterApplication\bin\Debug\net7.0-windows\Resources\Images\min_mo.png

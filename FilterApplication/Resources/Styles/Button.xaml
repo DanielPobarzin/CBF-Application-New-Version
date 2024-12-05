@@ -850,6 +850,68 @@
         </Setter>
 
     </Style>
+    <ImageBrush x:Key="MinAppDef"
+                ImageSource="pack://application:,,,/FilterApplication;component/Resources/Images/min_def.png"
+                Stretch="UniformToFill" />
 
+    <ImageBrush x:Key="MinAppMo"
+                ImageSource="pack://application:,,,/FilterApplication;component/Resources/Images/min_mo.png"
+                Stretch="UniformToFill" />
+
+    <Style x:Key="MinAppStyle"
+           TargetType="{x:Type Button}">
+
+        <Setter Property="Height"
+                Value="40" />
+        <Setter Property="Width"
+                Value="40" />
+        <Setter Property="HorizontalAlignment"
+                Value="Right" />
+        <Setter Property="VerticalAlignment"
+                Value="Top" />
+        <Setter Property="Margin"
+                Value="0,5,15,0" />
+
+        <Setter Property="Template">
+
+            <Setter.Value>
+
+                <ControlTemplate TargetType="{x:Type Button}">
+
+                    <Border x:Name="border"
+                            BorderThickness="0"
+                            Background="{StaticResource MinAppDef}">
+
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+
+                            <Setter Property="Background"
+                                    TargetName="border"
+                                    Value="{StaticResource MinAppMo}" />
+
+                        </Trigger>
+
+                        <Trigger Property="IsPressed"
+                                 Value="True">
+
+                            <Setter Property="Background"
+                                    TargetName="border"
+                                    Value="{StaticResource MinAppMo}" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
 
 </ResourceDictionary>

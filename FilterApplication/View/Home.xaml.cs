@@ -4,7 +4,7 @@ using Models.Enums.View;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Логика взаимодействия для Home.xaml
+	/// Страница "Главная". Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class Home : IHomeView
 	{

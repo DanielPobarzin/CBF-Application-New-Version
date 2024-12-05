@@ -11,7 +11,7 @@ using Telerik.Windows.Controls;
 namespace FilterApplication.View
 {
 	/// <summary>
-	/// Логика взаимодействия для Fuel.xaml
+	/// Страница "Топливо". Описывается основная логика взаимодействия
 	/// </summary>
 	public partial class Fuel : IFuelsView
 	{

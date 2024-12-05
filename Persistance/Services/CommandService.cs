@@ -12,6 +12,7 @@ namespace Persistence.Services
 	/// </summary>
 	public class CommandService : ICommandService
 	{
+		private readonly Lazy<RelayCommand> _minCommand;
 		private readonly Lazy<RelayCommand> _closeCommand;
 		private readonly Lazy<RelayCommand> _maxCommand;
 		private readonly Lazy<RelayCommand> _moveWindowCommand;
@@ -31,6 +32,7 @@ namespace Persistence.Services
 			_animationBehaviour = animation;
 			_closeCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await CloseAppAsync(parameter)));
 			_maxCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await MaxAppAsync(parameter)));
+			_minCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await MinAppAsync(parameter)));
 			_moveWindowCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) => await OnMoveWindowAsync(parameter)));
 			_closeNavigationMenuCommand = new Lazy<RelayCommand>(() => new RelayCommand(async (parameter) =>
 			{
@@ -70,6 +72,11 @@ namespace Persistence.Services
 		/// Получает команду для максимизации приложения.
 		/// </summary>
 		public RelayCommand MaxCommand => _maxCommand.Value;
+
+		/// <summary>
+		/// Получает команду для сворачивания приложения.
+		/// </summary>
+		public RelayCommand MinCommand => _minCommand.Value;
 
 		/// <summary>
 		/// Получает команду для перемещения окна.
@@ -153,12 +160,31 @@ namespace Persistence.Services
 			{
 				await win.Dispatcher.InvokeAsync(() =>
 				{
-					win.WindowState = win.WindowState == WindowState.Normal ?
-						WindowState.Maximized : WindowState.Normal;
+					switch(win.WindowState)
+					{
+						case WindowState.Normal:
+							win.Width = win.MaxWidth;
+							win.Height = win.MaxHeight;
+							break;
+						case WindowState.Maximized:
+								win.Width = win.MinWidth;
+								win.Height = win.MinHeight;
+							break;
+						case WindowState.Minimized:
+							win.Width = win.MaxWidth;
+							win.Height = win.MaxHeight;
+							break;
+					};
 				});
-
 			}
 		}
+
+		private static async Task MinAppAsync(object obj)
+		{
+			if (obj is Window win)
+				await win.Dispatcher.InvokeAsync(() => win.WindowState = WindowState.Minimized);
+		}
+
 		private static async Task OnMoveWindowAsync(object parameter)
 		{
 			if (parameter is Window window)

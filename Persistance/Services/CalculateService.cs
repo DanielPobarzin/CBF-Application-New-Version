@@ -283,7 +283,7 @@ namespace Persistence.Services
 			result.DegreeAshCapture = 1 - result.PassageAshTakingAccountGasLeaksZones;
 			if (result.DegreeAshCapture < 0.99)
 			{
-				var message = $"Степень улавливания золы для топлива типа '{fuel.BrandFuel}' ниже минимально допустимого значения. Желаете продолжить расчет?";
+				var message = $"Степень улавливания золы для топлива типа '{fuel.BrandFuel}' ниже минимально допустимого значения. Желаете продолжить расчет для этого вида топлива?";
 				var dialog = MessageBox.Show(message, "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
 				if (dialog == MessageBoxResult.No)
 				{
