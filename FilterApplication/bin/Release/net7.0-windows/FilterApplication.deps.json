@@ -8,14 +8,14 @@
     ".NETCoreApp,Version=v7.0": {
       "FilterApplication/1.0.0": {
         "dependencies": {
-          "Persistance": "1.0.0",
+          "Persistence": "1.0.0",
           "SQLitePCLRaw.bundle_green": "2.1.10",
           "SQLitePCLRaw.core": "2.1.10",
           "Serilog": "4.0.1",
           "Serilog.Sinks.Console": "6.0.0",
+          "Serilog.Sinks.File": "6.0.0",
           "Telerik.UI.for.Wpf.70.Xaml": "2023.1.117",
-          "ViewModels": "1.0.0",
-          "WpfAnimatedGif": "2.0.2"
+          "ViewModels": "1.0.0"
         },
         "runtime": {
           "FilterApplication.dll": {}
@@ -524,6 +524,17 @@
         },
         "runtime": {
           "lib/net6.0/Serilog.Sinks.Console.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.File/6.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Serilog.Sinks.File.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
           }
@@ -1678,14 +1689,6 @@
           }
         }
       },
-      "WpfAnimatedGif/2.0.2": {
-        "runtime": {
-          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.2.0"
-          }
-        }
-      },
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
@@ -1696,7 +1699,10 @@
           "Serilog.Sinks.Console": "6.0.0"
         },
         "runtime": {
-          "Application.dll": {}
+          "Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Models/1.0.0": {
@@ -1706,10 +1712,13 @@
           "Microsoft.EntityFrameworkCore": "7.0.20"
         },
         "runtime": {
-          "Models.dll": {}
+          "Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "Persistance/1.0.0": {
+      "Persistence/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
           "EPPlus": "7.3.2",
@@ -1717,7 +1726,10 @@
           "Telerik.UI.for.Wpf.70.Xaml": "2023.1.117"
         },
         "runtime": {
-          "Persistance.dll": {}
+          "Persistence.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ViewModels/1.0.0": {
@@ -1728,7 +1740,10 @@
           "Telerik.UI.for.Wpf.70.Xaml": "2023.1.117"
         },
         "runtime": {
-          "ViewModels.dll": {}
+          "ViewModels.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -2144,6 +2159,13 @@
       "sha512": "sha512-fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
       "path": "serilog.sinks.console/6.0.0",
       "hashPath": "serilog.sinks.console.6.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lxjg89Y8gJMmFxVkbZ+qDgjl+T4yC5F7WSLTvA+5q0R04tfKVLRL/EHpYoJ/MEQd2EeCKDuylBIVnAYMotmh2A==",
+      "path": "serilog.sinks.file/6.0.0",
+      "hashPath": "serilog.sinks.file.6.0.0.nupkg.sha512"
     },
     "SharpDX/4.2.0": {
       "type": "package",
@@ -2656,13 +2678,6 @@
       "path": "telerik.ui.for.wpf.70.xaml/2023.1.117",
       "hashPath": "telerik.ui.for.wpf.70.xaml.2023.1.117.nupkg.sha512"
     },
-    "WpfAnimatedGif/2.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-B0j9SqtThyHVTiOPvu6yR+39Te0g3o+7Jjb+qEm7+Iz1HRqbE5/4QV+ntHWOYYBPOUFr9x1mdzGl/EzWP+nKiA==",
-      "path": "wpfanimatedgif/2.0.2",
-      "hashPath": "wpfanimatedgif.2.0.2.nupkg.sha512"
-    },
     "Application/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -2673,7 +2688,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Persistance/1.0.0": {
+    "Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

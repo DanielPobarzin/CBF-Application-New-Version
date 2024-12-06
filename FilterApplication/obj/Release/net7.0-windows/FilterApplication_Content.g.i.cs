@@ -18,6 +18,8 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/icon_warning.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/load_data_def.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/load_data_mo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/min_def.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/min_mo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/save_data_mo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/save_data_def.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/images/ost.ico")]

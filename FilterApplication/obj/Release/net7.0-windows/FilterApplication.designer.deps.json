@@ -617,6 +617,17 @@
           }
         }
       },
+      "Serilog.Sinks.File/6.0.0": {
+        "dependencies": {
+          "Serilog": "4.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
       "SharpDX/4.2.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1"
@@ -2058,14 +2069,6 @@
             "locale": "tr"
           }
         }
-      },
-      "WpfAnimatedGif/2.0.2": {
-        "runtime": {
-          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.2.0"
-          }
-        }
       }
     }
   },
@@ -2475,6 +2478,13 @@
       "sha512": "sha512-fQGWqVMClCP2yEyTXPIinSr5c+CBGUvBybPxjAGcf7ctDhadFhrQw03Mv8rJ07/wR5PDfFjewf2LimvXCDzpbA==",
       "path": "serilog.sinks.console/6.0.0",
       "hashPath": "serilog.sinks.console.6.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lxjg89Y8gJMmFxVkbZ+qDgjl+T4yC5F7WSLTvA+5q0R04tfKVLRL/EHpYoJ/MEQd2EeCKDuylBIVnAYMotmh2A==",
+      "path": "serilog.sinks.file/6.0.0",
+      "hashPath": "serilog.sinks.file.6.0.0.nupkg.sha512"
     },
     "SharpDX/4.2.0": {
       "type": "package",
@@ -2986,13 +2996,6 @@
       "sha512": "sha512-QqZ9R7chaccgAt06ra1p8+AF7m9GSsWLULmY2vv8Xfg5brqtzvrfgABXaGGj1aDDFfcUdeV1Y9jnoAzAtdEVzw==",
       "path": "telerik.ui.for.wpf.70.xaml/2023.1.117",
       "hashPath": "telerik.ui.for.wpf.70.xaml.2023.1.117.nupkg.sha512"
-    },
-    "WpfAnimatedGif/2.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-B0j9SqtThyHVTiOPvu6yR+39Te0g3o+7Jjb+qEm7+Iz1HRqbE5/4QV+ntHWOYYBPOUFr9x1mdzGl/EzWP+nKiA==",
-      "path": "wpfanimatedgif/2.0.2",
-      "hashPath": "wpfanimatedgif.2.0.2.nupkg.sha512"
     }
   }
 }

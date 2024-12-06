@@ -56,6 +56,7 @@ namespace Models.Entities.HeatPowerPlant.StationProperty
 				if (!fuelConsumption.Equals(value))
 					fuelConsumption = value;
 				OnPropertyChanged();
+				OnPropertyChanged(this[nameof(FuelConsumption)]);
 			}
 		}
 
