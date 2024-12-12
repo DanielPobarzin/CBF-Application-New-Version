@@ -1699,10 +1699,7 @@
           "Serilog.Sinks.Console": "6.0.0"
         },
         "runtime": {
-          "Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Application.dll": {}
         }
       },
       "Models/1.0.0": {
@@ -1712,10 +1709,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.20"
         },
         "runtime": {
-          "Models.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Models.dll": {}
         }
       },
       "Persistence/1.0.0": {
@@ -1726,10 +1720,7 @@
           "Telerik.UI.for.Wpf.70.Xaml": "2023.1.117"
         },
         "runtime": {
-          "Persistence.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Persistence.dll": {}
         }
       },
       "ViewModels/1.0.0": {
@@ -1740,10 +1731,7 @@
           "Telerik.UI.for.Wpf.70.Xaml": "2023.1.117"
         },
         "runtime": {
-          "ViewModels.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ViewModels.dll": {}
         }
       }
     }

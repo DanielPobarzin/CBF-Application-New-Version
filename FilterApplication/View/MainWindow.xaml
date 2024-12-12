@@ -7,26 +7,12 @@
                 xmlns:menu="clr-namespace:Application.Utilities;assembly=Application" 
                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
                 d:DataContext="{d:DesignInstance Type=vm:NavigationVm}" 
-                mc:Ignorable="d"        
-                Title="CBF App PRO"
-                Name="ResponsiveWindow"
-                Height="500" 
-                Width="900"
-                MinWidth="800"
-                MinHeight="420"
-                MaxWidth="1100"
-                MaxHeight="600"
-                SizeChanged="WindowSizeChanged"
-                AllowsTransparency="True"
-                ResizeMode="CanResizeWithGrip"
-                WindowStartupLocation="CenterScreen"
-                WindowStyle="None"
-                telerik:DiagramSurface.IsVirtualizing="True"
-                telerik:DiagramAnimations.IsPanAnimationEnabled="False"
-                telerik:DiagramAnimations.IsZoomAnimationEnabled="False"
-                UseLayoutRounding="True"
-                Background="Transparent"
-                MouseLeftButtonDown="MovingWin">
+                mc:Ignorable="d" Name="ResponsiveWindow" Height="500" 
+                Width="900" MinWidth="800" MinHeight="420" MaxWidth="1100"
+                MaxHeight="600" SizeChanged="WindowSizeChanged"
+                AllowsTransparency="True" ResizeMode="CanResizeWithGrip"
+                WindowStartupLocation="CenterScreen" WindowStyle="None"
+                Background="Transparent" MouseLeftButtonDown="MovingWin">
 
     <Window.Icon>
         <BitmapImage UriSource="/Resources/Images/OST.ico"/>
@@ -58,12 +44,9 @@
 
             <!--// Navigation Panel //-->
             <Grid Name="NavigationGrid" MinWidth="80" MaxWidth="230" HorizontalAlignment="Left" Grid.Column="0">
-                <Border  Background="#272B2F" MinWidth="60" MaxWidth="240"
-                        BorderThickness="5"
+                <Border  Background="#272B2F" MinWidth="60" MaxWidth="240" BorderThickness="5"
                         CornerRadius="20,0,0,20" />
-                <Button Name="MenuClose" 
-                        Visibility="Visible" 
-                        Margin="10"
+                <Button Name="MenuClose" Visibility="Visible" Margin="10"
                         Command="{Binding CloseNavigationMenuCommand}"
                         Style="{StaticResource CloseMenuButton}">
                     <Button.CommandParameter>
@@ -74,10 +57,7 @@
                         </MultiBinding>
                     </Button.CommandParameter>
                 </Button>
-                <Button Name="MenuOpen"  
-                        Visibility="Collapsed" 
-                        HorizontalAlignment="Right" 
-                        Margin="10" 
+                <Button Name="MenuOpen" Visibility="Collapsed" HorizontalAlignment="Right" Margin="10" 
                          Command="{Binding OpenNavigationMenuCommand}"
                         Style="{StaticResource HamburgerMenuButton}">
                     <Button.CommandParameter>
@@ -93,110 +73,150 @@
                             Width="220">
                     <!--// Home //-->
                     <menu:Btn Name="Главная" Style="{DynamicResource BtnStyle}" Command="{Binding HomeCommand, IsAsync=True}"
-                        IsChecked="True">
-
-                        <Grid>
-                            <Image Source="/Resources/Images/img_home.png"
-                         Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Главная"
-                         Style="{StaticResource TextStyle}" />
-
-                        </Grid>
+                        IsChecked="True" ToolTipService.HasDropShadow="True" ToolTipService.IsEnabled="{Binding ElementName=MenuOpen, Path=IsVisible}">
+                        <menu:Btn.Content>
+                            <telerik:RadDockPanel>
+                                <Image Source="/Resources/Images/img_home.png"
+                                        Style="{StaticResource ImageStyle}" />
+                                <TextBlock Text="Главная" Margin="20 0" Style="{StaticResource TextStyle}" />
+                            </telerik:RadDockPanel>
+                        </menu:Btn.Content>
+                        <menu:Btn.ToolTip>
+                            <Border Background="#FF0BD3FF" 
+                                    CornerRadius="2">
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" FontWeight="Bold"
+                                               Margin="10" 
+                                               FontSize="14" FontFamily="Century Gothic">Главная</TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </menu:Btn.ToolTip>
                     </menu:Btn>
 
                     <!--// Фильтр //-->
 
-                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Фильтры"
-                        Command="{Binding FiltersCommand, IsAsync=True}">
-
-                        <Grid>
-                            <Image Source="/Resources/Images/img_filter.png"
-                         Style="{StaticResource ImageStyle}" />
-                            <TextBlock Text="Фильтры"
-                         Style="{StaticResource TextStyle}" />
-
-                        </Grid>
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Фильтры" Command="{Binding FiltersCommand, IsAsync=True}" 
+                              ToolTipService.HasDropShadow="True" ToolTipService.IsEnabled="{Binding ElementName=MenuOpen, Path=IsVisible}">
+                        <menu:Btn.Content>
+                            <telerik:RadDockPanel>
+                                <Image Source="/Resources/Images/img_filter.png"
+                                       Style="{StaticResource ImageStyle}" />
+                                <TextBlock Text="Фильтры" Margin="20 0"
+                                       Style="{StaticResource TextStyle}" />
+                            </telerik:RadDockPanel>
+                        </menu:Btn.Content>
+                        <menu:Btn.ToolTip>
+                            <Border Background="#FF0BD3FF" 
+                                    CornerRadius="2">
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" FontWeight="Bold"
+                                               Margin="10" 
+                                               FontSize="14" FontFamily="Century Gothic">Фильтры</TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </menu:Btn.ToolTip>
                     </menu:Btn>
                     <!--// Топлво //-->
 
-                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Топливо"
-                     Command="{Binding FuelsCommand}">
-
-                        <Grid>
-
-                            <Image Source="/Resources/Images/img_fuel.png"
-                             Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Топливо"
-                    Style="{StaticResource TextStyle}" />
-
-                        </Grid>
-
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Топливо" Command="{Binding FuelsCommand}" 
+                              ToolTipService.HasDropShadow="True" ToolTipService.IsEnabled="{Binding ElementName=MenuOpen, Path=IsVisible}">
+                        <menu:Btn.Content>
+                            <telerik:RadDockPanel>
+                                <Image Source="/Resources/Images/img_fuel.png"
+                                      Style="{StaticResource ImageStyle}" />
+                                <TextBlock Text="Топливо" Margin="20 0"
+                                        Style="{StaticResource TextStyle}" />
+                            </telerik:RadDockPanel>
+                        </menu:Btn.Content>
+                        <menu:Btn.ToolTip>
+                            <Border Background="#FF0BD3FF" 
+                                     CornerRadius="2">
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" FontWeight="Bold"
+                                               Margin="10" 
+                                               FontSize="14" FontFamily="Century Gothic">Топливо</TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </menu:Btn.ToolTip>
                     </menu:Btn>
 
                     <!--// Станция //-->
 
-                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Станция"
-           Command="{Binding StationsCommand, IsAsync=True}">
-
-                        <Grid>
-
-                            <Image Source="/Resources/Images/img_station.png"
-                Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Станция"
-                    Style="{StaticResource TextStyle}" />
-
-                        </Grid>
-
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Станция" Command="{Binding StationsCommand, IsAsync=True}" 
+                              ToolTipService.HasDropShadow="True" ToolTipService.IsEnabled="{Binding ElementName=MenuOpen, Path=IsVisible}">
+                        <menu:Btn.Content>
+                            <telerik:RadDockPanel>
+                                <Image Source="/Resources/Images/img_station.png"
+                                        Style="{StaticResource ImageStyle}" />
+                                <TextBlock Text="Станция"  Margin="20 0"
+                                         Style="{StaticResource TextStyle}" />
+                            </telerik:RadDockPanel>
+                        </menu:Btn.Content>
+                        <menu:Btn.ToolTip>
+                            <Border Background="#FF0BD3FF" 
+                                    CornerRadius="2">
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" FontWeight="Bold"
+                                               Margin="10" 
+                                               FontSize="14" FontFamily="Century Gothic">Станция</TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </menu:Btn.ToolTip>
                     </menu:Btn>
 
                     <!--// Расчет //-->
 
-                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Расчеты"
-           Command="{Binding CalculateCommand}">
-
-                        <Grid>
-
-                            <Image Source="/Resources/Images/img_calculate.png"
-                Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Расчеты"
-                    Style="{StaticResource TextStyle}" />
-
-                        </Grid>
-
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Расчеты" Command="{Binding CalculateCommand}" 
+                              ToolTipService.HasDropShadow="True" ToolTipService.IsEnabled="{Binding ElementName=MenuOpen, Path=IsVisible}">
+                        <menu:Btn.Content>
+                            <telerik:RadDockPanel>
+                                <Image Source="/Resources/Images/img_calculate.png"
+                                        Style="{StaticResource ImageStyle}" />
+                                <TextBlock Text="Расчеты"  Margin="20 0"
+                                           Style="{StaticResource TextStyle}" />
+                            </telerik:RadDockPanel>
+                        </menu:Btn.Content>
+                        <menu:Btn.ToolTip>
+                            <Border Background="#FF0BD3FF" 
+                                 CornerRadius="2">
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" FontWeight="Bold"
+                                               Margin="10" 
+                                               FontSize="14" FontFamily="Century Gothic">Расчеты</TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </menu:Btn.ToolTip>
                     </menu:Btn>
 
-                    <!--// Настройки //-->
+                    <!--// Графики //-->
 
-                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Графики"
-           Command="{Binding ChartsCommand}">
-
-                        <Grid>
-
-                            <Image Source="/Resources/Images/img_setting.png"
-                Style="{StaticResource ImageStyle}" />
-
-                            <TextBlock Text="Графики"
-                    Style="{StaticResource TextStyle}" />
-
-                        </Grid>
-
+                    <menu:Btn Style="{StaticResource BtnStyle}" Name="Графики" Command="{Binding ChartsCommand}" 
+                              ToolTipService.HasDropShadow="True" ToolTipService.IsEnabled="{Binding ElementName=MenuOpen, Path=IsVisible}">
+                        <menu:Btn.Content>
+                            <telerik:RadDockPanel>
+                                <Image Source="/Resources/Images/img_setting.png"
+                                    Style="{StaticResource ImageStyle}" />
+                                <TextBlock Text="Графики"  Margin="20 0"
+                                     Style="{StaticResource TextStyle}" />
+                            </telerik:RadDockPanel>
+                        </menu:Btn.Content>
+                        <menu:Btn.ToolTip>
+                            <Border Background="#FF0BD3FF" 
+                                    CornerRadius="2">
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" FontWeight="Bold"
+                                               Margin="10" 
+                                               FontSize="14" FontFamily="Century Gothic">Графики</TextBlock>
+                                </StackPanel>
+                            </Border>
+                        </menu:Btn.ToolTip>
                     </menu:Btn>
                 </StackPanel>
             </Grid>
             <Grid Name="UserGrid"  Grid.Column="1">
                 <ContentControl x:Name="Pages" 
                 VirtualizingPanel.IsVirtualizing="True"
-                VirtualizingPanel.IsContainerVirtualizable="True"
-                VirtualizingPanel.VirtualizationMode="Recycling"
-                VirtualizingPanel.IsVirtualizingWhenGrouping="True"
-                VirtualizingPanel.CacheLengthUnit="Pixel"
-                VirtualizingPanel.CacheLength="1000"
-                VirtualizingPanel.ScrollUnit="Item"
-                                
+                VirtualizingPanel.VirtualizationMode="Recycling"                      
                 Content="{Binding CurrentView}"/>
             </Grid>
         </Grid>

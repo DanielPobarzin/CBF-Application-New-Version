@@ -40,7 +40,5 @@
             </Border>
             <TextBlock VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="White" FontStyle="Italic" FontFamily="Berlin Sans FB Demi" HorizontalAlignment="Center">Загрузка ...</TextBlock>
         </StackPanel>
-       
-        
     </Grid>
 </Window>

@@ -34,3 +34,21 @@ D:\Develop\Новая папка\Persistance\obj\Debug\net7.0-windows\Persistenc
 D:\Develop\Новая папка\Persistance\obj\Debug\net7.0-windows\refint\Persistence.dll
 D:\Develop\Новая папка\Persistance\obj\Debug\net7.0-windows\Persistence.pdb
 D:\Develop\Новая папка\Persistance\obj\Debug\net7.0-windows\ref\Persistence.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Persistence.deps.json
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Persistence.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Persistence.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.csproj.AssemblyReference.cache
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.AssemblyInfoInputs.cache
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.AssemblyInfo.cs
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.csproj.CoreCompileInputs.cache
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.sourcelink.json
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persiste.61C28332.Up2Date
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\refint\Persistence.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\Persistence.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\Persistance\obj\Debug\net7.0-windows\ref\Persistence.dll

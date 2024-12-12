@@ -121,3 +121,21 @@ D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.
 D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
 D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
 D:\Develop\Новая папка\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.deps.json
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Application.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Models.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Application.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\bin\Debug\net7.0-windows\Models.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.AssemblyReference.cache
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfoInputs.cache
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.AssemblyInfo.cs
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.CoreCompileInputs.cache
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.sourcelink.json
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.csproj.Up2Date
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\refint\ViewModels.dll
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ViewModels.pdb
+D:\Develop\App\Filter\CBF-Application-New-Version\ViewModels\obj\Debug\net7.0-windows\ref\ViewModels.dll

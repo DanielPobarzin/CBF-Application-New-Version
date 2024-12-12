@@ -3,16 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             mc:Ignorable="d"
-            d:DesignHeight="600"
-            d:DesignWidth="622"
-              VirtualizingPanel.IsVirtualizing="True"
-              VirtualizingPanel.IsContainerVirtualizable="True"
-              VirtualizingPanel.VirtualizationMode="Recycling"
-              VirtualizingPanel.IsVirtualizingWhenGrouping="True"
-              VirtualizingPanel.CacheLengthUnit="Pixel"
-              VirtualizingPanel.CacheLength="10000"
-              VirtualizingPanel.ScrollUnit="Item"
+             mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="622"
+             VirtualizingPanel.IsVirtualizing="True"
+             VirtualizingPanel.IsContainerVirtualizable="True"
+             VirtualizingPanel.VirtualizationMode="Recycling"
     Background="Transparent"
     Style="{DynamicResource PageStyle}">
     <Grid>
@@ -25,26 +19,17 @@
                 Background="Transparent"
                 Margin="8">
 
-                <Border Height="30"
-               Width="230"
-               Background="#373E46"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Top"
-               BorderThickness="5,0,5,0"
-               BorderBrush="#FF0BCDFF"
-               CornerRadius="5">
-                    <Grid>
-                        <TextBlock Text="Electrofilter P R O"
+                <Border Height="30" Width="230" Background="#373E46"
+                HorizontalAlignment="Center" VerticalAlignment="Top"
+                BorderThickness="5,0,5,0" BorderBrush="#FF0BCDFF"
+                CornerRadius="5">
+                    <TextBlock Text="Electrofilter P R O"
                           FontFamily="Fonts/#Saira Regular"
                           FontSize="18"
-                 
                           VerticalAlignment="Center"
                           HorizontalAlignment="Center"
                           Foreground="#DCE0E4" />
-
-                </Grid>
-
-            </Border>
+                </Border>
 
             <ScrollViewer VerticalScrollBarVisibility="Auto">
 
