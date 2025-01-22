@@ -9,10 +9,9 @@ namespace Application.Utilities
 	/// </summary>
 	public class Btn : RadioButton
     {
-        static Btn()
-        {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(Btn), new FrameworkPropertyMetadata(typeof(Btn))); 
-        }
-
+        static Btn() => 
+	        DefaultStyleKeyProperty
+		        .OverrideMetadata(typeof(Btn), 
+			        new FrameworkPropertyMetadata(typeof(Btn)));
     }
 }

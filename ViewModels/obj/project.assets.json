@@ -6397,24 +6397,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Даниил\\.nuget\\packages\\": {},
+    "C:\\Users\\d.pobarzin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj",
+      "projectUniqueName": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj",
       "projectName": "ViewModels",
-      "projectPath": "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj",
-      "packagesPath": "C:\\Users\\Даниил\\.nuget\\packages\\",
-      "outputPath": "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\ViewModels\\obj\\",
+      "projectPath": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\ViewModels.csproj",
+      "packagesPath": "C:\\Users\\d.pobarzin\\.nuget\\packages\\",
+      "outputPath": "D:\\Develop\\CBF-Application-New-Version\\ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
-        "C:\\Users\\Даниил\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\NuGet.Config",
+        "C:\\Users\\d.pobarzin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6424,18 +6424,19 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "D:\\Develop\\CBF-Application-New-Version\\FilterApplication\\Resources\\NuGet": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.owen.ru/nuget": {}
       },
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\Application\\Application.csproj": {
-              "projectPath": "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\Application\\Application.csproj"
+            "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj": {
+              "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Application\\Application.csproj"
             },
-            "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\Models\\Models.csproj": {
-              "projectPath": "D:\\Develop\\App\\Filter\\CBF-Application-New-Version\\Models\\Models.csproj"
+            "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj": {
+              "projectPath": "D:\\Develop\\CBF-Application-New-Version\\Models\\Models.csproj"
             }
           }
         }
@@ -6483,7 +6484,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

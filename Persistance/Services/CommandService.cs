@@ -160,21 +160,18 @@ namespace Persistence.Services
 			{
 				await win.Dispatcher.InvokeAsync(() =>
 				{
-					switch(win.WindowState)
+					switch(win)
 					{
-						case WindowState.Normal:
+						case { WindowState: WindowState.Normal }:
 							win.Width = win.MaxWidth;
-							win.Height = win.MaxHeight;
-							break;
-						case WindowState.Maximized:
+							win.Height = win.MaxHeight; break;
+						case { WindowState: WindowState.Maximized }:
 								win.Width = win.MinWidth;
-								win.Height = win.MinHeight;
-							break;
-						case WindowState.Minimized:
+								win.Height = win.MinHeight; break;
+						case { WindowState: WindowState.Minimized }:
 							win.Width = win.MaxWidth;
-							win.Height = win.MaxHeight;
-							break;
-					};
+							win.Height = win.MaxHeight; break;
+					}
 				});
 			}
 		}

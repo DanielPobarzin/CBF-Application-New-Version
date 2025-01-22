@@ -39,12 +39,9 @@ namespace Persistence.Services
 		/// <summary>
 		/// Логирующая строка с выводом сообщений.
 		/// </summary>
-		public string LogOutput
-		{
-			get
-			{
-				lock (_logOutput)
-				{
+		public string LogOutput {
+			get {
+				lock (_logOutput) {
 					return _logOutput.ToString();
 				}
 			}

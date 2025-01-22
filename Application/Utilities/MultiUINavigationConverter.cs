@@ -19,14 +19,10 @@ namespace Application.Utilities
 		/// <param name="culture">Информация о культуре, используемая для преобразования.</param>
 		/// <returns>Объект <see cref="NavigationMenuParameter"/>, содержащий панели и кнопки меню.</returns>
 		public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
-		{
-			return new NavigationMenuParameter
-			{
+		=> new NavigationMenuParameter {
 				Panel = (values[0] as Grid)!,
 				CloseMenu = (values[1] as Button)!,
-				OpenMenu = (values[2] as Button)!
-			};
-		}
+				OpenMenu = (values[2] as Button)!};
 
 		/// <summary>
 		/// Преобразует значение обратно из целевого значения в массив значений источника данных.

@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Reflection;
 
 namespace Application.Extensions;
 
@@ -13,7 +12,7 @@ public static class EnumExtensions
 	/// <returns>Описание значения перечисления или его строковое представление, если описание отсутствует.</returns>
 	public static string? GetDescription(this Enum value)
 	{
-		FieldInfo? fi = value.GetType().GetField(value.ToString());
+		var fi = value.GetType().GetField(value.ToString());
 		if (fi == null) return null;
 		var attributes = (DescriptionAttribute[])fi
 			.GetCustomAttributes(typeof(DescriptionAttribute), false);
